@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>人员变动监测 | 私募证券管理人人员变动监测平台</title>
+    <link rel="stylesheet" href="./styles.css?v=20260627-indigo" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <nav class="module-nav" aria-label="主模块">
+          <a class="active" href="./">人员变动</a>
+          <a href="../personnel-center/">人员库</a>
+          <a href="../manager-center/">管理人库</a>
+          <a href="../filing-center/">产品备案</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="module-header">
+        <div>
+          <div class="module-kicker">PERSONNEL CHANGE</div>
+          <h1>周度人员变动监测</h1>
+          <p>基于周度快照对比，识别人员新增、减少、流动与资格变化</p>
+        </div>
+        <div class="header-stats" id="summaryPills"></div>
+      </section>
+
+      <section class="change-metrics" id="changeMetrics"></section>
+
+      <section class="search-panel" aria-label="搜索管理人或人员">
+        <input id="changeSearch" type="search" placeholder="搜索管理人、登记编号或人员姓名" />
+        <button id="clearSearch" type="button">清除</button>
+      </section>
+
+      <section class="section-title">
+        <div>
+          <h2>最近一周人员变化</h2>
+          <p>点击榜单中的管理人，进入独立管理人详情页查看具体公司和人员。</p>
+        </div>
+      </section>
+
+      <section class="rank-grid">
+        <article class="rank-card">
+          <div class="card-accent"></div>
+          <header>
+            <span>扩张</span>
+            <h3>扩张最快</h3>
+          </header>
+          <div class="rank-list" id="expansionList"></div>
+        </article>
+
+        <article class="rank-card">
+          <div class="card-accent"></div>
+          <header>
+            <span>收缩</span>
+            <h3>收缩最明显</h3>
+          </header>
+          <div class="rank-list" id="shrinkList"></div>
+        </article>
+
+        <article class="rank-card">
+          <div class="card-accent"></div>
+          <header>
+            <span>路线</span>
+            <h3>样本内主要流动路线</h3>
+          </header>
+          <div class="rank-list" id="routeList"></div>
+        </article>
+      </section>
+    </main>
+
+    <script src="./app.js?v=20260627-drop-cert-metric"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>人员库 | 私募证券管理人人员变动监测平台</title>
+    <link rel="stylesheet" href="./styles.css?v=20260627-indigo" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <nav class="module-nav" aria-label="主模块">
+          <a href="../change-center/">人员变动</a>
+          <a class="active" href="../personnel-center/">人员库</a>
+          <a href="../manager-center/">管理人库</a>
+          <a href="../filing-center/">产品备案</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="module-header">
+        <div>
+          <div class="module-kicker">PERSONNEL CENTER</div>
+          <h1>人员库</h1>
+          <p>查人、查机构归属、查资格证书</p>
+        </div>
+        <div class="header-stats" id="dataStatus">加载数据中</div>
+      </section>
+
+      <section class="metrics" id="metrics"></section>
+
+      <section class="workbench">
+        <div class="search-row">
+          <label class="search-box">
+            <span>全局搜索</span>
+            <input id="queryInput" type="search" placeholder="输入人员姓名、管理人名称、登记编号或证书编号" />
+          </label>
+          <button id="resetBtn" class="ghost-btn">重置</button>
+        </div>
+
+        <div class="filter-grid">
+          <label>
+            规模区间
+            <select id="scaleFilter"><option value="">全部规模</option></select>
+          </label>
+          <label>
+            资格类别
+            <select id="certFilter"><option value="">全部资格</option></select>
+          </label>
+          <label>
+            证书状态
+            <select id="statusFilter"><option value="">全部状态</option></select>
+          </label>
+          <label>
+            注册地
+            <select id="provinceFilter"><option value="">全部地区</option></select>
+          </label>
+          <label>
+            证书取得起始
+            <input id="dateFromFilter" type="date" />
+          </label>
+          <label>
+            证书取得截至
+            <input id="dateToFilter" type="date" />
+          </label>
+        </div>
+
+        <div class="quick-filters" id="quickFilters">
+          <button data-scale="5-10亿元">5-10亿元</button>
+          <button data-scale="10-20亿元">10-20亿元</button>
+          <button data-scale="20-50亿元">20-50亿元</button>
+          <button data-scale="50-100亿元">50-100亿元</button>
+          <button data-scale="100亿元以上">100亿元以上</button>
+          <button data-filter="reset">清除快捷筛选</button>
+        </div>
+
+        <div class="table-toolbar">
+          <div>
+            <strong id="resultCount">0</strong>
+            <span>条匹配记录</span>
+          </div>
+          <div class="toolbar-actions">
+            <select id="sortSelect">
+              <option value="default">默认排序</option>
+              <option value="dateDesc">证书取得日期：新到旧</option>
+              <option value="dateAsc">证书取得日期：旧到新</option>
+              <option value="scaleDesc">规模区间：大到小</option>
+              <option value="nameAsc">人员姓名：A-Z</option>
+            </select>
+            <button id="exportBtn" class="ghost-btn">导出当前结果</button>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>人员姓名</th>
+                <th>管理人</th>
+                <th>登记编号</th>
+                <th>规模</th>
+                <th>资格类别</th>
+                <th>证书编号</th>
+                <th>取得日期</th>
+                <th>状态</th>
+              </tr>
+            </thead>
+            <tbody id="personTable"></tbody>
+          </table>
+        </div>
+
+        <div class="pagination">
+          <button id="prevPage" class="ghost-btn">上一页</button>
+          <span id="pageInfo">第 1 页</span>
+          <button id="nextPage" class="ghost-btn">下一页</button>
+        </div>
+      </section>
+    </main>
+
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-panel">
+        <button class="close-btn" id="closeDrawer">×</button>
+        <div id="drawerContent"></div>
+      </div>
+    </aside>
+
+    <script src="./app.js?v=20260616-manager-date-format"></script>
+  </body>
+</html>

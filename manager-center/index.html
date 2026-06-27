@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>管理人库 | 私募证券管理人人员变动监测平台</title>
+    <link rel="stylesheet" href="../personnel-center/styles.css?v=20260627-indigo" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <nav class="module-nav" aria-label="主模块">
+          <a href="../change-center/">人员变动</a>
+          <a href="../personnel-center/">人员库</a>
+          <a class="active" href="../manager-center/">管理人库</a>
+          <a href="../filing-center/">产品备案</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="module-header">
+        <div>
+          <div class="module-kicker">MANAGER CENTER</div>
+          <h1>管理人库</h1>
+          <p>查机构、看规模、看团队结构</p>
+        </div>
+        <div class="header-stats" id="dataStatus">加载数据中</div>
+      </section>
+
+      <section class="metrics" id="metrics"></section>
+
+      <section class="workbench">
+        <div class="search-row">
+          <label class="search-box">
+            <span>管理人搜索</span>
+            <input id="queryInput" type="search" placeholder="输入管理人名称、登记编号、注册地或办公地" />
+          </label>
+          <button id="resetBtn" class="ghost-btn">重置</button>
+        </div>
+
+        <div class="filter-grid">
+          <label>
+            规模区间
+            <select id="scaleFilter"><option value="">全部规模</option></select>
+          </label>
+          <label>
+            注册地
+            <select id="registerProvinceFilter"><option value="">全部注册地</option></select>
+          </label>
+          <label>
+            办公地
+            <select id="officeProvinceFilter"><option value="">全部办公地</option></select>
+          </label>
+          <label>
+            会员类型
+            <select id="memberTypeFilter"><option value="">全部会员类型</option></select>
+          </label>
+          <label>
+            最少人员数
+            <input id="minPeopleFilter" type="number" min="0" placeholder="不限" />
+          </label>
+          <label>
+            最少基金数
+            <input id="minFundFilter" type="number" min="0" placeholder="不限" />
+          </label>
+        </div>
+
+        <div class="quick-filters" id="quickFilters">
+          <button data-scale="5-10亿元">5-10亿元</button>
+          <button data-scale="10-20亿元">10-20亿元</button>
+          <button data-scale="20-50亿元">20-50亿元</button>
+          <button data-scale="50-100亿元">50-100亿元</button>
+          <button data-scale="100亿元以上">100亿元以上</button>
+          <button data-filter="reset">清除快捷筛选</button>
+        </div>
+
+        <div class="table-toolbar">
+          <div>
+            <strong id="resultCount">0</strong>
+            <span>家匹配管理人</span>
+          </div>
+          <div class="toolbar-actions">
+            <select id="sortSelect">
+              <option value="scaleDesc">规模区间：大到小</option>
+              <option value="peopleDesc">人员数量：多到少</option>
+              <option value="fundDesc">在管基金：多到少</option>
+              <option value="registerDateDesc">登记时间：新到旧</option>
+              <option value="nameAsc">管理人名称：A-Z</option>
+            </select>
+            <button id="exportBtn" class="ghost-btn">导出当前结果</button>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>管理人名称</th>
+                <th>登记编号</th>
+                <th>规模区间</th>
+                <th>注册地</th>
+                <th>办公地</th>
+                <th>成立时间</th>
+                <th>登记时间</th>
+                <th>在管基金</th>
+                <th>人员数量</th>
+              </tr>
+            </thead>
+            <tbody id="managerTable"></tbody>
+          </table>
+        </div>
+
+        <div class="pagination">
+          <button id="prevPage" class="ghost-btn">上一页</button>
+          <span id="pageInfo">第 1 页</span>
+          <button id="nextPage" class="ghost-btn">下一页</button>
+        </div>
+      </section>
+    </main>
+
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-panel">
+        <button class="close-btn" id="closeDrawer">×</button>
+        <div id="drawerContent"></div>
+      </div>
+    </aside>
+
+    <script src="./app.js?v=20260627-manager-detail-link"></script>
+  </body>
+</html>

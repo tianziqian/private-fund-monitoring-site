@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>产品备案统计 | 私募证券管理人监测平台</title>
+    <link rel="stylesheet" href="./styles.css?v=20260627-indigo" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <nav class="module-nav" aria-label="主模块">
+          <a href="../change-center/">人员变动</a>
+          <a href="../personnel-center/">人员库</a>
+          <a href="../manager-center/">管理人库</a>
+          <a class="active" href="../filing-center/">产品备案</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="module-header">
+        <div>
+          <div class="module-kicker">FILING CENTER</div>
+          <h1>产品备案统计</h1>
+          <p>证券类私募 · 周度新增备案数量与本周管理人备案 TOP15</p>
+        </div>
+        <div class="header-stats" id="dataStatus">加载数据中</div>
+      </section>
+
+      <section class="metrics" id="metrics"></section>
+
+      <section class="panel-section">
+        <div class="section-head">
+          <div>
+            <h2>周度备案数量</h2>
+            <p id="trendSubtitle">近 12 周新增备案产品数量（按备案日期所在自然周统计）</p>
+          </div>
+        </div>
+        <div class="chart-wrap" id="weeklyChart"></div>
+      </section>
+
+      <section class="panel-section">
+        <div class="section-head">
+          <div>
+            <h2>本周管理人备案 TOP15</h2>
+            <p id="topSubtitle">本周备案产品数量最多的管理人</p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th class="rank-cell">排名</th>
+                <th>管理人</th>
+                <th>本周备案数量</th>
+                <th>本周备案产品</th>
+              </tr>
+            </thead>
+            <tbody id="topTable"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel-section">
+        <div class="section-head">
+          <div>
+            <h2>本周备案产品明细</h2>
+            <p id="detailSubtitle">本周新增备案的证券类私募产品</p>
+          </div>
+        </div>
+
+        <div class="search-row">
+          <label class="search-box">
+            <span>搜索</span>
+            <input id="queryInput" type="search" placeholder="输入产品名称、管理人名称或产品编码" />
+          </label>
+          <button id="resetBtn" class="ghost-btn">重置</button>
+        </div>
+
+        <div class="filter-grid" style="grid-template-columns: repeat(3, minmax(0, 1fr));">
+          <label>
+            管理类型
+            <select id="managerTypeFilter"><option value="">全部管理类型</option></select>
+          </label>
+          <label>
+            运作状态
+            <select id="stateFilter"><option value="">全部状态</option></select>
+          </label>
+          <label>
+            排序
+            <select id="sortSelect">
+              <option value="dateDesc">备案日期：新到旧</option>
+              <option value="dateAsc">备案日期：旧到新</option>
+              <option value="nameAsc">产品名称：A-Z</option>
+              <option value="managerAsc">管理人：A-Z</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="table-toolbar">
+          <div>
+            <strong id="resultCount">0</strong>
+            <span>条本周备案产品</span>
+          </div>
+          <div class="toolbar-actions">
+            <button id="exportBtn" class="ghost-btn">导出当前结果</button>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>产品名称</th>
+                <th>管理人</th>
+                <th>产品编码</th>
+                <th>管理类型</th>
+                <th>备案日期</th>
+                <th>运作状态</th>
+              </tr>
+            </thead>
+            <tbody id="filingTable"></tbody>
+          </table>
+        </div>
+
+        <div class="pagination">
+          <button id="prevPage" class="ghost-btn">上一页</button>
+          <span id="pageInfo">第 1 页</span>
+          <button id="nextPage" class="ghost-btn">下一页</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js?v=20260627-filing-center"></script>
+  </body>
+</html>
