@@ -3,10 +3,222 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>私募证券管理人人员变动监测平台</title>
-    <meta http-equiv="refresh" content="0; url=./change-center/" />
+    <title>私募资产挖掘机</title>
+    <style>
+      :root {
+        --bg: #f6f7fb;
+        --panel: #ffffff;
+        --text: #172033;
+        --muted: #667085;
+        --line: #d8deea;
+        --primary: #284f9f;
+        --primary-soft: #e7eefc;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--text);
+        background: var(--bg);
+        font-family:
+          Inter, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial,
+          sans-serif;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background: rgba(255, 255, 255, 0.94);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .topbar-inner {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 14px 24px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        overflow-x: auto;
+      }
+
+      .brand {
+        flex: 0 0 auto;
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+
+      .module-nav {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        white-space: nowrap;
+      }
+
+      .module-nav a {
+        color: var(--muted);
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .module-nav a:hover,
+      .module-nav a.active {
+        color: var(--primary);
+        background: var(--primary-soft);
+      }
+
+      .page {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 56px 24px 72px;
+      }
+
+      .hero {
+        margin-bottom: 28px;
+      }
+
+      .hero h1 {
+        margin: 0 0 10px;
+        font-size: 42px;
+        line-height: 1.15;
+      }
+
+      .hero p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 16px;
+      }
+
+      .module-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .module-card {
+        min-height: 132px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        color: inherit;
+        text-decoration: none;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+      }
+
+      .module-card strong {
+        font-size: 19px;
+      }
+
+      .module-card span {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .module-card:hover {
+        border-color: var(--primary);
+        box-shadow: 0 12px 28px rgba(25, 46, 90, 0.1);
+      }
+
+      @media (max-width: 900px) {
+        .module-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 640px) {
+        .topbar-inner {
+          padding: 12px 16px;
+        }
+
+        .page {
+          padding: 36px 16px 48px;
+        }
+
+        .hero h1 {
+          font-size: 32px;
+        }
+
+        .module-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+      <link rel="stylesheet" href="./assets/platform.css?v=20260628-unified" />
+    <link rel="stylesheet" href="./assets/ai-analysis.css?v=20260628" />
   </head>
   <body>
-    <p><a href="./change-center/">进入人员变动监测</a></p>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="platform-brand" href="./">私募资产挖掘机</a>
+        <nav class="module-nav" aria-label="主模块">
+          <a href="./filing-center/">产品备案概览</a>
+          <a href="./fund-discovery/">净值跟踪</a>
+          <a href="./change-center/">人员变动</a>
+          <a href="./sentiment-center/">资讯</a>
+          <a href="./due-diligence-center/">尽调报告</a>
+          <a href="./manager-center/">管理人库</a>
+          <a href="./personnel-center/">人员库</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="hero">
+        <h1>私募资产挖掘机</h1>
+        <p>从备案、净值、人员、资讯、尽调和基础库进入同一个工作台。</p>
+      </section>
+
+      <section class="module-grid" aria-label="模块入口">
+        <a class="module-card" href="./filing-center/">
+          <strong>产品备案概览</strong>
+          <span>查看周度新增备案、管理人备案排行和产品明细。</span>
+        </a>
+        <a class="module-card" href="./fund-discovery/">
+          <strong>净值跟踪</strong>
+          <span>跟踪代表产品净值、收益与策略筛选。</span>
+        </a>
+        <a class="module-card" href="./change-center/">
+          <strong>人员变动</strong>
+          <span>监测管理人人员新增、减少和流动路线。</span>
+        </a>
+        <a class="module-card" href="./sentiment-center/">
+          <strong>资讯</strong>
+          <span>聚合私募相关资讯、观点和机构动态。</span>
+        </a>
+        <a class="module-card" href="./due-diligence-center/">
+          <strong>尽调报告</strong>
+          <span>检索管理人尽调材料和报告要点。</span>
+        </a>
+        <a class="module-card" href="./manager-center/">
+          <strong>管理人库</strong>
+          <span>查询管理人规模、城市、产品和人员概况。</span>
+        </a>
+        <a class="module-card" href="./personnel-center/">
+          <strong>人员库</strong>
+          <span>按人员、机构和资格信息检索从业人员。</span>
+        </a>
+      </section>
+      <section class="ai-aggregation" id="aiAggregation">
+        <div class="ai-agg-head"><span class="ai-badge">AI 全景分析</span><h2>跨模块智能摘要</h2><p>聚合各模块 AI 分析结果，提供全景视角</p></div>
+        <div class="ai-agg-grid" id="aiAggGrid"><div class="ai-loading"><div class="ai-spinner"></div><span>正在加载分析结果...</span></div></div>
+      </section>
+    </main>
+    <script src="./assets/ai-render.js?v=20260628"></script>
+    <script>
+(function(){var M=[{k:'filing',n:'产品备案概览',p:'./filing-center/data/filing-analysis.json',l:'./filing-center/'},{k:'fundDiscovery',n:'净值跟踪',p:'./fund-discovery/data/fund-discovery-analysis.json',l:'./fund-discovery/'},{k:'change',n:'人员变动',p:'./change-center/data/change-analysis.json',l:'./change-center/'},{k:'sentiment',n:'资讯',p:'./sentiment-center/data/sentiment-analysis.json',l:'./sentiment-center/'}];
+function mn(items,mx){mx=mx||3;if(!items||!items.length)return'暂无';return items.slice(0,mx).map(function(i){return AiRender.escapeHtml(i.managerName||'未知')}).join('、')}
+(async function(){var g=document.getElementById('aiAggGrid');if(!g)return;var rs={},any=false;for(var i=0;i<M.length;i++){var m=M[i];try{var r=await fetch(m.p,{cache:'no-store'});if(r.ok){rs[m.k]=await r.json();any=true}}catch(_){}}if(!any){g.innerHTML='<div class="ai-agg-empty"><p>尚未生成 AI 分析结果。</p><p style="font-size:12px;color:var(--ai-muted,#667085)">运行 <code>python scripts/ai_analysis.py</code> 生成各模块分析。</p></div>';return}var h='';M.forEach(function(m){var r=rs[m.k];if(!r)return;var w=r.worthWatching||[],rk=r.atRisk||[];if(r.overall){w=r.overall.worthWatching||[];rk=r.overall.atRisk||[]}var mt=r.meta||{},ts=mt.analyzedAt?AiRender.fmtTime(mt.analyzedAt):'';h+='<a class="ai-agg-card" href="'+m.l+'"><h4>'+m.n+'</h4>'+(ts?'<div class="ai-agg-time">分析时间：'+ts+'</div>':'')+'<div class="ai-agg-mini-row"><span class="ai-agg-mini-label worth">值得关注</span><span class="ai-agg-mini-value">'+mn(w)+'</span></div><div class="ai-agg-mini-row"><span class="ai-agg-mini-label risk">存在风险</span><span class="ai-agg-mini-value">'+mn(rk)+'</span></div></a>'});g.innerHTML=h})()})();
+    </script>
   </body>
 </html>

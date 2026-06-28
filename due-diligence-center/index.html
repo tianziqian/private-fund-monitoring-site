@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尽调报告 | 私募资产挖掘机</title>
+    <link rel="stylesheet" href="./styles.css?v=20260628-std-nav">
+    <link rel="stylesheet" href="../assets/platform.css?v=20260628-unified" />
+</head>
+<body>
+    <!-- Top Navigation -->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="platform-brand" href="../">私募资产挖掘机</a>
+        <nav class="module-nav" aria-label="主模块">
+          <a href="../filing-center/">产品备案概览</a>
+          <a href="../fund-discovery/">净值跟踪</a>
+          <a href="../change-center/">人员变动</a>
+          <a href="../sentiment-center/">资讯</a>
+          <a class="active" href="./">尽调报告</a>
+          <a href="../manager-center/">管理人库</a>
+          <a href="../personnel-center/">人员库</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+    <!-- Module Header -->
+    <section class="module-header">
+        <div>
+            <div class="module-kicker">DUE DILIGENCE</div>
+            <h1>尽调报告</h1>
+            <p>检索管理人尽调材料、报告要点与风险线索</p>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar" id="statsBar"></section>
+
+    <!-- Workbench -->
+    <section class="workbench">
+        <div class="controls">
+            <input type="text" id="queryInput" placeholder="搜索管理人名称..." autocomplete="off">
+        </div>
+        <div class="filter-pills" id="filterPills">
+            <button class="filter-pill active" data-category="all">全部</button>
+        </div>
+        <div class="result-info" id="resultInfo"></div>
+        <div class="card-grid" id="cardGrid"></div>
+    </section>
+    </main>
+
+    <script src="./app.js?v=20260628-due"></script>
+</body>
+</html>

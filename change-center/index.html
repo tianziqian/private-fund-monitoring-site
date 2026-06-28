@@ -3,17 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>人员变动监测 | 私募证券管理人人员变动监测平台</title>
+    <title>人员变动 | 私募资产挖掘机</title>
     <link rel="stylesheet" href="./styles.css?v=20260627-indigo" />
-  </head>
+      <link rel="stylesheet" href="../assets/platform.css?v=20260628-unified" />
+    <link rel="stylesheet" href="../assets/ai-analysis.css?v=20260628" />
+</head>
   <body>
     <header class="topbar">
       <div class="topbar-inner">
+        <a class="platform-brand" href="../">私募资产挖掘机</a>
         <nav class="module-nav" aria-label="主模块">
-          <a href="../filing-center/">产品备案</a>
+          <a href="../filing-center/">产品备案概览</a>
+          <a href="../fund-discovery/">净值跟踪</a>
           <a class="active" href="./">人员变动</a>
-          <a href="../personnel-center/">人员库</a>
+          <a href="../sentiment-center/">资讯</a>
+          <a href="../due-diligence-center/">尽调报告</a>
           <a href="../manager-center/">管理人库</a>
+          <a href="../personnel-center/">人员库</a>
         </nav>
       </div>
     </header>
@@ -29,7 +35,10 @@
       </section>
 
       <section class="change-metrics" id="changeMetrics"></section>
-
+      <section class="ai-analysis-panel" id="aiAnalysisPanel">
+        <div class="ai-panel-head"><div class="ai-panel-title"><span class="ai-badge">AI 分析</span><h2>人员变动智能分析</h2><p>基于周度人员变动数据，识别团队扩张及人员流失风险信号</p></div></div>
+        <div class="ai-panel-body" id="aiResults"><div class="ai-loading"><div class="ai-spinner"></div><span>正在加载分析结果...</span></div></div>
+      </section>
       <section class="search-panel" aria-label="搜索管理人或人员">
         <input id="changeSearch" type="search" placeholder="搜索管理人、登记编号或人员姓名" />
         <button id="clearSearch" type="button">清除</button>
@@ -72,6 +81,7 @@
       </section>
     </main>
 
+    <script src="../assets/ai-render.js?v=20260628"></script>
     <script src="./app.js?v=20260627-drop-cert-metric"></script>
   </body>
 </html>

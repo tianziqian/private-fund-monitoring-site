@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>资讯 | 私募资产挖掘机</title>
+    <link rel="stylesheet" href="./styles.css?v=20260628-sentiment" />
+      <link rel="stylesheet" href="../assets/platform.css?v=20260628-unified" />
+    <link rel="stylesheet" href="../assets/ai-analysis.css?v=20260628" />
+</head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="platform-brand" href="../">私募资产挖掘机</a>
+        <nav class="module-nav" aria-label="主模块">
+          <a href="../filing-center/">产品备案概览</a>
+          <a href="../fund-discovery/">净值跟踪</a>
+          <a href="../change-center/">人员变动</a>
+          <a class="active" href="./">资讯</a>
+          <a href="../due-diligence-center/">尽调报告</a>
+          <a href="../manager-center/">管理人库</a>
+          <a href="../personnel-center/">人员库</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="module-header">
+        <div>
+          <div class="module-kicker">INFORMATION CENTER</div>
+          <h1>资讯</h1>
+          <p>私募排排网资讯 · 私募公募、市场动态、机构访谈</p>
+        </div>
+        <div class="header-stats" id="dataStatus">加载数据中</div>
+      </section>
+
+      <section class="metrics" id="metrics"></section>
+      <section class="ai-analysis-panel" id="aiAnalysisPanel">
+        <div class="ai-panel-head"><div class="ai-panel-title"><span class="ai-badge">AI 分析</span><h2>资讯智能分析</h2><p>基于私募排排网资讯，识别舆论关注度高及需警惕风险的管理人</p></div></div>
+        <div class="ai-panel-body" id="aiResults"><div class="ai-loading"><div class="ai-spinner"></div><span>正在加载分析结果...</span></div></div>
+      </section>
+      <section class="workbench">
+        <div class="tab-row" role="tablist" aria-label="资讯视图">
+          <button class="active" id="managerTab" type="button" role="tab" aria-selected="true" data-tab="manager">管理人</button>
+          <button id="viewpointTab" type="button" role="tab" aria-selected="false" data-tab="viewpoint">观点</button>
+        </div>
+
+        <div class="search-row">
+          <label class="search-box">
+            <span>搜索</span>
+            <input id="queryInput" type="search" placeholder="输入管理人、主题、标题或摘要关键词" />
+          </label>
+          <button id="resetBtn" class="ghost-btn" type="button">重置</button>
+        </div>
+
+        <div class="filter-grid">
+          <label>
+            分类
+            <select id="categoryFilter"><option value="">全部分类</option></select>
+          </label>
+          <label>
+            主题
+            <select id="topicFilter"><option value="">全部主题</option></select>
+          </label>
+          <label>
+            排序
+            <select id="sortSelect">
+              <option value="dateDesc">发布时间：新到旧</option>
+              <option value="dateAsc">发布时间：旧到新</option>
+              <option value="titleAsc">标题：A-Z</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="table-toolbar">
+          <div>
+            <strong id="resultCount">0</strong>
+            <span id="resultLabel">条管理人舆情</span>
+          </div>
+          <div class="toolbar-actions">
+            <a class="source-link" href="https://www.simuwang.com/news" target="_blank" rel="noopener noreferrer">打开来源</a>
+            <button id="exportBtn" class="ghost-btn" type="button">导出当前结果</button>
+          </div>
+        </div>
+
+        <section class="list-panel" id="resultList" aria-live="polite"></section>
+      </section>
+    </main>
+
+    <script src="../assets/ai-render.js?v=20260628"></script>
+    <script src="./app.js?v=20260628-sentiment"></script>
+  </body>
+</html>

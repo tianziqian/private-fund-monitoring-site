@@ -3,17 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>产品备案统计 | 私募证券管理人监测平台</title>
+    <title>产品备案概览 | 私募资产挖掘机</title>
     <link rel="stylesheet" href="./styles.css?v=20260627-indigo" />
-  </head>
+      <link rel="stylesheet" href="../assets/platform.css?v=20260628-unified" />
+    <link rel="stylesheet" href="../assets/ai-analysis.css?v=20260628" />
+</head>
   <body>
     <header class="topbar">
       <div class="topbar-inner">
+        <a class="platform-brand" href="../">私募资产挖掘机</a>
         <nav class="module-nav" aria-label="主模块">
-          <a class="active" href="./">产品备案</a>
+          <a class="active" href="./">产品备案概览</a>
+          <a href="../fund-discovery/">净值跟踪</a>
           <a href="../change-center/">人员变动</a>
-          <a href="../personnel-center/">人员库</a>
+          <a href="../sentiment-center/">资讯</a>
+          <a href="../due-diligence-center/">尽调报告</a>
           <a href="../manager-center/">管理人库</a>
+          <a href="../personnel-center/">人员库</a>
         </nav>
       </div>
     </header>
@@ -22,12 +28,16 @@
       <section class="module-header">
         <div>
           <div class="module-kicker">FILING CENTER</div>
-          <h1>产品备案统计</h1>
+          <h1>产品备案概览</h1>
           <p>证券类私募 · 周度新增备案数量与本周管理人备案 TOP15</p>
         </div>
         <div class="header-stats" id="dataStatus">加载数据中</div>
       </section>
 
+      <section class="ai-analysis-panel" id="aiAnalysisPanel">
+        <div class="ai-panel-head"><div class="ai-panel-title"><span class="ai-badge">AI 分析</span><h2>备案智能分析</h2><p>基于当前备案数据，自动识别值得关注的管理人</p></div></div>
+        <div class="ai-panel-body" id="aiResults"><div class="ai-loading"><div class="ai-spinner"></div><span>正在加载分析结果...</span></div></div>
+      </section>
       <section class="metrics" id="metrics"></section>
 
       <section class="panel-section">
@@ -132,6 +142,7 @@
       </section>
     </main>
 
+    <script src="../assets/ai-render.js?v=20260628"></script>
     <script src="./app.js?v=20260627-filing-center"></script>
   </body>
 </html>

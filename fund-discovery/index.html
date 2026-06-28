@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>净值跟踪 | 私募资产挖掘机</title>
+    <link rel="stylesheet" href="./styles.css?v=20260628-std-nav" />
+      <link rel="stylesheet" href="../assets/platform.css?v=20260628-unified" />
+    <link rel="stylesheet" href="../assets/ai-analysis.css?v=20260628" />
+</head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="platform-brand" href="../">私募资产挖掘机</a>
+        <nav class="module-nav" aria-label="主模块">
+          <a href="../filing-center/">产品备案概览</a>
+          <a class="active" href="./">净值跟踪</a>
+          <a href="../change-center/">人员变动</a>
+          <a href="../sentiment-center/">资讯</a>
+          <a href="../due-diligence-center/">尽调报告</a>
+          <a href="../manager-center/">管理人库</a>
+          <a href="../personnel-center/">人员库</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <section class="module-header">
+        <div>
+          <div class="module-kicker">NET VALUE TRACKING</div>
+          <h1>净值跟踪</h1>
+          <p>覆盖股票对冲、股票多头、期货策略、多资产策略；净值日期 1 个月内、近一年收益为正，同一管理人保留成立日期最早的产品。</p>
+        </div>
+        <div class="data-status" id="dataStatus">加载数据中</div>
+      </section>
+
+      <nav class="sub-tabs" id="subTabs">
+        <button class="sub-tab active" data-tab="browse">净值浏览</button>
+        <button class="sub-tab" data-tab="compare">对比</button>
+        <button class="sub-tab" data-tab="analysis">净值分析</button>
+      </nav>
+      <div id="tabPrompt" class="tab-prompt" hidden></div>
+
+      <section class="ai-analysis-panel" id="aiAnalysisPanel">
+        <div class="ai-panel-head"><div class="ai-panel-title"><span class="ai-badge">AI 分析</span><h2>净值智能分析</h2><p>排除0-5亿规模，按二级策略分组，识别各策略下值得关注和存在风险的管理人</p></div></div>
+        <div class="ai-panel-body" id="aiResults"><div class="ai-loading"><div class="ai-spinner"></div><span>正在加载分析结果...</span></div></div>
+      </section>
+      <section class="workbench filter-section" id="browseSection">
+        <div class="filter-row">
+          <label class="search-box">
+            <span>搜索</span>
+            <input id="queryInput" type="search" placeholder="输入管理人、产品、备案编号或策略" />
+          </label>
+          <div class="multi-select" data-multi-select>
+            <span>一级策略</span>
+            <button id="strategyOneFilterButton" class="multi-select-button" type="button" aria-expanded="false">全部一级策略</button>
+            <div id="strategyOneFilter" class="multi-select-menu" hidden></div>
+          </div>
+          <div class="multi-select" data-multi-select>
+            <span>二级策略</span>
+            <button id="strategyTwoFilterButton" class="multi-select-button" type="button" aria-expanded="false">全部二级策略</button>
+            <div id="strategyTwoFilter" class="multi-select-menu" hidden></div>
+          </div>
+          <div class="multi-select" data-multi-select>
+            <span>管理人规模</span>
+            <button id="scaleFilterButton" class="multi-select-button" type="button" aria-expanded="false">全部规模</button>
+            <div id="scaleFilter" class="multi-select-menu scale-menu" hidden></div>
+          </div>
+          <label>
+            视图
+            <select id="viewModeFilter">
+              <option value="scale">按规模分组</option>
+              <option value="ranking">全局排名</option>
+            </select>
+          </label>
+          <label>
+            近一年收益/超额收益下限
+            <input id="minReturnInput" type="number" step="1" placeholder="不限" />
+          </label>
+          <button id="resetBtn" class="ghost-btn" type="button">重置</button>
+          <button id="exportBtn" class="ghost-btn" type="button">导出 CSV</button>
+        </div>
+      </section>
+
+      <section class="metrics" id="metrics"></section>
+
+      <section class="workbench" id="tableSection">
+        <div class="table-toolbar">
+          <div>
+            <strong id="resultCount">0</strong>
+            <span>个管理人代表产品</span>
+          </div>
+          <div id="filterSummary" class="filter-summary"></div>
+        </div>
+
+        <div class="table-wrap" id="scaleGroups"></div>
+      </section>
+    </main>
+
+    <div class="compare-bar" id="compareBar" aria-hidden="true">
+      <span id="compareCount">已选 0 只产品</span>
+      <button id="clearCompareBtn" class="ghost-btn" type="button">清空</button>
+      <button id="openCompareBtn" type="button">对比</button>
+      <button id="openAnalysisBarBtn" type="button">净值分析</button>
+    </div>
+
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <div class="drawer-panel">
+        <button class="close-btn" id="closeDrawer" type="button" aria-label="关闭">×</button>
+        <div id="drawerContent"></div>
+      </div>
+    </aside>
+
+    <aside class="compare-modal" id="compareModal" aria-hidden="true">
+      <div class="compare-panel">
+        <button class="close-btn" id="closeCompare" type="button" aria-label="关闭">×</button>
+        <div id="compareContent"></div>
+      </div>
+    </aside>
+
+    <aside class="compare-modal" id="analysisModal" aria-hidden="true">
+      <div class="compare-panel">
+        <button class="close-btn" id="closeAnalysis" type="button" aria-label="关闭">×</button>
+        <div id="analysisContent"></div>
+      </div>
+    </aside>
+
+    <script src="../assets/ai-render.js?v=20260628-subtabs"></script>
+    <script src="./app.js?v=20260628-subtabs"></script>
+  </body>
+</html>

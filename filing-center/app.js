@@ -161,10 +161,13 @@ function renderTop15() {
       const pct = Math.max(8, (row.fundCount / maxCount) * 100);
       const funds = (row.funds || []).slice(0, 6).map(escapeHtml).join("、");
       const more = (row.funds || []).length > 6 ? ` 等 ${row.funds.length} 只` : "";
+      const managerLabel = row.registerNo
+        ? `<a class="person-name-link" href="../change-center/manager-detail.html?registerNo=${encodeURIComponent(row.registerNo)}">${escapeHtml(row.managerName)}</a>`
+        : escapeHtml(row.managerName);
       return `
       <tr>
         <td class="rank-cell${row.rank <= 3 ? " top" : ""}">${row.rank}</td>
-        <td class="name-cell"><strong>${escapeHtml(row.managerName)}</strong></td>
+        <td class="name-cell"><strong>${managerLabel}</strong></td>
         <td>
           <div class="count-bar-track" style="max-width:200px">
             <div class="count-bar-fill" style="width:${pct.toFixed(1)}%"></div>
@@ -284,4 +287,5 @@ els.next.addEventListener("click", () => {
 });
 els.export.addEventListener("click", exportCsv);
 
-loadData();
+async function loadAnalysis(){var p=document.getElementById('aiResults');if(!p)return;var r=await AiRender.loadAnalysisResult('./data/filing-analysis.json');if(!r||r._parseError){AiRender.mountCollapsibleAnalysis(p,AiRender.renderEmptyState(),{open:true});return}var h='',m=r.meta;if(m&&m.analyzedAt)h+='<div class="ai-update-time" style="margin-bottom:10px;text-align:right">分析时间：'+AiRender.fmtTime(m.analyzedAt)+' · 模型：'+AiRender.escapeHtml(m.model||'-')+'</div>';var w=r.worthWatching||[],s=r.summary||'';if(s)h+='<div class="ai-result-summary">'+AiRender.escapeHtml(s)+'</div>';h+='<div class="ai-result-col worth" style="max-width:640px"><h3>值得关注的管理人</h3><div class="ai-manager-cards">';if(w.length)w.forEach(function(it,i){h+=AiRender.renderManagerCard(it,i,'worth')});else h+='<div class="ai-state-msg"><p>暂无数据</p></div>';h+='</div></div>';AiRender.mountCollapsibleAnalysis(p,h)}
+loadData();loadAnalysis();
