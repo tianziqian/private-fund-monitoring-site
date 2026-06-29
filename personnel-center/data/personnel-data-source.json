@@ -1,0 +1,9 @@
+{
+  "dataSource": "latest_snapshot",
+  "snapshotDate": "2026-06-28",
+  "snapshotType": "daily",
+  "persons": "output\\snapshots\\2026-06-28\\persons_snapshot.xlsx",
+  "managers": "output\\snapshots\\2026-06-28\\managers_snapshot.xlsx",
+  "outFile": "..\\private-fund-monitoring-site\\personnel-center\\data\\personnel-data.json",
+  "updatedAt": "2026-06-29T14:31:24"
+}
