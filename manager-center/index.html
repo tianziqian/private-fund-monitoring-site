@@ -6,6 +6,39 @@
     <title>管理人库 | 私募资产挖掘机</title>
     <link rel="stylesheet" href="../personnel-center/styles.css?v=20260627-indigo" />
       <link rel="stylesheet" href="../assets/platform.css?v=20260628-unified" />
+    <style>
+      .ai-mgr-section { border: 1px solid #dfe3ee; border-radius: 10px; background: #fafbff; }
+      .ai-mgr-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+      .ai-mgr-head h4 { margin: 0; }
+      .ai-mgr-btn { border: 0; border-radius: 8px; padding: 7px 16px; cursor: pointer;
+        background: linear-gradient(135deg, #3d5afe, #536dfe); color: #fff; font-size: 13px; font-weight: 600; }
+      .ai-mgr-btn:hover { filter: brightness(1.05); }
+      .ai-mgr-btn:disabled { opacity: .6; cursor: default; }
+      .ai-mgr-body { margin-top: 14px; }
+      .ai-mgr-verdict { display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+        padding: 12px 14px; border-radius: 8px; background: #eef1fb; margin-bottom: 12px; }
+      .ai-mgr-verdict strong { font-size: 14px; color: #1a2340; }
+      .ai-mgr-risk-badge { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px; color: #fff; white-space: nowrap; }
+      .ai-mgr-risk-low  .ai-mgr-risk-badge { background: #2e7d32; }
+      .ai-mgr-risk-medium .ai-mgr-risk-badge { background: #ef6c00; }
+      .ai-mgr-risk-high .ai-mgr-risk-badge { background: #c62828; }
+      .ai-mgr-risk-high  { background: #fdecec; }
+      .ai-mgr-risk-medium { background: #fff4e6; }
+      .ai-mgr-sections { display: grid; gap: 10px; }
+      .ai-mgr-sec { padding: 10px 12px; border-radius: 8px; border-left: 3px solid #b7c0e0; background: #fff; }
+      .ai-mgr-sec p { margin: 6px 0 0; font-size: 13px; line-height: 1.65; color: #333; }
+      .ai-mgr-sec-head { display: flex; align-items: center; gap: 8px; }
+      .ai-mgr-flag-tag { font-size: 11px; padding: 1px 8px; border-radius: 999px; color: #fff; background: #8894b8; }
+      .ai-mgr-flag-warn { border-left-color: #ef6c00; }
+      .ai-mgr-flag-warn .ai-mgr-flag-tag { background: #ef6c00; }
+      .ai-mgr-flag-risk { border-left-color: #c62828; }
+      .ai-mgr-flag-risk .ai-mgr-flag-tag { background: #c62828; }
+      .ai-mgr-keypoints { margin-top: 12px; padding: 10px 14px; border-radius: 8px; background: #f4f6fd; }
+      .ai-mgr-keypoints h5 { margin: 0 0 6px; font-size: 13px; color: #1a2340; }
+      .ai-mgr-keypoints ul { margin: 0; padding-left: 18px; }
+      .ai-mgr-keypoints li { font-size: 13px; line-height: 1.6; color: #333; }
+      .ai-mgr-note { margin-top: 10px; font-size: 11px; }
+    </style>
 </head>
   <body>
     <header class="topbar">
@@ -131,6 +164,6 @@
       </div>
     </aside>
 
-    <script src="./app.js?v=20260627-manager-detail-link"></script>
+    <script src="./app.js?v=20260701-ai-analysis"></script>
   </body>
 </html>
