@@ -409,8 +409,9 @@ function registryInfo(manager) {
         ${infoField("登记时间", safe(record.registerDate, "--"))}
         ${infoField("注册地", placeText(record.registerProvince || manager.registerProvince, record.registerCity))}
         ${infoField("办公地", placeText(record.officeProvince || manager.officeProvince, record.officeCity))}
-        ${infoField("认缴资本", safe(record.subscribedCapital, "--"))}
-        ${infoField("实缴资本", safe(record.paidInCapital, "--"))}
+        ${infoField("注册资本", (manager.structureInfo || {}).registeredCapital ? `${manager.structureInfo.registeredCapital} 万元` : "--")}
+        ${infoField("实缴资本", (manager.structureInfo || {}).paidInCapitalAmount ? `${manager.structureInfo.paidInCapitalAmount} 万元` : "--")}
+        ${infoField("实缴比例", safe((manager.structureInfo || {}).paidInRatio, "--"))}
       </div>
     </article>
   `;

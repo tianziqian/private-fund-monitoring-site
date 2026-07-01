@@ -306,8 +306,9 @@ function openDrawer(manager) {
       <div class="detail-grid">
         ${detailItem("注册地", place(manager.registerProvince, manager.registerCity))}
         ${detailItem("办公地", place(manager.officeProvince, manager.officeCity))}
-        ${detailItem("注册资本", manager.subscribedCapital)}
-        ${detailItem("实缴资本", manager.paidInCapital)}
+        ${detailItem("注册资本", manager.registeredCapital ? `${manager.registeredCapital} 万元` : "")}
+        ${detailItem("实缴资本", manager.paidInCapitalAmount ? `${manager.paidInCapitalAmount} 万元` : "")}
+        ${detailItem("实缴比例", manager.paidInRatio)}
         ${detailItem("特殊提示", manager.hasSpecialTips)}
         ${detailItem("诚信提示", manager.hasCreditTips)}
       </div>
