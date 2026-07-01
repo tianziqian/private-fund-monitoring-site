@@ -446,6 +446,7 @@ function registrySection(manager) {
 
 function detailSections(manager) {
   return [
+    ["ai", "AI 解读", aiAnalysisSection(manager)],
     ["overview", "机构概览", overview(manager)],
     ["registry", "工商与登记", registrySection(manager)],
     ["routes", "主要来源与去向", sourceDestination(manager)],
@@ -453,6 +454,79 @@ function detailSections(manager) {
     ["structure", "结构与股权信息", structureEquity(manager)],
     ["team", "当前团队", currentTeamSection(manager)],
   ];
+}
+
+function aiAnalysisSection(manager) {
+  return `
+    <div class="ai-mgr-head">
+      <span class="ai-mgr-title">基于工商/结构/人员数据的尽调定性解读</span>
+      <button type="button" id="ai-mgr-btn" class="ai-mgr-btn" data-register="${safe(manager.registerNo, "")}">AI 解读</button>
+    </div>
+    <div id="ai-mgr-body" class="ai-mgr-body" hidden></div>
+  `;
+}
+
+let _aiAnalysisCache = null;
+async function loadAiAnalysis() {
+  if (_aiAnalysisCache) return _aiAnalysisCache;
+  try {
+    const r = await fetch("../manager-center/data/manager-ai-analysis.json", { cache: "no-store" });
+    if (!r.ok) return null;
+    _aiAnalysisCache = await r.json();
+    return _aiAnalysisCache;
+  } catch (_) {
+    return null;
+  }
+}
+
+function escapeAi(s) {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+  })[c]);
+}
+
+function renderAiAnalysis(a) {
+  if (!a) {
+    return '<p class="empty-state">该管理人暂未生成 AI 解读。目前已覆盖尽调关注清单，其余可运行 <code>build_manager_ai_analysis.py</code> 补充生成。</p>';
+  }
+  const flagLabel = { info: "提示", warn: "关注", risk: "风险" };
+  const riskMap = { low: "低", medium: "中", high: "高" };
+  const secs = (a.sections || []).map((s) => `
+    <div class="ai-mgr-sec ai-mgr-flag-${escapeAi(s.flag || "info")}">
+      <div class="ai-mgr-sec-head"><strong>${escapeAi(s.title)}</strong>
+        <span class="ai-mgr-flag-tag">${flagLabel[s.flag] || "提示"}</span></div>
+      <p>${escapeAi(s.body)}</p>
+    </div>`).join("");
+  const kps = (a.keyPoints || []).map((k) => `<li>${escapeAi(k)}</li>`).join("");
+  return `
+    <div class="ai-mgr-verdict ai-mgr-risk-${escapeAi(a.riskLevel || "low")}">
+      <span class="ai-mgr-risk-badge">整体风险 · ${riskMap[a.riskLevel] || "—"}</span>
+      <strong>${escapeAi(a.verdict)}</strong>
+    </div>
+    <div class="ai-mgr-sections">${secs}</div>
+    ${kps ? `<div class="ai-mgr-keypoints"><h5>尽调重点提示</h5><ul>${kps}</ul></div>` : ""}
+    <p class="ai-mgr-note">AI 解读（规则引擎 + ${escapeAi(a.model || "")}）· 生成于 ${escapeAi((a.generatedAt || "").slice(0, 10))}；仅供尽调参考，需人工复核。</p>
+  `;
+}
+
+async function toggleAiAnalysis(btn) {
+  const body = document.getElementById("ai-mgr-body");
+  if (!body) return;
+  if (body.dataset.loaded === "1") {
+    const hidden = body.hidden;
+    body.hidden = !hidden;
+    btn.textContent = hidden ? "收起解读" : "AI 解读";
+    return;
+  }
+  btn.disabled = true;
+  btn.textContent = "加载中…";
+  const data = await loadAiAnalysis();
+  const a = data && data.managers ? data.managers[btn.dataset.register] : null;
+  body.innerHTML = renderAiAnalysis(a);
+  body.hidden = false;
+  body.dataset.loaded = "1";
+  btn.disabled = false;
+  btn.textContent = "收起解读";
 }
 
 function setActiveSection(sectionId) {
@@ -523,6 +597,11 @@ function renderManagerDetail(manager) {
 
 function bindEvents() {
   els.managerDetail.addEventListener("click", (event) => {
+    const aiBtn = event.target.closest("#ai-mgr-btn");
+    if (aiBtn) {
+      toggleAiAnalysis(aiBtn);
+      return;
+    }
     const btn = event.target.closest("[data-anchor]");
     if (!btn || !state.manager) return;
     const section = document.getElementById(btn.dataset.anchor);
