@@ -256,13 +256,31 @@ async function loadData() {
   if (!response.ok) throw new Error(`数据加载失败：${response.status}`);
   const payload = await response.json();
   state.funds = (payload.funds || []).map((fund) => ({ ...fund, managerScale: fund.managerScale || "规模待匹配" }));
-  state.navByFund = payload.navByFund || {};
+  state.navByFund = await loadNavByFund(payload);
   state.meta = payload.meta || {};
   setupFilters();
   applyFilters();
   const generatedAt = state.meta.generatedAt ? new Date(state.meta.generatedAt).toLocaleString("zh-CN") : "-";
   els.dataStatus.textContent = `更新：${generatedAt}`;
   loadIndexSeries();
+}
+
+// The per-fund NAV time series is large, so it is stored outside the main data
+// file. Newer builds shard it across several files (listed in payload.navShards)
+// to stay under the Cloudflare Workers 25 MiB per-asset limit; older builds
+// inlined it as payload.navByFund. Support both.
+async function loadNavByFund(payload) {
+  if (payload.navByFund) return payload.navByFund;
+  const shards = payload.navShards || [];
+  if (!shards.length) return {};
+  const parts = await Promise.all(
+    shards.map(async (url) => {
+      const response = await fetch(url, { cache: "no-store" });
+      if (!response.ok) throw new Error(`净值数据加载失败：${response.status}`);
+      return response.json();
+    })
+  );
+  return Object.assign({}, ...parts);
 }
 
 // Load the index daily-close snapshot used by 净值分析 (regression / rolling
