@@ -1,0 +1,9 @@
+# Non-served data source files, excluded from the Cloudflare Workers asset
+# upload (each Worker asset must be <= 25 MiB). The frontend never fetches
+# these: fund-discovery reads the sharded fund-discovery-nav-*.json files, and
+# person detail reads change-center/data/person-detail-shards/*.json.
+fund-discovery/data/fund-discovery-raw.json
+change-center/data/person-detail-data.json
+
+# Never upload version-control internals as site assets.
+.git
