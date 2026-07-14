@@ -771,6 +771,25 @@ tbody tr:hover {
   min-width: 120px;
 }
 
+.filing-count {
+  min-width: 84px;
+  color: var(--wine);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.filing-count strong {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.filing-count span {
+  margin-left: 3px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
 .count-bar-fill {
   position: absolute;
   inset: 0 auto 0 0;

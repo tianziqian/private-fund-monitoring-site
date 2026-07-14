@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>净值跟踪 | 私募资产挖掘机</title>
-    <link rel="stylesheet" href="./styles.css?v=20260628-std-nav" />
+    <link rel="stylesheet" href="./styles.css?v=20260714-overview2" />
       <link rel="stylesheet" href="../assets/platform.css?v=20260628-unified" />
     <link rel="stylesheet" href="../assets/ai-analysis.css?v=20260628" />
 </head>
@@ -46,6 +46,19 @@
         <div class="ai-panel-body" id="aiResults"><div class="ai-loading"><div class="ai-spinner"></div><span>正在加载分析结果...</span></div></div>
       </section>
       <section class="workbench filter-section" id="browseSection">
+        <div class="strategy-overview" id="strategyOverview">
+          <div class="strategy-overview-head">
+            <div>
+              <strong>整体概览</strong>
+              <span id="strategyOverviewMeta" class="strategy-overview-meta">按二级策略汇总核心指标中位数</span>
+            </div>
+            <button id="strategyOverviewToggle" class="strategy-overview-toggle" type="button" aria-expanded="false">查看策略中位数 <span class="overview-toggle-arrow" aria-hidden="true">⌄</span></button>
+          </div>
+          <div id="strategyOverviewDetails" class="strategy-overview-details" hidden>
+            <p>按当前策略、规模和搜索条件汇总；不受五项优选展示上限影响。指增策略使用超额口径。</p>
+            <div class="strategy-overview-table-wrap"><table id="strategyOverviewTable" class="strategy-overview-table"></table></div>
+          </div>
+        </div>
         <div class="filter-row">
           <label class="search-box">
             <span>搜索</span>
@@ -80,8 +93,27 @@
           <button id="resetBtn" class="ghost-btn" type="button">重置</button>
           <button id="exportBtn" class="ghost-btn" type="button">导出 CSV</button>
         </div>
+        <div class="quality-filter" aria-label="策略优选筛选">
+          <span class="quality-filter-title">策略优选</span>
+          <button id="qualityPresetBtn" class="quality-preset-btn" type="button">一键五项优选</button>
+          <label class="quality-rule"><input type="checkbox" data-quality-rule="lastOneMonthReturn" />近1月收益 &gt; 同策略中位数</label>
+          <label class="quality-rule"><input type="checkbox" data-quality-rule="lastOneMonthMaxDrawdown" />近1月回撤优于同策略中位数</label>
+          <label class="quality-rule"><input type="checkbox" data-quality-rule="lastOneMonthSharpeRatio" />近1月夏普 &gt; 同策略中位数</label>
+          <label class="quality-rule"><input type="checkbox" data-quality-rule="ytdReturn" />今年以来收益 &gt; 同策略中位数</label>
+          <label class="quality-rule"><input type="checkbox" data-quality-rule="lastOneYearReturn" />近1年收益 &gt; 同策略中位数</label>
+          <label class="quality-cap">
+            每个二级策略展示
+            <select id="qualityCapFilter">
+              <option value="3">前 3 只</option>
+              <option value="5" selected>前 5 只</option>
+              <option value="10">前 10 只</option>
+            </select>
+          </label>
+          <span id="qualityHint" class="quality-hint">同二级策略内比较；指增产品采用超额口径；样本不足时以候补补足 3 只。</span>
+        </div>
       </section>
 
+      <p class="metrics-note">上方用于快速判断当前筛选池的整体表现；具体候选基金请看下方结果表，点任一指标按钮即可切换排序。</p>
       <section class="metrics" id="metrics"></section>
 
       <section class="workbench" id="tableSection">
@@ -126,6 +158,6 @@
     </aside>
 
     <script src="../assets/ai-render.js?v=20260628-subtabs"></script>
-    <script src="./app.js?v=20260628-subtabs"></script>
+    <script src="./app.js?v=20260714-overview2"></script>
   </body>
 </html>

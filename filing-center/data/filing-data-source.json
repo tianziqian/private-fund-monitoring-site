@@ -1,0 +1,8 @@
+{
+  "dataSource": "fund_filings_snapshot",
+  "snapshotDate": "2026-07-12",
+  "filings": "output\\snapshots\\2026-07-12\\fund_filings_security_snapshot_2026-07-12.xlsx",
+  "outFile": "D:\\ai\\fof框架\\资产挖掘\\fof-monitoring\\private-fund-monitoring-site\\filing-center\\data\\filing-data.json",
+  "incrementalFrom": "2026-06-27",
+  "updatedAt": "2026-07-14T14:00:41"
+}

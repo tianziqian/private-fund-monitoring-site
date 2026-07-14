@@ -94,7 +94,7 @@ function renderMetrics() {
   const cards = [
     { label: "本周备案数量", value: formatNumber(m.currentWeekCount), note: `上周 ${formatNumber(m.previousWeekCount)} 只` },
     { label: "周环比", value: wowText, note: "相比上一自然周", cls: wowClass },
-    { label: "本周备案管理人", value: formatNumber(m.currentWeekManagerCount), note: "本周有新备案的管理人家数" },
+    { label: "本周备案涉及管理人", value: formatNumber(m.currentWeekManagerCount), note: "360 只备案产品去重后的管理人家数" },
     { label: `近${m.weeks || state.weeklyCounts.length}周周均`, value: formatNumber(m.averageWeeklyCount), note: "周度备案数量均值" },
     { label: `近${m.weeks || state.weeklyCounts.length}周累计`, value: formatNumber(m.totalFilings), note: "窗口期累计新增备案" },
   ];
@@ -152,7 +152,7 @@ function renderChart() {
 
 function renderTop15() {
   if (!state.top15.length) {
-    els.topTable.innerHTML = `<tr><td colspan="4"><div class="empty-state">本周暂无备案产品</div></td></tr>`;
+    els.topTable.innerHTML = `<tr><td colspan="5"><div class="empty-state">本周暂无备案产品</div></td></tr>`;
     return;
   }
   const maxCount = Math.max(...state.top15.map((d) => d.fundCount), 1);
@@ -168,10 +168,10 @@ function renderTop15() {
       <tr>
         <td class="rank-cell${row.rank <= 3 ? " top" : ""}">${row.rank}</td>
         <td class="name-cell"><strong>${managerLabel}</strong></td>
+        <td class="filing-count"><strong>${formatNumber(row.fundCount)}</strong><span>只</span></td>
         <td>
-          <div class="count-bar-track" style="max-width:200px">
+          <div class="count-bar-track" style="max-width:200px" title="${formatNumber(row.fundCount)} 只">
             <div class="count-bar-fill" style="width:${pct.toFixed(1)}%"></div>
-            <span class="count-bar-text">${formatNumber(row.fundCount)} 只</span>
           </div>
         </td>
         <td class="fund-list-cell">${funds}${escapeHtml(more)}</td>

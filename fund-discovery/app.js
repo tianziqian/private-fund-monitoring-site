@@ -8,6 +8,8 @@ const state = {
   meta: null,
   indexSeries: {},
   indexNames: [],
+  cta: null,
+  quality: null,
 };
 
 const scaleOrder = ["100亿元以上", "50-100亿元", "20-50亿元", "10-20亿元", "5-10亿元", "0-5亿元", "规模待匹配"];
@@ -59,6 +61,27 @@ const compareMetrics = [
   { key: "lastOneYearSharpeRatio", label: "近一年夏普/超额夏普", type: "ratio" },
 ];
 
+const qualityRules = [
+  { key: "lastOneMonthReturn", label: "近1月收益 > 同策略中位数" },
+  { key: "lastOneMonthMaxDrawdown", label: "近1月回撤优于同策略中位数" },
+  { key: "lastOneMonthSharpeRatio", label: "近1月夏普 > 同策略中位数" },
+  { key: "ytdReturn", label: "今年以来收益 > 同策略中位数" },
+  { key: "lastOneYearReturn", label: "近1年收益 > 同策略中位数" },
+];
+
+const strategyOverviewColumns = [
+  { key: "pastWeekReturn", label: "近1周收益", format: "percent" },
+  { key: "lastOneMonthReturn", label: "近1月收益", format: "percent" },
+  { key: "lastOneMonthMaxDrawdown", label: "近1月回撤", format: "percent" },
+  { key: "lastOneMonthSharpeRatio", label: "近1月夏普", format: "number" },
+  { key: "ytdReturn", label: "今年以来收益", format: "percent" },
+  { key: "ytdMaxDrawdown", label: "今年以来回撤", format: "percent" },
+  { key: "ytdSharpeRatio", label: "今年以来夏普", format: "number" },
+  { key: "lastOneYearReturn", label: "近1年收益", format: "percent" },
+  { key: "lastOneYearMaxDrawdown", label: "近1年回撤", format: "percent" },
+  { key: "lastOneYearSharpeRatio", label: "近1年夏普", format: "number" },
+];
+
 const els = {
   dataStatus: document.querySelector("#dataStatus"),
   metrics: document.querySelector("#metrics"),
@@ -71,6 +94,15 @@ const els = {
   scaleButton: document.querySelector("#scaleFilterButton"),
   viewMode: document.querySelector("#viewModeFilter"),
   minReturn: document.querySelector("#minReturnInput"),
+  qualityPreset: document.querySelector("#qualityPresetBtn"),
+  qualityRules: [...document.querySelectorAll("[data-quality-rule]")],
+  qualityCap: document.querySelector("#qualityCapFilter"),
+  qualityHint: document.querySelector("#qualityHint"),
+  strategyOverview: document.querySelector("#strategyOverview"),
+  strategyOverviewMeta: document.querySelector("#strategyOverviewMeta"),
+  strategyOverviewToggle: document.querySelector("#strategyOverviewToggle"),
+  strategyOverviewDetails: document.querySelector("#strategyOverviewDetails"),
+  strategyOverviewTable: document.querySelector("#strategyOverviewTable"),
   reset: document.querySelector("#resetBtn"),
   export: document.querySelector("#exportBtn"),
   resultCount: document.querySelector("#resultCount"),
@@ -220,6 +252,109 @@ function median(values) {
   return valid.length % 2 ? valid[mid] : (valid[mid - 1] + valid[mid]) / 2;
 }
 
+function selectedQualityRuleKeys() {
+  return els.qualityRules.filter((input) => input.checked).map((input) => input.dataset.qualityRule);
+}
+
+function buildQualityProfiles() {
+  const groups = new Map();
+  state.funds.forEach((fund) => {
+    const key = fund.strategyTwo || fund.strategyOne || "未分类策略";
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(fund);
+  });
+  const profiles = new Map();
+  groups.forEach((funds, key) => {
+    const medians = {};
+    qualityRules.forEach((rule) => {
+      medians[rule.key] = median(funds.map((fund) => metricValue(fund, rule.key)));
+    });
+    profiles.set(key, { key, funds, medians });
+  });
+  return profiles;
+}
+
+function qualityScore(fund, profile, ruleKeys) {
+  const scores = ruleKeys
+    .map((key) => {
+      const value = num(metricValue(fund, key));
+      if (value === null) return null;
+      const peers = profile.funds.map((item) => num(metricValue(item, key))).filter((item) => item !== null);
+      if (!peers.length) return null;
+      const lower = peers.filter((item) => item < value).length;
+      const equal = peers.filter((item) => item === value).length;
+      const percentile = (lower + equal * 0.5) / peers.length;
+      return key.toLowerCase().includes("drawdown") ? 1 - percentile : percentile;
+    })
+    .filter((value) => value !== null);
+  return scores.length ? scores.reduce((sum, value) => sum + value, 0) / scores.length : -Infinity;
+}
+
+function applyQualityRules(funds) {
+  const ruleKeys = selectedQualityRuleKeys();
+  const cap = Math.min(10, Math.max(3, Number(els.qualityCap.value || 5)));
+  if (!ruleKeys.length) {
+    return { funds, ruleKeys, qualifiedCount: funds.length, displayedCount: funds.length, cap, profiles: null, scores: new Map(), candidateIds: new Set() };
+  }
+  const profiles = buildQualityProfiles();
+  const qualified = funds.filter((fund) => {
+    const profile = profiles.get(fund.strategyTwo || fund.strategyOne || "未分类策略");
+    return ruleKeys.every((key) => {
+      const value = num(metricValue(fund, key));
+      const benchmark = profile?.medians[key];
+      return value !== null && benchmark !== null && value > benchmark;
+    });
+  });
+  const scores = new Map();
+  qualified.forEach((fund) => {
+    const profile = profiles.get(fund.strategyTwo || fund.strategyOne || "未分类策略");
+    scores.set(fund.id, qualityScore(fund, profile, ruleKeys));
+  });
+  const chosen = [];
+  const candidateIds = new Set();
+  const qualifiedByStrategy = new Map();
+  qualified.forEach((fund) => {
+    const key = fund.strategyTwo || fund.strategyOne || "未分类策略";
+    if (!qualifiedByStrategy.has(key)) qualifiedByStrategy.set(key, []);
+    qualifiedByStrategy.get(key).push(fund);
+  });
+  const baseByStrategy = new Map();
+  funds.forEach((fund) => {
+    const key = fund.strategyTwo || fund.strategyOne || "未分类策略";
+    if (!baseByStrategy.has(key)) baseByStrategy.set(key, []);
+    baseByStrategy.get(key).push(fund);
+  });
+  baseByStrategy.forEach((items, key) => {
+    const strict = qualifiedByStrategy.get(key) || [];
+    const profile = profiles.get(key);
+    strict
+      .sort((a, b) => scores.get(b.id) - scores.get(a.id) || safe(a.fundShortName, "").localeCompare(safe(b.fundShortName, ""), "zh-Hans-CN"))
+      .slice(0, cap)
+      .forEach((fund) => chosen.push(fund));
+    if (strict.length >= 3) return;
+    const strictIds = new Set(strict.map((fund) => fund.id));
+    const needed = 3 - strict.length;
+    const substitutes = items
+      .filter((fund) => !strictIds.has(fund.id) && ruleKeys.every((metric) => num(metricValue(fund, metric)) !== null))
+      .map((fund) => ({ fund, score: qualityScore(fund, profile, ruleKeys) }))
+      .sort((a, b) => b.score - a.score || safe(a.fund.fundShortName, "").localeCompare(safe(b.fund.fundShortName, ""), "zh-Hans-CN"))
+      .slice(0, needed);
+    substitutes.forEach(({ fund }) => {
+      chosen.push(fund);
+      candidateIds.add(fund.id);
+    });
+  });
+  return { funds: chosen, ruleKeys, qualifiedCount: qualified.length, displayedCount: chosen.length, cap, profiles, scores, candidateIds };
+}
+
+function updateQualityControls() {
+  const selected = selectedQualityRuleKeys();
+  const allSelected = selected.length === qualityRules.length;
+  els.qualityPreset.classList.toggle("active", allSelected);
+  els.qualityPreset.textContent = allSelected ? "已启用五项优选" : "一键五项优选";
+  els.qualityCap.disabled = !selected.length;
+}
+
 function topFunds(funds, key, size = 3) {
   return funds
     .filter((fund) => num(metricValue(fund, key)) !== null)
@@ -288,6 +423,42 @@ async function loadIndexSeries() {
   }
 }
 
+// Lazy-load the Nanhua commodity index snapshot used by CTA 净值分析.
+// Generated by scripts/fetch_cta_series.py; absence just disables CTA mode.
+let ctaLoadPromise = null;
+function loadCtaSeries() {
+  if (ctaLoadPromise) return ctaLoadPromise;
+  ctaLoadPromise = fetch("./data/cta-series.json", { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) throw new Error(`cta-series.json 加载失败（${response.status}）`);
+      return response.json();
+    })
+    .then((payload) => {
+      const series = {};
+      for (const [name, rows] of Object.entries(payload.indices || {})) {
+        series[name] = (rows || [])
+          .filter((row) => row && row.date && num(row.close) !== null)
+          .map((row) => ({ date: row.date, close: Number(row.close) }))
+          .sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+      }
+      const groups = (payload.meta && payload.meta.groups) || {};
+      state.cta = {
+        series,
+        composite: (groups.composite || []).filter((n) => series[n]),
+        sectors: (groups.sectors || []).filter((n) => series[n]),
+        varieties: Object.fromEntries(Object.entries(groups.varieties || {}).filter(([n]) => series[n])),
+        env: null,
+      };
+      return state.cta;
+    })
+    .catch((error) => {
+      state.cta = null;
+      ctaLoadPromise = null;
+      throw error;
+    });
+  return ctaLoadPromise;
+}
+
 function rankRows(funds, key) {
   if (!funds.length) return `<li class="rank-empty">暂无数据</li>`;
   return funds
@@ -311,30 +482,50 @@ function renderMetrics() {
       const positive = valued.filter((fund) => metricValue(fund, period.key) > 0).length;
       const med = fmtPercent(median(values));
       const avg = fmtPercent(average(values));
-      const top = topFunds(valued, period.key, 5);
-      const bottom = bottomFunds(valued, period.key, 5).reverse();
+      const best = values.length ? fmtPercent(Math.max(...values)) : "-";
+      const worst = values.length ? fmtPercent(Math.min(...values)) : "-";
       return `
         <article class="metric-card">
           <div class="metric-head">
             <span class="metric-title">${period.label}</span>
             <strong class="metric-stat">中位数 ${med}</strong>
           </div>
-          <div class="metric-sub">平均 ${avg} · 上涨 ${positive}/${valued.length}</div>
-          <button class="rank-sort-btn" type="button" data-rank-sort="${period.key}">按此指标看列表</button>
-          <div class="rank-grid">
-            <div class="rank-block">
-              <div class="rank-title">当前筛选全局前五</div>
-              <ol class="rank-list">${rankRows(top, period.key)}</ol>
-            </div>
-            <div class="rank-block">
-              <div class="rank-title">当前筛选全局后五</div>
-              <ol class="rank-list">${rankRows(bottom, period.key)}</ol>
-            </div>
-          </div>
+          <div class="metric-sub">平均 ${avg} · 正收益 ${positive}/${valued.length}</div>
+          <div class="metric-range"><span>最佳 <b class="pos">${best}</b></span><span>最弱 <b class="neg">${worst}</b></span></div>
+          <button class="rank-sort-btn" type="button" data-rank-sort="${period.key}">按此指标排序下方名单</button>
         </article>
       `;
     })
     .join("");
+}
+
+function renderStrategyOverview(funds) {
+  const groups = new Map();
+  funds.forEach((fund) => {
+    const key = fund.strategyTwo || fund.strategyOne || "未分类策略";
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(fund);
+  });
+  const rows = [...groups.entries()].sort((a, b) => a[0].localeCompare(b[0], "zh-Hans-CN"));
+  els.strategyOverviewMeta.textContent = `当前范围 ${funds.length} 只代表产品 · ${rows.length} 个二级策略`;
+  if (!rows.length) {
+    els.strategyOverviewTable.innerHTML = `<tbody><tr><td>当前条件下没有可汇总的数据</td></tr></tbody>`;
+    return;
+  }
+  els.strategyOverviewTable.innerHTML = `
+    <thead><tr><th>二级策略</th><th>样本</th>${strategyOverviewColumns.map((column) => `<th>${column.label}中位数</th>`).join("")}</tr></thead>
+    <tbody>${rows
+      .map(([strategy, items]) => {
+        const values = strategyOverviewColumns
+          .map((column) => {
+            const value = median(items.map((fund) => metricValue(fund, column.key)));
+            return `<td>${column.format === "percent" ? fmtPercent(value) : fmtNumber(value, 2)}</td>`;
+          })
+          .join("");
+        return `<tr><th>${safe(strategy)}</th><td>${items.length}</td>${values}</tr>`;
+      })
+      .join("")}</tbody>
+  `;
 }
 
 function applyFilters() {
@@ -347,7 +538,7 @@ function applyFilters() {
   updateMultiButton(els.strategyOneButton, selectedLabels(els.strategyOne), "全部一级策略");
   updateMultiButton(els.strategyTwoButton, selectedLabels(els.strategyTwo), "全部二级策略");
   updateMultiButton(els.scaleButton, selectedLabels(els.scale), "全部规模");
-  state.filtered = state.funds.filter((fund) => {
+  const baseFiltered = state.funds.filter((fund) => {
     const haystack = [
       fund.advisor,
       fund.managerFullName,
@@ -370,6 +561,10 @@ function applyFilters() {
     if (minReturn !== null && num(returnForFilter) !== null && returnForFilter < minReturn) return false;
     return true;
   });
+  updateQualityControls();
+  renderStrategyOverview(baseFiltered);
+  state.quality = applyQualityRules(baseFiltered);
+  state.filtered = state.quality.funds;
   sortRows();
   renderMetrics();
   renderGroups();
@@ -422,7 +617,17 @@ function renderGroups() {
   const strategyOneLabel = summarizeValues(selectedLabels(els.strategyOne));
   const strategyTwoLabel = summarizeValues(selectedLabels(els.strategyTwo));
   const scaleLabel = summarizeValues(selectedLabels(els.scale));
-  els.summary.textContent = `筛选：近一年收益/超额收益 ${minReturnLabel}，一级策略 ${strategyOneLabel}，二级策略 ${strategyTwoLabel}，规模 ${scaleLabel}，视图 ${els.viewMode.value === "ranking" ? "全局排名" : "按规模分组"}`;
+  const substituteCount = state.quality?.candidateIds?.size || 0;
+  const qualityText = state.quality?.ruleKeys?.length
+    ? `；优选 ${state.quality.ruleKeys.length} 项，符合 ${state.quality.qualifiedCount} 只，每二级策略前 ${state.quality.cap} 只${substituteCount ? `，候补 ${substituteCount} 只` : ""}`
+    : "";
+  els.summary.textContent = `筛选：近一年收益/超额收益 ${minReturnLabel}，一级策略 ${strategyOneLabel}，二级策略 ${strategyTwoLabel}，规模 ${scaleLabel}，视图 ${els.viewMode.value === "ranking" ? "全局排名" : "按规模分组"}${qualityText}`;
+  if (state.quality?.ruleKeys?.length) {
+    const candidateText = substituteCount ? `；${substituteCount} 只“候补”来自同策略综合分位评分，用于将不足 3 只的策略补足` : "";
+    els.qualityHint.textContent = `同二级策略内比较，指增产品采用超额口径；${state.quality.qualifiedCount} 只符合当前规则；每策略最多展示 ${state.quality.cap} 只${candidateText}。`;
+  } else {
+    els.qualityHint.textContent = "同二级策略内比较；指增产品采用超额口径；启用规则后，样本不足时以候补补足 3 只。";
+  }
   if (!state.filtered.length) {
     els.scaleGroups.innerHTML = `<div class="empty-state">没有匹配的产品</div>`;
     return;
@@ -471,7 +676,7 @@ function renderFundTable(funds) {
               <tr data-id="${fund.id}">
                 <td class="check-col"><input type="checkbox" class="compare-check" data-id="${fund.id}" ${checked} aria-label="选择 ${safe(fund.fundShortName)}" /></td>
                 <td class="manager-cell"><strong>${safe(fund.advisor)}</strong><div class="subtle">${safe(fund.managerFullName || fund.companyId)}</div></td>
-                <td class="fund-cell"><strong>${safe(fund.fundShortName)}</strong><div class="subtle">${safe(fund.registerNumber)} · 净值 ${(state.navByFund[fund.id] || []).length} 条</div></td>
+                <td class="fund-cell"><strong>${safe(fund.fundShortName)}${state.quality?.candidateIds?.has(fund.id) ? '<span class="quality-candidate-tag">候补</span>' : ""}</strong><div class="subtle">${safe(fund.registerNumber)} · 净值 ${(state.navByFund[fund.id] || []).length} 条</div></td>
                 <td>${safe(fund.inceptionDate)}</td>
                 <td>${safe(fund.strategyOne)}</td>
                 <td><span class="tag">${safe(fund.strategyTwo)}</span><div class="subtle">${metricBasis(fund)}口径</div></td>
@@ -737,7 +942,7 @@ function drawDetailChart(canvas, rows, label) {
 
 /* ===================== 净值分析（回归 / 滚动相关 / 深加工） ===================== */
 
-const analysisState = { funds: [] };
+const analysisState = { funds: [], mode: "equity" };
 
 // fundIndexName / strategyTwo -> the index name used in state.indexSeries.
 const indexAlias = {
@@ -913,7 +1118,8 @@ function dayMs(d) {
 // Build aligned interval-return matrix on the fund's NAV dates: each observation
 // requires every selected index to have a close at both endpoints, so the joint
 // regression uses only the common overlapping window.
-function buildReturnSeries(navRows, indexNames) {
+// seriesMap: name -> [{date, close}] (defaults to equity index snapshot).
+function buildReturnSeries(navRows, indexNames, seriesMap = state.indexSeries) {
   const fund = navRows
     .filter((row) => num(row.cumulative_nav) !== null && row.price_date)
     .map((row) => ({ date: row.price_date, cum: Number(row.cumulative_nav) }))
@@ -924,7 +1130,7 @@ function buildReturnSeries(navRows, indexNames) {
     if (dedup.length && dedup[dedup.length - 1].date === row.date) dedup[dedup.length - 1] = row;
     else dedup.push(row);
   }
-  const idxList = indexNames.map((name) => ({ name, rows: state.indexSeries[name] || [] }));
+  const idxList = indexNames.map((name) => ({ name, rows: seriesMap[name] || [] }));
   const closeBefore = (rows, date) => {
     let lo = 0, hi = rows.length - 1, ans = -1;
     while (lo <= hi) {
@@ -995,6 +1201,209 @@ function captureRatios(rFund, rBench) {
   return { up, down, upN, dnN };
 }
 
+// annualized return / vol / sortino / calmar / win-rate from interval returns
+function extraPerfStats(rFund, rBench, ppy, maxDD) {
+  const n = rFund.length;
+  if (!n) return null;
+  let cum = 1;
+  for (const r of rFund) cum *= 1 + r;
+  const annRet = n > 0 ? Math.pow(cum, ppy / n) - 1 : null;
+  const mean = rFund.reduce((s, v) => s + v, 0) / n;
+  let varSum = 0, dnSum = 0, dnN = 0, beat = 0;
+  for (let i = 0; i < n; i += 1) {
+    const d = rFund[i] - mean;
+    varSum += d * d;
+    if (rFund[i] < 0) { dnSum += rFund[i] * rFund[i]; dnN += 1; }
+    if (rBench && rFund[i] > rBench[i]) beat += 1;
+  }
+  const annVol = n > 1 ? Math.sqrt(varSum / (n - 1)) * Math.sqrt(ppy) : null;
+  const downDev = dnN ? Math.sqrt(dnSum / n) * Math.sqrt(ppy) : null;
+  const sortino = downDev > 0 ? (mean * ppy) / downDev : null;
+  const calmar = maxDD !== null && maxDD < 0 && annRet !== null ? annRet / Math.abs(maxDD) : null;
+  const winRate = rBench ? beat / n : null;
+  return { annRet, annVol, sortino, calmar, winRate };
+}
+
+// Treynor–Mazuy timing test: rFund = α + β·rB + γ·rB². γ>0 & significant = timing skill.
+function tmTiming(rFund, rBench) {
+  if (rFund.length < 8) return null;
+  const sq = rBench.map((v) => v * v);
+  const fit = ols(rFund, [rBench, sq]);
+  if (!fit) return null;
+  return { gamma: fit.beta[2], p: fit.pVal[2] };
+}
+
+function rollingAlphaSeries(dates, rFund, X, names, win, ppy) {
+  const out = [];
+  for (let i = win - 1; i < rFund.length; i += 1) {
+    const y = rFund.slice(i - win + 1, i + 1);
+    const cols = names.map((name) => X[name].slice(i - win + 1, i + 1));
+    const fit = ols(y, cols);
+    if (fit) out.push({ date: dates[i], value: fit.alpha * ppy });
+  }
+  return out;
+}
+
+/* ===================== CTA 环境指标（趋势顺滑 / 板块反转 / 动量宽度） ===================== */
+
+function trailingPercentile(values, win, minObs) {
+  const out = new Array(values.length).fill(null);
+  const hist = [];
+  for (let i = 0; i < values.length; i += 1) {
+    const v = values[i];
+    if (v === null || !Number.isFinite(v)) continue;
+    hist.push(v);
+    // drop values older than win valid observations
+    while (hist.length > win) hist.shift();
+    if (hist.length >= minObs) {
+      let below = 0, equal = 0;
+      for (const h of hist) { if (h < v) below += 1; else if (h === v) equal += 1; }
+      out[i] = ((below + 0.5 * equal) / hist.length) * 100;
+    }
+  }
+  return out;
+}
+
+function spearmanRankCorr(a, b) {
+  const rank = (arr) => {
+    const order = arr.map((v, i) => [v, i]).sort((x, y) => x[0] - y[0]);
+    const r = new Array(arr.length);
+    order.forEach(([, idx], pos) => { r[idx] = pos; });
+    return r;
+  };
+  return pearson(rank(a), rank(b));
+}
+
+// Classify a (smoothness percentile, reversal percentile) pair into an
+// environment regime, following the FundTalk framework:
+// 深蓝=趋势顺滑+反转压力低（CTA 顺风），深红=趋势不顺+板块快速反转（CTA 逆风）。
+function ctaRegime(smooth, rev) {
+  if (smooth === null || rev === null) return null;
+  if (smooth >= 70 && rev <= 30) return "深蓝";
+  if (smooth <= 30 && rev >= 70) return "深红";
+  if (smooth >= 55 && rev <= 45) return "浅蓝";
+  if (smooth <= 45 && rev >= 55) return "浅红";
+  return "混合";
+}
+
+const regimeBucket = { 深蓝: "顺风", 浅蓝: "顺风", 混合: "中性", 浅红: "逆风", 深红: "逆风" };
+const regimeColor = { 深蓝: "#1d4ed8", 浅蓝: "#60a5fa", 混合: "#98a2b3", 浅红: "#f97066", 深红: "#b42318" };
+
+// forward-fill a series' closes onto a reference date grid
+function alignCloses(rows, dates) {
+  const out = new Array(dates.length).fill(null);
+  let j = 0;
+  let last = null;
+  for (let i = 0; i < dates.length; i += 1) {
+    while (j < rows.length && rows[j].date <= dates[i]) { last = rows[j].close; j += 1; }
+    out[i] = last;
+  }
+  return out;
+}
+
+// Compute (and cache) the market-level CTA environment time series from the
+// commodity index snapshot. All indicators are daily on the composite's grid.
+function computeCtaEnv() {
+  const cta = state.cta;
+  if (!cta) return null;
+  if (cta.env) return cta.env;
+  const compName = cta.composite[0];
+  const comp = compName ? cta.series[compName] : null;
+  if (!comp || comp.length < 300) return null;
+  const dates = comp.map((r) => r.date);
+  const n = dates.length;
+
+  // 1) 趋势顺滑指数：各品种 20 日效率系数（净位移/总路程）的横截面均值 → 2 年滚动分位。
+  // 用品种均值而非综合指数：指数单边行情下个别品种仍可能反复折返，均值口径更贴近
+  // CTA 的实际持仓体验（同 indicators.py 的 mean_er / FundTalk 口径）。
+  const varNamesEr = Object.keys(cta.varieties);
+  const varAlignedEr = varNamesEr.map((name) => alignCloses(cta.series[name], dates));
+  const er = new Array(n).fill(null);
+  for (let i = 20; i < n; i += 1) {
+    let sum = 0, cnt = 0;
+    for (const s of varAlignedEr) {
+      if (s[i] === null || s[i - 20] === null) continue;
+      let noise = 0;
+      let ok = true;
+      for (let k = i - 19; k <= i; k += 1) {
+        if (s[k] === null || s[k - 1] === null) { ok = false; break; }
+        noise += Math.abs(s[k] - s[k - 1]);
+      }
+      if (!ok || !(noise > 0)) continue;
+      sum += Math.abs(s[i] - s[i - 20]) / noise;
+      cnt += 1;
+    }
+    if (cnt >= 10) er[i] = sum / cnt;
+  }
+  const smoothPct = trailingPercentile(er, 504, 250);
+
+  // 2) 板块反转压力指数：板块前 5 日 vs 近 5 日收益排名的负相关强度 → 平滑 → 分位
+  const sectorAligned = cta.sectors.map((name) => alignCloses(cta.series[name], dates));
+  const revRaw = new Array(n).fill(null);
+  for (let i = 10; i < n; i += 1) {
+    const prev = [], rec = [];
+    let ok = true;
+    for (const s of sectorAligned) {
+      const c0 = s[i - 10], c1 = s[i - 5], c2 = s[i];
+      if (!(c0 > 0) || !(c1 > 0) || c2 === null) { ok = false; break; }
+      prev.push(c1 / c0 - 1);
+      rec.push(c2 / c1 - 1);
+    }
+    if (!ok || prev.length < 4) continue;
+    const corr = spearmanRankCorr(prev, rec);
+    if (corr !== null) revRaw[i] = Math.max(0, -corr);
+  }
+  const revSm = new Array(n).fill(null);
+  for (let i = 0; i < n; i += 1) {
+    let s = 0, c = 0;
+    for (let k = Math.max(0, i - 9); k <= i; k += 1) {
+      if (revRaw[k] !== null) { s += revRaw[k]; c += 1; }
+    }
+    if (c >= 5) revSm[i] = s / c;
+  }
+  const revPct = trailingPercentile(revSm, 504, 250);
+
+  // 3) 动量宽度：正动量品种占比（20/60/120 日）
+  const varNames = Object.keys(cta.varieties);
+  const varAligned = varNames.map((name) => alignCloses(cta.series[name], dates));
+  const breadthAt = (i, lb) => {
+    let pos = 0, tot = 0;
+    for (const s of varAligned) {
+      const c0 = i >= lb ? s[i - lb] : null;
+      if (!(c0 > 0) || s[i] === null) continue;
+      tot += 1;
+      if (s[i] / c0 - 1 > 0) pos += 1;
+    }
+    return tot >= 10 ? pos / tot : null;
+  };
+  const b20 = new Array(n).fill(null), b60 = new Array(n).fill(null), b120 = new Array(n).fill(null);
+  for (let i = 0; i < n; i += 1) {
+    b20[i] = breadthAt(i, 20);
+    b60[i] = breadthAt(i, 60);
+    b120[i] = breadthAt(i, 120);
+  }
+
+  const regime = dates.map((_, i) => ctaRegime(smoothPct[i], revPct[i]));
+  cta.env = { dates, er, smoothPct, revPct, b20, b60, b120, regime, compName };
+  return cta.env;
+}
+
+// Average smoothness/reversal percentiles over (d0, d1], classify the interval.
+function intervalRegime(env, d0, d1) {
+  let s = 0, r = 0, c = 0;
+  for (let i = 0; i < env.dates.length; i += 1) {
+    const d = env.dates[i];
+    if (d <= d0) continue;
+    if (d > d1) break;
+    if (env.smoothPct[i] === null || env.revPct[i] === null) continue;
+    s += env.smoothPct[i];
+    r += env.revPct[i];
+    c += 1;
+  }
+  if (!c) return null;
+  return ctaRegime(s / c, r / c);
+}
+
 // max drawdown + recovery (in observation count) on cumulative_nav.
 function drawdownRecovery(navRows) {
   const rows = navRows
@@ -1022,6 +1431,31 @@ function fmtSigned(value, digits = 2) {
   return `${parsed >= 0 ? "+" : ""}${parsed.toFixed(digits)}`;
 }
 
+// Populate the "聚焦指数" select from the currently checked comparison indices
+// and keep the previous selection if it's still valid. When only one index is
+// checked there's nothing to switch to, so disable it with an explanatory hint
+// instead of leaving it looking clickable-but-broken.
+function syncFocusSelect(focusControl, focusSelect, names, multi) {
+  if (!multi) {
+    focusControl.hidden = true;
+    return names[0];
+  }
+  focusControl.hidden = false;
+  const prev = focusSelect.value;
+  focusSelect.innerHTML = names.map((n) => `<option value="${n}">${n}</option>`).join("");
+  const focus = names.includes(prev) ? prev : names[0];
+  focusSelect.value = focus;
+  const onlyOne = names.length <= 1;
+  focusSelect.disabled = onlyOne;
+  const hint = focusControl.querySelector("#focusIndexHint");
+  if (hint) {
+    hint.textContent = onlyOne
+      ? `当前只勾选了【${names[0] || "-"}】一个对比指数，滚动图只能看这一个；在上方"对比指数"里再勾选其它指数，这里才能切换聚焦`
+      : `滚动图按各产品对所选指数的暴露画线；可选项来自上方"对比指数"的勾选`;
+  }
+  return focus;
+}
+
 function analysisSelectedIndices() {
   const wrap = els.analysisContent.querySelector("#analysisIndexPicker");
   if (!wrap) return [];
@@ -1042,8 +1476,31 @@ const analysisHelpHtml = `
         <li><b>滚动 β（风格漂移）</b>：β 随时间变化。曲线平稳=风格稳定；β 明显跳变=持仓风格切换了。</li>
         <li><b>上 / 下行捕获</b>：基准上涨 / 下跌时，产品平均捕获了多少。上行高、下行低=进攻强守得住。</li>
         <li><b>信息比率 IR</b>：超额收益的稳定性（年化），越高越好；约 &gt;0.5 算不错。</li>
+        <li><b>择时 γ（T-M 模型）</b>：在回归中加入市场收益的平方项。γ 显著为正=市场涨时敢加仓、跌时会减仓（有择时能力）；显著为负=常被行情反向打。</li>
+        <li><b>索提诺 / 卡玛</b>：只惩罚下行波动的夏普（索提诺）、年化收益÷最大回撤（卡玛），都是越高越好。</li>
+        <li><b>滚动 α</b>：α 随时间的变化（年化）。看超额能力是持续的，还是只集中在某一段。</li>
       </ul>
       <p class="analysis-help-warn">提示：回归只是参考。若某指数恰好与产品真实持仓高度相关，也会显示出高暴露——不能盲信，需结合管理人、策略口径等其它信息综合判断。</p>
+    </div>
+  </details>
+`;
+
+const ctaHelpHtml = `
+  <details class="analysis-help">
+    <summary>怎么看 CTA 分析？（点击展开）</summary>
+    <div class="analysis-help-body">
+      <p><b>这页在做什么：</b>CTA 收益不看"跑赢哪个指数"，而看两件事——① 产品对商品市场的暴露方向和幅度（β）；② 商品市场当前是否给趋势策略"顺风"（趋势顺不顺、板块主线是否延续）。</p>
+      <ul>
+        <li><b>β · 南华商品指数</b>：衡量多头偏向。β 明显为正=偏多头趋势跟踪；接近 0=多空平衡或截面策略；回归 R² 低是正常的（CTA 本就不该被单一指数解释）。</li>
+        <li><b>板块 β</b>：勾选南华板块指数后，可看产品的收益更贴近哪个板块（能化 / 黑色 / 有色 / 贵金属 / 农产品）。</li>
+        <li><b>趋势顺滑指数（0-100 分位）</b>：南华商品指数 20 日"净位移 ÷ 总路程"的历史分位。低于 30=价格反复折返、假突破多，趋势策略难受。</li>
+        <li><b>板块反转压力指数（0-100 分位）</b>：板块前 5 日强弱排名与最近 5 日排名的负相关强度。高于 70=强弱结构快速反转，"刚确认、就反转"。</li>
+        <li><b>环境状态</b>：顺滑高+反转低=<b style="color:#1d4ed8">深蓝（顺风）</b>；顺滑低+反转高=<b style="color:#b42318">深红（逆风）</b>；其余为浅蓝 / 混合 / 浅红。</li>
+        <li><b>动量宽度</b>：20/60/120 日正动量品种占比。三线同向抬升=趋势逐步扩散、被多周期确认，是 CTA 最舒服的行情。</li>
+        <li><b>环境适应性</b>：把产品每期收益按当期环境归入顺风 / 中性 / 逆风。好的 CTA 应当顺风赚得动、逆风守得住；<b>逆风回吐比</b>=逆风亏损 ÷ 顺风盈利，越低越好。</li>
+        <li><b>股指相关性</b>：CTA 与沪深300 的相关性应接近 0。明显偏正=可能含股指多头暴露，危机保护属性打折。</li>
+      </ul>
+      <p class="analysis-help-warn">提示：环境指标基于南华指数体系（参考 FundTalk 趋势顺滑 / 板块反转框架），只刻画商品趋势类 CTA 的适应环境；套利、截面、期权类策略不完全适用。</p>
     </div>
   </details>
 `;
@@ -1053,20 +1510,50 @@ function openAnalysis(funds) {
   const list = (Array.isArray(funds) ? funds : [funds]).filter(Boolean);
   if (!list.length) return;
   analysisState.funds = list;
-  const defaults = new Set();
-  list.forEach((f) => defaultIndicesFor(f).forEach((n) => defaults.add(n)));
-  if (list.length > 1) defaults.add(indexAlias["沪深300"]); // ensure a shared broad index for multi-fund
+  const ctaLike = (f) => f.strategyOne === "期货策略" || /CTA|期货|管理期货/.test(safe(f.strategyOne, "") + safe(f.strategyTwo, ""));
+  analysisState.mode = list.every(ctaLike) ? "cta" : "equity";
+  // open the modal BEFORE rendering: charts read clientWidth, which is 0 while hidden
+  els.analysisModal.classList.add("open");
+  els.analysisModal.setAttribute("aria-hidden", "false");
+  els.analysisModal.scrollTop = 0;
+  renderAnalysisShell();
+}
+
+function renderAnalysisShell() {
+  const list = analysisState.funds;
   els.analysisContent.innerHTML = `
     <div class="analysis-head">
       <h2>净值分析${list.length > 1 ? `（${list.length} 只产品）` : ` · ${safe(list[0].fundShortName)}`}</h2>
-      <p>${list.map((f) => safe(f.fundShortName)).join(" / ")} · 区间收益回归 / 滚动暴露</p>
+      <p>${list.map((f) => safe(f.fundShortName)).join(" / ")} · 区间收益回归 / 滚动暴露 / 策略环境</p>
     </div>
-    ${analysisHelpHtml}
+    <div class="analysis-mode-toggle" id="analysisModeToggle">
+      <button type="button" data-mode="equity" class="${analysisState.mode === "equity" ? "active" : ""}">股票策略分析</button>
+      <button type="button" data-mode="cta" class="${analysisState.mode === "cta" ? "active" : ""}">CTA 策略分析</button>
+    </div>
+    <div id="analysisBody"></div>
+  `;
+  els.analysisContent.querySelector("#analysisModeToggle").addEventListener("click", (event) => {
+    const btn = event.target.closest("[data-mode]");
+    if (!btn || btn.dataset.mode === analysisState.mode) return;
+    analysisState.mode = btn.dataset.mode;
+    els.analysisContent.querySelectorAll("#analysisModeToggle button").forEach((b) => b.classList.toggle("active", b.dataset.mode === analysisState.mode));
+    renderAnalysisBody();
+  });
+  renderAnalysisBody();
+}
+
+function renderAnalysisBody() {
+  if (analysisState.mode === "cta") renderCtaBody();
+  else renderEquityBody();
+}
+
+function analysisControlsHtml(pickNames, defaults, pickerNote) {
+  return `
     <div id="analysisControls" class="analysis-controls">
       <div class="analysis-control">
         <span>对比指数（多选）</span>
         <div id="analysisIndexPicker" class="analysis-index-picker">
-          ${state.indexNames
+          ${pickNames
             .map(
               (name) => `
                 <label class="multi-option"><input type="checkbox" value="${name}" ${defaults.has(name) ? "checked" : ""} /><span>${name}</span></label>
@@ -1074,6 +1561,7 @@ function openAnalysis(funds) {
             )
             .join("")}
         </div>
+        ${pickerNote ? `<small class="analysis-hint">${pickerNote}</small>` : ""}
       </div>
       <div class="analysis-control">
         <span>滚动窗口（观测点 / 期）</span>
@@ -1087,9 +1575,21 @@ function openAnalysis(funds) {
       <div class="analysis-control" id="focusIndexControl" hidden>
         <span>滚动图聚焦指数</span>
         <select id="focusIndexSelect"></select>
-        <small class="analysis-hint">多产品对比时，滚动图按各产品对该指数的暴露画线</small>
+        <small class="analysis-hint" id="focusIndexHint">多产品对比时，滚动图按各产品对该指数的暴露画线；可选项来自上方"对比指数"的勾选，勾选多个才能切换</small>
       </div>
     </div>
+  `;
+}
+
+function renderEquityBody() {
+  const list = analysisState.funds;
+  const body = els.analysisContent.querySelector("#analysisBody");
+  const defaults = new Set();
+  list.forEach((f) => defaultIndicesFor(f).forEach((n) => defaults.add(n)));
+  if (list.length > 1) defaults.add(indexAlias["沪深300"]); // ensure a shared broad index for multi-fund
+  body.innerHTML = `
+    ${analysisHelpHtml}
+    ${analysisControlsHtml(state.indexNames, defaults, "宽基看仓位风格，国证成长/价值、中证红利看风格暴露")}
     <h3 class="analysis-sub">分析解读</h3>
     <div id="analysisReading" class="analysis-reading"></div>
     <h3 class="analysis-sub">多指数回归（区间收益 OLS）· β 暴露</h3>
@@ -1101,19 +1601,64 @@ function openAnalysis(funds) {
     <div class="chart-wrap analysis-chart-wrap"><canvas id="corrChart"></canvas></div>
     <h3 class="analysis-sub" id="betaTitle">滚动 β 暴露 · 风格漂移（×100%）</h3>
     <div class="chart-wrap analysis-chart-wrap"><canvas id="betaChart"></canvas></div>
+    <h3 class="analysis-sub" id="alphaTitle">滚动年化 α · 超额能力持续性</h3>
+    <div class="chart-wrap analysis-chart-wrap"><canvas id="alphaChart"></canvas></div>
   `;
-  els.analysisModal.classList.add("open");
-  els.analysisModal.setAttribute("aria-hidden", "false");
-  els.analysisModal.scrollTop = 0;
-  els.analysisContent.querySelector("#analysisControls").addEventListener("change", updateAnalysis);
+  body.querySelector("#analysisControls").addEventListener("change", updateAnalysis);
   updateAnalysis();
 }
 
+function renderCtaBody() {
+  const body = els.analysisContent.querySelector("#analysisBody");
+  if (!state.cta) {
+    body.innerHTML = `<div class="empty-state">正在加载商品指数数据…</div>`;
+    loadCtaSeries()
+      .then(() => {
+        if (analysisState.mode === "cta") renderCtaBody();
+      })
+      .catch(() => {
+        if (analysisState.mode !== "cta") return;
+        body.innerHTML = `<div class="empty-state">商品指数数据（cta-series.json）尚未生成。<br />请运行 <code>python scripts/fetch_cta_series.py</code> 后刷新页面。</div>`;
+      });
+    return;
+  }
+  const pickNames = [...state.cta.composite, ...state.cta.sectors];
+  // check composite + all sectors by default so the sector β breakdown is visible
+  // immediately and (when comparing 2+ products) the "聚焦指数" selector below has
+  // more than one option to switch between right away.
+  const defaults = new Set(pickNames);
+  body.innerHTML = `
+    ${ctaHelpHtml}
+    ${analysisControlsHtml(pickNames, defaults, "默认全选南华商品指数及五个板块指数；取消勾选可精简回归")}
+    <h3 class="analysis-sub">分析解读</h3>
+    <div id="analysisReading" class="analysis-reading"></div>
+    <h3 class="analysis-sub">商品指数回归（区间收益 OLS）· β 暴露</h3>
+    <div id="analysisReg" class="reg-table-wrap"></div>
+    <h3 class="analysis-sub">净值深加工指标</h3>
+    <div id="analysisMetrics" class="reg-table-wrap"></div>
+    <h3 class="analysis-sub">环境适应性 · 顺风 / 逆风表现拆解</h3>
+    <div id="ctaAdaptTable" class="reg-table-wrap"></div>
+    <h3 class="analysis-sub">CTA 策略环境 · 当前状态</h3>
+    <div id="ctaEnvCards" class="analysis-cards"></div>
+    <h3 class="analysis-sub">趋势顺滑指数 vs 板块反转压力指数（历史分位 0-100）</h3>
+    <div class="chart-wrap analysis-chart-wrap"><canvas id="ctaEnvChart"></canvas></div>
+    <h3 class="analysis-sub">商品动量宽度 · 正动量品种占比</h3>
+    <div class="chart-wrap analysis-chart-wrap"><canvas id="ctaBreadthChart"></canvas></div>
+    <div id="analysisLegend" class="legend"></div>
+    <h3 class="analysis-sub" id="corrTitle">滚动相关系数（×100%）</h3>
+    <div class="chart-wrap analysis-chart-wrap"><canvas id="corrChart"></canvas></div>
+    <h3 class="analysis-sub" id="betaTitle">滚动 β 暴露（×100%）</h3>
+    <div class="chart-wrap analysis-chart-wrap"><canvas id="betaChart"></canvas></div>
+  `;
+  body.querySelector("#analysisControls").addEventListener("change", updateCtaAnalysis);
+  updateCtaAnalysis();
+}
+
 // build {fund, navRows, aligned, fit} for each fund against the selected indices
-function analysisBundles(names) {
+function analysisBundles(names, seriesMap = state.indexSeries) {
   return analysisState.funds.map((fund) => {
     const navRows = state.navByFund[fund.id] || [];
-    const aligned = buildReturnSeries(navRows, names);
+    const aligned = buildReturnSeries(navRows, names, seriesMap);
     const fit = aligned.rFund.length >= 5 ? ols(aligned.rFund, names.map((n) => aligned.X[n])) : null;
     return { fund, navRows, aligned, fit };
   });
@@ -1145,28 +1690,54 @@ function regComparisonTable(names, bundles) {
   `;
 }
 
-function metricsComparisonTable(names, bundles) {
+function metricsComparisonTable(names, bundles, opts = {}) {
   const primary = names[0];
+  const mode = opts.mode || "equity";
   const stat = bundles.map((b) => {
     if (!b.fit) return null;
     const annAlpha = b.fit.alpha * b.aligned.ppy;
     const ir = b.fit.sigmaResid > 0 ? (b.fit.alpha / b.fit.sigmaResid) * Math.sqrt(b.aligned.ppy) : null;
     const cap = captureRatios(b.aligned.rFund, b.aligned.X[primary]);
     const dd = drawdownRecovery(b.navRows);
-    return { annAlpha, ir, r2: b.fit.r2, cap, dd };
+    const perf = extraPerfStats(b.aligned.rFund, b.aligned.X[primary], b.aligned.ppy, dd.maxDD);
+    const tm = mode === "equity" ? tmTiming(b.aligned.rFund, b.aligned.X[primary]) : null;
+    let eqCorr = null;
+    if (mode === "cta" && state.indexSeries["沪深300"]) {
+      const pair = buildReturnSeries(b.navRows, ["沪深300"], state.indexSeries);
+      if (pair.rFund.length >= 8) eqCorr = pearson(pair.rFund, pair.X["沪深300"]);
+    }
+    return { annAlpha, ir, r2: b.fit.r2, cap, dd, perf, tm, eqCorr };
   });
   const row = (label, render) =>
     `<tr><td>${label}</td>${bundles.map((b, i) => render(stat[i])).join("")}</tr>`;
   const dash = `<td class="num">-</td>`;
+  const pct = (v, cls = true) => `<td class="num ${cls ? clsByNumber(v) : ""}">${(v * 100).toFixed(2)}%</td>`;
+  const equityRows = mode === "equity"
+    ? `
+        ${row("择时 γ（T-M）", (s) => (s && s.tm ? `<td class="num ${clsByNumber(s.tm.gamma)}">${fmtSigned(s.tm.gamma, 2)}<sup class="star">${pStars(s.tm.p)}</sup></td>` : dash))}
+        ${row(`对基准胜率 · ${primary}`, (s) => (s && s.perf && s.perf.winRate !== null ? `<td class="num">${(s.perf.winRate * 100).toFixed(0)}%</td>` : dash))}
+      `
+    : "";
+  const ctaRows = mode === "cta"
+    ? `
+        ${row("股指相关性 · 沪深300", (s) => (s && s.eqCorr !== null ? `<td class="num ${Math.abs(s.eqCorr) > 0.4 ? "neg" : ""}">${s.eqCorr.toFixed(2)}</td>` : dash))}
+      `
+    : "";
   return `
     <table class="reg-table">
       <thead><tr><th>指标</th>${bundles.map((b) => `<th class="num">${safe(b.fund.fundShortName)}</th>`).join("")}</tr></thead>
       <tbody>
-        ${row("年化 α", (s) => (s ? `<td class="num ${clsByNumber(s.annAlpha)}">${(s.annAlpha * 100).toFixed(2)}%</td>` : dash))}
+        ${row("年化收益", (s) => (s && s.perf && s.perf.annRet !== null ? pct(s.perf.annRet) : dash))}
+        ${row("年化波动", (s) => (s && s.perf && s.perf.annVol !== null ? pct(s.perf.annVol, false) : dash))}
+        ${row("年化 α", (s) => (s ? pct(s.annAlpha) : dash))}
         ${row("信息比率 IR", (s) => (s && s.ir !== null ? `<td class="num ${clsByNumber(s.ir)}">${s.ir.toFixed(2)}</td>` : dash))}
+        ${row("索提诺比率", (s) => (s && s.perf && s.perf.sortino !== null ? `<td class="num ${clsByNumber(s.perf.sortino)}">${s.perf.sortino.toFixed(2)}</td>` : dash))}
+        ${row("卡玛比率", (s) => (s && s.perf && s.perf.calmar !== null ? `<td class="num ${clsByNumber(s.perf.calmar)}">${s.perf.calmar.toFixed(2)}</td>` : dash))}
         ${row("拟合优度 R²", (s) => (s ? `<td class="num">${s.r2.toFixed(3)}</td>` : dash))}
+        ${equityRows}
         ${row(`上行捕获 · ${primary}`, (s) => (s && s.cap.up !== null ? `<td class="num">${(s.cap.up * 100).toFixed(0)}%</td>` : dash))}
         ${row(`下行捕获 · ${primary}`, (s) => (s && s.cap.down !== null ? `<td class="num">${(s.cap.down * 100).toFixed(0)}%</td>` : dash))}
+        ${ctaRows}
         ${row("最大回撤", (s) => (s && s.dd.maxDD !== null ? `<td class="num neg">${(s.dd.maxDD * 100).toFixed(2)}%</td>` : dash))}
         ${row("回撤修复", (s) => (s && s.dd.maxDD !== null ? `<td class="num">${s.dd.recovered ? s.dd.recoverObs + " 期" : "未修复"}</td>` : dash))}
       </tbody>
@@ -1215,8 +1786,10 @@ function updateAnalysis() {
   const legendEl = els.analysisContent.querySelector("#analysisLegend");
   const corrCanvas = els.analysisContent.querySelector("#corrChart");
   const betaCanvas = els.analysisContent.querySelector("#betaChart");
+  const alphaCanvas = els.analysisContent.querySelector("#alphaChart");
   const corrTitle = els.analysisContent.querySelector("#corrTitle");
   const betaTitle = els.analysisContent.querySelector("#betaTitle");
+  const alphaTitle = els.analysisContent.querySelector("#alphaTitle");
   const focusControl = els.analysisContent.querySelector("#focusIndexControl");
   const focusSelect = els.analysisContent.querySelector("#focusIndexSelect");
   const numFmt2 = (value) => value.toFixed(2);
@@ -1230,34 +1803,28 @@ function updateAnalysis() {
     focusControl.hidden = true;
     renderChart(corrCanvas, []);
     renderChart(betaCanvas, []);
+    if (alphaCanvas) renderChart(alphaCanvas, []);
     return;
   }
 
   // focus index control (multi-fund rolling charts pick one index)
-  let focus = names[0];
-  if (multi) {
-    focusControl.hidden = false;
-    const prev = focusSelect.value;
-    focusSelect.innerHTML = names.map((n) => `<option value="${n}">${n}</option>`).join("");
-    focus = names.includes(prev) ? prev : names[0];
-    focusSelect.value = focus;
-  } else {
-    focusControl.hidden = true;
-  }
+  const focus = syncFocusSelect(focusControl, focusSelect, names, multi);
 
   const bundles = analysisBundles(names);
 
   readingEl.innerHTML = buildReading(names, bundles);
   regEl.innerHTML = regComparisonTable(names, bundles);
-  metricsEl.innerHTML = metricsComparisonTable(names, bundles);
+  metricsEl.innerHTML = metricsComparisonTable(names, bundles, { mode: "equity" });
 
   // ---- rolling charts ----
   let corrDatasets;
   let betaDatasets;
+  let alphaDatasets;
   let legendItems;
   if (multi) {
     corrTitle.textContent = `滚动相关系数 · 各产品对【${focus}】（×100%）`;
     betaTitle.textContent = `滚动 β · 各产品对【${focus}】（×100%）`;
+    if (alphaTitle) alphaTitle.textContent = `滚动年化 α · 各产品对【${focus}】`;
     corrDatasets = bundles
       .map((b, i) => {
         const pair = buildReturnSeries(b.navRows, [focus]);
@@ -1271,14 +1838,255 @@ function updateAnalysis() {
         return { color: palette[i % palette.length], label: b.fund.fundShortName, series: bs[0] || [] };
       })
       .filter((ds) => ds.series.length);
+    alphaDatasets = bundles
+      .map((b, i) => {
+        const pair = buildReturnSeries(b.navRows, [focus]);
+        return { color: palette[i % palette.length], label: b.fund.fundShortName, series: rollingAlphaSeries(pair.dates, pair.rFund, pair.X, [focus], win, pair.ppy) };
+      })
+      .filter((ds) => ds.series.length);
     legendItems = bundles.map((b, i) => ({ color: palette[i % palette.length], label: `${safe(b.fund.fundShortName)} · ${safe(b.fund.advisor)}` }));
   } else {
     corrTitle.textContent = `滚动相关系数 · 对各指数（×100%）`;
     betaTitle.textContent = `滚动 β 暴露 · 风格漂移（×100%）`;
+    if (alphaTitle) alphaTitle.textContent = `滚动年化 α · 剔除所选指数暴露后的超额（多指数联合回归）`;
     const b = bundles[0];
     corrDatasets = names
       .map((name, i) => {
         const pair = buildReturnSeries(b.navRows, [name]);
+        return { color: palette[i % palette.length], label: name, series: rollingCorrSeries(pair.dates, pair.rFund, pair.X[name], win) };
+      })
+      .filter((ds) => ds.series.length);
+    const betaSeries = b.fit ? rollingBetaSeries(b.aligned.dates, b.aligned.rFund, b.aligned.X, names, win) : names.map(() => []);
+    betaDatasets = names
+      .map((name, i) => ({ color: palette[i % palette.length], label: name, series: betaSeries[i] || [] }))
+      .filter((ds) => ds.series.length);
+    alphaDatasets = b.fit
+      ? [{ color: palette[0], label: `${safe(b.fund.fundShortName)} · 年化α`, series: rollingAlphaSeries(b.aligned.dates, b.aligned.rFund, b.aligned.X, names, win, b.aligned.ppy) }].filter((ds) => ds.series.length)
+      : [];
+    legendItems = names.map((name, i) => ({ color: palette[i % palette.length], label: name }));
+  }
+  legendEl.innerHTML = legendItems
+    .map((it) => `<span><i style="background:${it.color}"></i>${it.label}</span>`)
+    .join("");
+  renderChart(corrCanvas, corrDatasets, { fmt: numFmt2 });
+  renderChart(betaCanvas, betaDatasets, { fmt: numFmt2 });
+  if (alphaCanvas) renderChart(alphaCanvas, alphaDatasets);
+}
+
+/* ===================== CTA 净值分析 ===================== */
+
+// Bucket each NAV interval by the prevailing CTA environment and aggregate
+// per-bucket performance. Interval i spans (dates[i-1], dates[i]]; the first
+// interval has no recorded start so it is skipped.
+function ctaAdaptStats(aligned, env) {
+  const mk = () => ({ n: 0, sum: 0, wins: 0, cum: 1 });
+  const buckets = { 顺风: mk(), 中性: mk(), 逆风: mk() };
+  for (let i = 1; i < aligned.dates.length; i += 1) {
+    const regime = intervalRegime(env, aligned.dates[i - 1], aligned.dates[i]);
+    if (!regime) continue;
+    const bucket = buckets[regimeBucket[regime]];
+    const r = aligned.rFund[i];
+    bucket.n += 1;
+    bucket.sum += r;
+    if (r > 0) bucket.wins += 1;
+    bucket.cum *= 1 + r;
+  }
+  const tail = buckets.顺风.cum - 1;
+  const head = buckets.逆风.cum - 1;
+  const giveBack = tail > 0 && head < 0 ? Math.min(-head / tail, 9.99) : null;
+  return { buckets, giveBack };
+}
+
+function ctaAdaptTable(bundles, adaptStats) {
+  const bucketCell = (s, key) => {
+    const b = s ? s.buckets[key] : null;
+    if (!b || !b.n) return `<td class="num">-</td>`;
+    const avg = b.sum / b.n;
+    const cum = b.cum - 1;
+    return `<td class="num"><b class="${clsByNumber(cum)}">${fmtPercent(cum)}</b><div class="subtle">${b.n} 期 · 均 ${fmtPercent(avg)} · 胜率 ${((b.wins / b.n) * 100).toFixed(0)}%</div></td>`;
+  };
+  const row = (label, render) => `<tr><td>${label}</td>${bundles.map((b, i) => render(adaptStats[i])).join("")}</tr>`;
+  return `
+    <table class="reg-table">
+      <thead><tr><th>环境</th>${bundles.map((b) => `<th class="num">${safe(b.fund.fundShortName)}</th>`).join("")}</tr></thead>
+      <tbody>
+        ${row("顺风（深蓝/浅蓝）累计", (s) => bucketCell(s, "顺风"))}
+        ${row("中性（混合）累计", (s) => bucketCell(s, "中性"))}
+        ${row("逆风（浅红/深红）累计", (s) => bucketCell(s, "逆风"))}
+        ${row("逆风回吐比", (s) => (s && s.giveBack !== null ? `<td class="num ${s.giveBack > 0.6 ? "neg" : ""}">${(s.giveBack * 100).toFixed(0)}%</td>` : `<td class="num">-</td>`))}
+      </tbody>
+    </table>
+    <div class="reg-foot">按每个净值区间内趋势顺滑/板块反转分位的均值归类环境；逆风回吐比 = 逆风累计亏损 ÷ 顺风累计盈利（越低越好，&gt;60% 标红）。样本期以产品净值与商品指数重叠区间为准。</div>
+  `;
+}
+
+function ctaEnvCardsHtml(env) {
+  const last = (arr) => {
+    for (let i = arr.length - 1; i >= 0; i -= 1) if (arr[i] !== null) return { v: arr[i], date: env.dates[i] };
+    return null;
+  };
+  const sm = last(env.smoothPct);
+  const rv = last(env.revPct);
+  const regime = sm && rv ? ctaRegime(sm.v, rv.v) : null;
+  const b20 = last(env.b20), b60 = last(env.b60), b120 = last(env.b120);
+  const card = (title, value, note, color) => `
+    <div class="analysis-card">
+      <div class="analysis-card-title">${title}</div>
+      <div class="analysis-card-value" ${color ? `style="color:${color}"` : ""}>${value}</div>
+      <div class="analysis-card-note">${note}</div>
+    </div>
+  `;
+  return [
+    regime ? card("当前环境状态", regime, `截至 ${sm.date} · ${regimeBucket[regime]}环境`, regimeColor[regime]) : "",
+    sm ? card("趋势顺滑指数", sm.v.toFixed(0), sm.v < 30 ? "价格路径不顺，假突破多" : sm.v > 70 ? "趋势有效，路径顺滑" : "中等") : "",
+    rv ? card("板块反转压力", rv.v.toFixed(0), rv.v > 70 ? "板块主线快速切换" : rv.v < 30 ? "强弱结构延续" : "中等") : "",
+    b20 && b60 && b120 ? card("动量宽度 20/60/120", `${(b20.v * 100).toFixed(0)}% / ${(b60.v * 100).toFixed(0)}% / ${(b120.v * 100).toFixed(0)}%`, "正动量品种占比，三线同升=趋势扩散") : "",
+  ].join("");
+}
+
+function buildCtaReading(names, bundles, adaptStats, env) {
+  const compName = env ? env.compName : names[0];
+  const items = bundles.map((b, i) => {
+    const name = safe(b.fund.fundShortName);
+    if (!b.fit) return `<li><b>${name}</b>：样本不足（${b.aligned.rFund.length} 个重叠观测点），无法稳定回归。</li>`;
+    const ci = names.indexOf(compName);
+    const beta = ci >= 0 ? b.fit.beta[ci + 1] : b.fit.beta[1];
+    const betaP = ci >= 0 ? b.fit.pVal[ci + 1] : b.fit.pVal[1];
+    let dir;
+    if (beta > 0.3 && pStars(betaP)) dir = `对商品指数有明显多头暴露（β=${beta.toFixed(2)}${pStars(betaP)}），偏多头趋势跟踪`;
+    else if (beta < -0.3 && pStars(betaP)) dir = `对商品指数呈显著负暴露（β=${beta.toFixed(2)}${pStars(betaP)}），当前偏空头持仓`;
+    else dir = `对商品指数暴露不明显（β=${beta.toFixed(2)}），多空较平衡或以截面/套利为主`;
+    const s = adaptStats[i];
+    let adaptText = "";
+    if (s) {
+      const t = s.buckets.顺风, h = s.buckets.逆风;
+      if (t.n >= 3 && h.n >= 3) {
+        adaptText = `；顺风期累计 ${fmtPercent(t.cum - 1)}（${t.n} 期），逆风期累计 ${fmtPercent(h.cum - 1)}（${h.n} 期）` +
+          (s.giveBack !== null ? `，逆风回吐比 ${(s.giveBack * 100).toFixed(0)}%${s.giveBack > 0.6 ? "，回吐偏多需关注" : "，控制尚可"}` : "");
+      }
+    }
+    return `<li><b>${name}</b>：${dir}；R²=${b.fit.r2.toFixed(2)}${b.fit.r2 < 0.3 ? "（低 R² 对 CTA 属正常）" : ""}${adaptText}。</li>`;
+  }).join("");
+  let envText = "";
+  if (env) {
+    const li = (arr) => { for (let i = arr.length - 1; i >= 0; i -= 1) if (arr[i] !== null) return arr[i]; return null; };
+    const sm = li(env.smoothPct), rv = li(env.revPct);
+    const regime = sm !== null && rv !== null ? ctaRegime(sm, rv) : null;
+    if (regime) {
+      const desc = {
+        深蓝: "趋势顺滑且板块主线延续，CTA 明确顺风，可关注顺风期进攻能力强的产品",
+        浅蓝: "环境偏友好，趋势可做但强度一般",
+        混合: "顺逆信号交织，管理人分化会加大，更看重风控与周期分散",
+        浅红: "环境转差，趋势延续性不足，注意仓位",
+        深红: "趋势不顺 + 板块快速反转的典型逆风区，警惕净值回吐，逆风守得住的产品更可贵",
+      }[regime];
+      envText = `<p class="analysis-reading-compare">当前商品市场环境为 <b style="color:${regimeColor[regime]}">${regime}</b>（趋势顺滑分位 ${sm.toFixed(0)}，板块反转压力分位 ${rv.toFixed(0)}）：${desc}。</p>`;
+    }
+  }
+  return `<ul class="analysis-reading-list">${items}</ul>${envText}`;
+}
+
+function updateCtaAnalysis() {
+  const funds = analysisState.funds;
+  if (!funds.length || !state.cta) return;
+  const seriesMap = state.cta.series;
+  const names = analysisSelectedIndices();
+  const win = Number(els.analysisContent.querySelector("#analysisWindow").value) || 26;
+  const readingEl = els.analysisContent.querySelector("#analysisReading");
+  const regEl = els.analysisContent.querySelector("#analysisReg");
+  const metricsEl = els.analysisContent.querySelector("#analysisMetrics");
+  const adaptEl = els.analysisContent.querySelector("#ctaAdaptTable");
+  const envCardsEl = els.analysisContent.querySelector("#ctaEnvCards");
+  const legendEl = els.analysisContent.querySelector("#analysisLegend");
+  const envCanvas = els.analysisContent.querySelector("#ctaEnvChart");
+  const breadthCanvas = els.analysisContent.querySelector("#ctaBreadthChart");
+  const corrCanvas = els.analysisContent.querySelector("#corrChart");
+  const betaCanvas = els.analysisContent.querySelector("#betaChart");
+  const corrTitle = els.analysisContent.querySelector("#corrTitle");
+  const betaTitle = els.analysisContent.querySelector("#betaTitle");
+  const focusControl = els.analysisContent.querySelector("#focusIndexControl");
+  const focusSelect = els.analysisContent.querySelector("#focusIndexSelect");
+  const numFmt2 = (value) => value.toFixed(2);
+  const multi = funds.length > 1;
+
+  const env = computeCtaEnv();
+
+  // ---- market environment (independent of index selection) ----
+  if (env) {
+    envCardsEl.innerHTML = ctaEnvCardsHtml(env);
+    const clip = Math.max(0, env.dates.length - 750);
+    const toSeries = (arr) => {
+      const out = [];
+      for (let i = clip; i < env.dates.length; i += 1) {
+        if (arr[i] !== null) out.push({ date: env.dates[i], value: arr[i] });
+      }
+      return out;
+    };
+    renderChart(envCanvas, [
+      { color: "#1d4ed8", label: "趋势顺滑指数", series: toSeries(env.smoothPct) },
+      { color: "#b42318", label: "板块反转压力指数", series: toSeries(env.revPct) },
+    ], { fmt: (v) => v.toFixed(0) });
+    renderChart(breadthCanvas, [
+      { color: palette[1], label: "20日正动量占比", series: toSeries(env.b20) },
+      { color: palette[0], label: "60日正动量占比", series: toSeries(env.b60) },
+      { color: palette[3], label: "120日正动量占比", series: toSeries(env.b120) },
+    ]);
+  } else {
+    envCardsEl.innerHTML = `<div class="empty-state">商品指数历史不足，无法计算环境指标</div>`;
+    renderChart(envCanvas, []);
+    renderChart(breadthCanvas, []);
+  }
+
+  if (!names.length) {
+    readingEl.innerHTML = "";
+    regEl.innerHTML = `<div class="empty-state">请至少选择一个对比指数</div>`;
+    metricsEl.innerHTML = "";
+    adaptEl.innerHTML = "";
+    legendEl.innerHTML = "";
+    focusControl.hidden = true;
+    renderChart(corrCanvas, []);
+    renderChart(betaCanvas, []);
+    return;
+  }
+
+  const focus = syncFocusSelect(focusControl, focusSelect, names, multi);
+
+  const bundles = analysisBundles(names, seriesMap);
+  const adaptStats = bundles.map((b) => (env ? ctaAdaptStats(b.aligned, env) : null));
+
+  readingEl.innerHTML = buildCtaReading(names, bundles, adaptStats, env);
+  regEl.innerHTML = regComparisonTable(names, bundles);
+  metricsEl.innerHTML = metricsComparisonTable(names, bundles, { mode: "cta" });
+  adaptEl.innerHTML = env ? ctaAdaptTable(bundles, adaptStats) : `<div class="empty-state">环境指标不可用</div>`;
+
+  // ---- rolling charts vs commodity indices ----
+  let corrDatasets;
+  let betaDatasets;
+  let legendItems;
+  if (multi) {
+    corrTitle.textContent = `滚动相关系数 · 各产品对【${focus}】（×100%）`;
+    betaTitle.textContent = `滚动 β · 各产品对【${focus}】（×100%）`;
+    corrDatasets = bundles
+      .map((b, i) => {
+        const pair = buildReturnSeries(b.navRows, [focus], seriesMap);
+        return { color: palette[i % palette.length], label: b.fund.fundShortName, series: rollingCorrSeries(pair.dates, pair.rFund, pair.X[focus], win) };
+      })
+      .filter((ds) => ds.series.length);
+    betaDatasets = bundles
+      .map((b, i) => {
+        const pair = buildReturnSeries(b.navRows, [focus], seriesMap);
+        const bs = rollingBetaSeries(pair.dates, pair.rFund, pair.X, [focus], win);
+        return { color: palette[i % palette.length], label: b.fund.fundShortName, series: bs[0] || [] };
+      })
+      .filter((ds) => ds.series.length);
+    legendItems = bundles.map((b, i) => ({ color: palette[i % palette.length], label: `${safe(b.fund.fundShortName)} · ${safe(b.fund.advisor)}` }));
+  } else {
+    corrTitle.textContent = `滚动相关系数 · 对各商品指数（×100%）`;
+    betaTitle.textContent = `滚动 β 暴露 · 多空切换（×100%）`;
+    const b = bundles[0];
+    corrDatasets = names
+      .map((name, i) => {
+        const pair = buildReturnSeries(b.navRows, [name], seriesMap);
         return { color: palette[i % palette.length], label: name, series: rollingCorrSeries(pair.dates, pair.rFund, pair.X[name], win) };
       })
       .filter((ds) => ds.series.length);
@@ -1401,6 +2209,7 @@ function switchTab(tab) {
   els.subTabs.querySelectorAll(".sub-tab").forEach((btn) => btn.classList.toggle("active", btn.dataset.tab === tab));
   const isBrowse = tab === "browse";
   els.browseSection.hidden = !isBrowse;
+  els.strategyOverview.hidden = !isBrowse;
   els.metrics.hidden = !isBrowse;
   updateTabPrompt();
 }
@@ -1553,6 +2362,13 @@ function exportCsv() {
   URL.revokeObjectURL(a.href);
 }
 
+els.strategyOverviewToggle.addEventListener("click", () => {
+  const opening = els.strategyOverviewDetails.hidden;
+  els.strategyOverviewDetails.hidden = !opening;
+  els.strategyOverviewToggle.innerHTML = `${opening ? "收起" : "查看"}策略中位数 <span class="overview-toggle-arrow" aria-hidden="true">${opening ? "⌃" : "⌄"}</span>`;
+  els.strategyOverviewToggle.setAttribute("aria-expanded", String(opening));
+});
+
 els.query.addEventListener("input", applyFilters);
 els.strategyOneButton.addEventListener("click", () => toggleMultiMenu(els.strategyOneButton, els.strategyOne));
 els.strategyTwoButton.addEventListener("click", () => toggleMultiMenu(els.strategyTwoButton, els.strategyTwo));
@@ -1562,6 +2378,15 @@ els.strategyTwo.addEventListener("change", applyFilters);
 els.scale.addEventListener("change", applyFilters);
 els.viewMode.addEventListener("change", applyFilters);
 els.minReturn.addEventListener("input", applyFilters);
+els.qualityRules.forEach((input) => input.addEventListener("change", applyFilters));
+els.qualityCap.addEventListener("change", applyFilters);
+els.qualityPreset.addEventListener("click", () => {
+  const enable = selectedQualityRuleKeys().length !== qualityRules.length;
+  els.qualityRules.forEach((input) => {
+    input.checked = enable;
+  });
+  applyFilters();
+});
 els.metrics.addEventListener("click", (event) => {
   const button = event.target.closest("[data-rank-sort]");
   if (!button) return;
@@ -1578,6 +2403,10 @@ els.reset.addEventListener("click", () => {
   clearChecks(els.scale);
   els.viewMode.value = "scale";
   els.minReturn.value = "";
+  els.qualityRules.forEach((input) => {
+    input.checked = false;
+  });
+  els.qualityCap.value = "5";
   applyFilters();
 });
 els.export.addEventListener("click", exportCsv);
