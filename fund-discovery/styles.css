@@ -1112,6 +1112,12 @@ tbody tr:hover {
   color: var(--accent);
 }
 
+.sub-tab-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .sub-tab.active {
   background: var(--accent);
   color: #fff;

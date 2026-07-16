@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>周度业绩复盘 | 私募资产挖掘机</title>
+    <link rel="stylesheet" href="../styles.css?v=20260716" />
+    <link rel="stylesheet" href="../../assets/platform.css?v=20260628-unified" />
+    <link rel="stylesheet" href="./weekly-review.css?v=20260716" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="platform-brand" href="../../">私募资产挖掘机</a>
+        <nav class="module-nav" aria-label="主模块">
+          <a href="../../filing-center/">产品备案概览</a>
+          <a class="active" href="../">净值跟踪</a>
+          <a href="../../change-center/">人员变动</a>
+          <a href="../../sentiment-center/">资讯</a>
+          <a href="../../due-diligence-center/">尽调报告</a>
+          <a href="../../manager-center/">管理人库</a>
+          <a href="../../personnel-center/">人员库</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page review-page">
+      <section class="module-header">
+        <div>
+          <div class="module-kicker">WEEKLY PERFORMANCE REVIEW</div>
+          <h1>周度业绩复盘</h1>
+          <p>子基金周度表现 × 策略环境归因：统计口径由脚本按统一日历周重算，归因叙事结合各策略观测模块结论撰写。</p>
+        </div>
+      </section>
+
+      <nav class="sub-tabs">
+        <a class="sub-tab sub-tab-link" href="../">净值浏览</a>
+        <a class="sub-tab sub-tab-link" href="../">对比</a>
+        <a class="sub-tab sub-tab-link" href="../">净值分析</a>
+        <a class="sub-tab sub-tab-link active" href="./">周度复盘</a>
+      </nav>
+
+      <div class="report-list" id="reportList">
+        <div class="callout-info">加载报告列表中…</div>
+      </div>
+    </main>
+
+    <script>
+      fetch("./reports.json?ts=" + Date.now())
+        .then((r) => r.json())
+        .then(({ reports }) => {
+          const list = document.querySelector("#reportList");
+          if (!reports || !reports.length) {
+            list.innerHTML = '<div class="callout-info">暂无复盘报告。生成方法见《资产挖掘/周记/生成业绩复盘.md》。</div>';
+            return;
+          }
+          reports.sort((a, b) => b.date.localeCompare(a.date));
+          list.innerHTML = reports
+            .map(
+              (r) => `
+            <a class="report-card" href="./${r.file}">
+              <div>
+                <div class="report-week">${r.week}</div>
+                <div class="report-summary">${r.summary || ""}</div>
+              </div>
+              <span class="report-open">查看报告 →</span>
+            </a>`
+            )
+            .join("");
+        })
+        .catch(() => {
+          document.querySelector("#reportList").innerHTML =
+            '<div class="callout-info">报告列表加载失败（本地文件模式请通过 启动平台.bat 以 http 方式访问）。</div>';
+        });
+    </script>
+  </body>
+</html>

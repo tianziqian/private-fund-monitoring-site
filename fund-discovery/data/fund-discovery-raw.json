@@ -994,7 +994,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 968,
+        "startDate": "2022-07-13",
+        "endDate": "2026-07-10",
+        "latestNav": 3.289,
+        "latestCumulativeNav": 3.289,
+        "latestAdjustedNav": 3.289
+      }
     },
     {
       "id": "504e2653e1d27a40",
@@ -3199,7 +3207,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 904,
+        "startDate": "2018-12-06",
+        "endDate": "2026-07-10",
+        "latestNav": 5.0945,
+        "latestCumulativeNav": 15.5994,
+        "latestAdjustedNav": 58.47392559
+      }
     },
     {
       "id": "f54451cbc3238ca4",
@@ -4398,7 +4414,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1266,
+        "startDate": "2018-09-18",
+        "endDate": "2026-07-10",
+        "latestNav": 3.7029,
+        "latestCumulativeNav": 4.4348,
+        "latestAdjustedNav": 6.62735221
+      }
     },
     {
       "id": "a045b41c43b5e646",
@@ -6169,7 +6193,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 277,
+        "startDate": "2022-01-06",
+        "endDate": "2026-07-10",
+        "latestNav": 4.2407,
+        "latestCumulativeNav": 4.2407,
+        "latestAdjustedNav": 4.2407
+      }
     },
     {
       "id": "b431f5ac4fcdb949",
@@ -9472,7 +9504,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 195,
+        "startDate": "2022-10-31",
+        "endDate": "2026-07-10",
+        "latestNav": 2.4167,
+        "latestCumulativeNav": 2.4167,
+        "latestAdjustedNav": 2.4167
+      }
     },
     {
       "id": "a0b6455f6d09e0c9",
@@ -10083,7 +10123,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 141,
+        "startDate": "2024-01-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1956,
+        "latestCumulativeNav": 2.5959,
+        "latestAdjustedNav": 3.81587537
+      }
     },
     {
       "id": "24dac8bf1fc75f6d",
@@ -12297,7 +12345,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 312,
+        "startDate": "2021-01-07",
+        "endDate": "2026-07-10",
+        "latestNav": 3.2063,
+        "latestCumulativeNav": 3.4063,
+        "latestAdjustedNav": 3.56937326
+      }
     },
     {
       "id": "588f080f93a04c9a",
@@ -13444,7 +13500,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 605,
+        "startDate": "2024-01-08",
+        "endDate": "2026-07-10",
+        "latestNav": 3.0527,
+        "latestCumulativeNav": 3.0527,
+        "latestAdjustedNav": 3.0527
+      }
     },
     {
       "id": "40e095d91338b781",
@@ -16613,7 +16677,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 244,
+        "startDate": "2022-12-20",
+        "endDate": "2026-07-10",
+        "latestNav": 7.627,
+        "latestCumulativeNav": 7.627,
+        "latestAdjustedNav": 7.627
+      }
     },
     {
       "id": "382c26cfe37decc3",
@@ -19722,7 +19794,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 202,
+        "startDate": "2022-11-07",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5852,
+        "latestCumulativeNav": 1.5852,
+        "latestAdjustedNav": 1.5852
+      }
     },
     {
       "id": "0ffcdf416bc02b6b",
@@ -25893,7 +25973,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 328,
+        "startDate": "2020-09-24",
+        "endDate": "2026-07-10",
+        "latestNav": 1.679,
+        "latestCumulativeNav": 2.522,
+        "latestAdjustedNav": 3.50290892
+      }
     },
     {
       "id": "d49d91b9c11ddacb",
@@ -27528,7 +27616,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 184,
+        "startDate": "2022-12-02",
+        "endDate": "2026-07-10",
+        "latestNav": 0.6728,
+        "latestCumulativeNav": 1.4525,
+        "latestAdjustedNav": 1.282344
+      }
     },
     {
       "id": "f58fd7f488429c9e",
@@ -28158,7 +28254,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 370,
+        "startDate": "2019-12-23",
+        "endDate": "2026-07-10",
+        "latestNav": 5.0525,
+        "latestCumulativeNav": 5.0525,
+        "latestAdjustedNav": 5.0525
+      }
     },
     {
       "id": "1ff81584d66e1739",
@@ -28335,7 +28439,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 612,
+        "startDate": "2020-03-09",
+        "endDate": "2026-07-10",
+        "latestNav": 5.3262,
+        "latestCumulativeNav": 5.7516,
+        "latestAdjustedNav": 5.96106382
+      }
     },
     {
       "id": "ffecc9d2756f96f2",
@@ -32612,7 +32724,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 252,
+        "startDate": "2021-12-29",
+        "endDate": "2026-07-10",
+        "latestNav": 1.489,
+        "latestCumulativeNav": 1.489,
+        "latestAdjustedNav": 1.489
+      }
     },
     {
       "id": "6eaa01b77c09c73d",
@@ -32953,7 +33073,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 452,
+        "startDate": "2022-08-04",
+        "endDate": "2026-07-10",
+        "latestNav": 2.3254,
+        "latestCumulativeNav": 2.6234,
+        "latestAdjustedNav": 2.73195277
+      }
     },
     {
       "id": "d7b66b2006819405",
@@ -34652,7 +34780,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 619,
+        "startDate": "2021-03-03",
+        "endDate": "2026-07-10",
+        "latestNav": 2.6099,
+        "latestCumulativeNav": 2.6099,
+        "latestAdjustedNav": 2.6099
+      }
     },
     {
       "id": "9c5b2b11d2366b2b",
@@ -35415,7 +35551,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 311,
+        "startDate": "2021-01-11",
+        "endDate": "2026-07-10",
+        "latestNav": 3.0712,
+        "latestCumulativeNav": 3.0712,
+        "latestAdjustedNav": 3.0712
+      }
     },
     {
       "id": "c3032091b5811ecd",
@@ -36642,7 +36786,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 98,
+        "startDate": "2024-10-11",
+        "endDate": "2026-07-10",
+        "latestNav": 2.3639,
+        "latestCumulativeNav": 2.3639,
+        "latestAdjustedNav": 2.3639
+      }
     },
     {
       "id": "209371ad80c4983b",
@@ -37075,7 +37227,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 165,
+        "startDate": "2023-06-30",
+        "endDate": "2026-07-10",
+        "latestNav": 2.1669,
+        "latestCumulativeNav": 2.1669,
+        "latestAdjustedNav": 2.1669
+      }
     },
     {
       "id": "2832dc6a842424ab",
@@ -38011,7 +38171,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 262,
+        "startDate": "2021-08-03",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7311,
+        "latestCumulativeNav": 1.7777,
+        "latestAdjustedNav": 1.78636049
+      }
     },
     {
       "id": "e561c04176011fc4",
@@ -38099,7 +38267,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 440,
+        "startDate": "2024-07-15",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7752,
+        "latestCumulativeNav": 1.7752,
+        "latestAdjustedNav": 1.7752
+      }
     },
     {
       "id": "b735fe2abb8ba975",
@@ -38190,7 +38366,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 180,
+        "startDate": "2023-02-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.808,
+        "latestCumulativeNav": 1.808,
+        "latestAdjustedNav": 1.808
+      }
     },
     {
       "id": "01dc2814ac514583",
@@ -38950,7 +39134,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 453,
+        "startDate": "2017-12-27",
+        "endDate": "2026-07-10",
+        "latestNav": 5.026,
+        "latestCumulativeNav": 5.026,
+        "latestAdjustedNav": 5.026
+      }
     },
     {
       "id": "4990a295c6f0591e",
@@ -39377,7 +39569,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 175,
+        "startDate": "2023-05-23",
+        "endDate": "2026-07-10",
+        "latestNav": 2.6932,
+        "latestCumulativeNav": 3.0775,
+        "latestAdjustedNav": 3.48935135
+      }
     },
     {
       "id": "f2217bf274399e1d",
@@ -39919,7 +40119,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 214,
+        "startDate": "2022-07-07",
+        "endDate": "2026-07-10",
+        "latestNav": 2.319,
+        "latestCumulativeNav": 2.239,
+        "latestAdjustedNav": 1.8552
+      }
     },
     {
       "id": "9818d0d596399f29",
@@ -40702,7 +40910,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 211,
+        "startDate": "2022-10-27",
+        "endDate": "2026-07-10",
+        "latestNav": 1.118,
+        "latestCumulativeNav": 1.5666,
+        "latestAdjustedNav": 1.66435462
+      }
     },
     {
       "id": "6dff536a8dd39d0e",
@@ -42183,7 +42399,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 204,
+        "startDate": "2022-11-25",
+        "endDate": "2026-07-10",
+        "latestNav": 2.7531,
+        "latestCumulativeNav": 2.7531,
+        "latestAdjustedNav": 2.7531
+      }
     },
     {
       "id": "0a18f2e6acd04472",
@@ -42268,7 +42492,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 127,
+        "startDate": "2023-01-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.8045,
+        "latestCumulativeNav": 1.8561,
+        "latestAdjustedNav": 1.89569706
+      }
     },
     {
       "id": "7d4c21ef43a36fb0",
@@ -42814,7 +43046,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 224,
+        "startDate": "2022-05-10",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9734,
+        "latestCumulativeNav": 1.9734,
+        "latestAdjustedNav": 1.9734
+      }
     },
     {
       "id": "48ccc608a4096fc2",
@@ -43229,7 +43469,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 211,
+        "startDate": "2022-10-14",
+        "endDate": "2026-07-10",
+        "latestNav": 3.1566,
+        "latestCumulativeNav": 3.1566,
+        "latestAdjustedNav": 3.1566
+      }
     },
     {
       "id": "3ac144a6ef8b1848",
@@ -46006,7 +46254,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 829,
+        "startDate": "2021-03-11",
+        "endDate": "2026-07-10",
+        "latestNav": 2.899,
+        "latestCumulativeNav": 2.899,
+        "latestAdjustedNav": 2.899
+      }
     },
     {
       "id": "5b511b5bd9647fb4",
@@ -47132,7 +47388,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 539,
+        "startDate": "2022-11-10",
+        "endDate": "2026-07-10",
+        "latestNav": 4.723,
+        "latestCumulativeNav": 4.723,
+        "latestAdjustedNav": 4.723
+      }
     },
     {
       "id": "069493e7a6e5565a",
@@ -47308,7 +47572,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 852,
+        "startDate": "2022-12-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5856,
+        "latestCumulativeNav": 2.1372,
+        "latestAdjustedNav": 2.5772038
+      }
     },
     {
       "id": "9a51c4bbf502288d",
@@ -48304,7 +48576,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 818,
+        "startDate": "2023-02-23",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6148,
+        "latestCumulativeNav": 2.188,
+        "latestAdjustedNav": 2.38613613
+      }
     },
     {
       "id": "5189104fa6eb5578",
@@ -48558,7 +48838,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 82,
+        "startDate": "2025-01-17",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4082,
+        "latestCumulativeNav": 1.7632,
+        "latestAdjustedNav": 1.81789595
+      }
     },
     {
       "id": "4bb134362bb71eec",
@@ -48635,7 +48923,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 329,
+        "startDate": "2022-07-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7909,
+        "latestCumulativeNav": 2.1794,
+        "latestAdjustedNav": 2.35422657
+      }
     },
     {
       "id": "861d2579ecb41708",
@@ -48712,7 +49008,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 213,
+        "startDate": "2022-09-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9894,
+        "latestCumulativeNav": 2.2173,
+        "latestAdjustedNav": 2.37555472
+      }
     },
     {
       "id": "963a40559489ee26",
@@ -49071,7 +49375,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 183,
+        "startDate": "2023-04-12",
+        "endDate": "2026-07-10",
+        "latestNav": 1.8424,
+        "latestCumulativeNav": 1.8424,
+        "latestAdjustedNav": 1.8424
+      }
     },
     {
       "id": "1fbfee0adffc6e6f",
@@ -49321,7 +49633,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 237,
+        "startDate": "2022-04-29",
+        "endDate": "2026-07-10",
+        "latestNav": 2.3013,
+        "latestCumulativeNav": 2.3013,
+        "latestAdjustedNav": 2.3013
+      }
     },
     {
       "id": "b9158f8c12a222e7",
@@ -49398,7 +49718,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 141,
+        "startDate": "2023-12-29",
+        "endDate": "2026-07-10",
+        "latestNav": 3.2215,
+        "latestCumulativeNav": 3.2215,
+        "latestAdjustedNav": 3.2215
+      }
     },
     {
       "id": "7826fe11ad15cf71",
@@ -50139,7 +50467,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 152,
+        "startDate": "2023-10-26",
+        "endDate": "2026-07-10",
+        "latestNav": 2.0435,
+        "latestCumulativeNav": 2.0435,
+        "latestAdjustedNav": 2.0435
+      }
     },
     {
       "id": "7a0057e57b3958c2",
@@ -50293,7 +50629,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 206,
+        "startDate": "2023-03-21",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7583,
+        "latestCumulativeNav": 1.7583,
+        "latestAdjustedNav": 1.7583
+      }
     },
     {
       "id": "83b8ee55c808ab72",
@@ -50370,7 +50714,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1236,
+        "startDate": "2021-06-03",
+        "endDate": "2026-07-10",
+        "latestNav": 3.8789,
+        "latestCumulativeNav": 3.8789,
+        "latestAdjustedNav": 3.8789
+      }
     },
     {
       "id": "72ab18097b5ef242",
@@ -50473,7 +50825,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 429,
+        "startDate": "2019-01-03",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2162,
+        "latestCumulativeNav": 2.1662,
+        "latestAdjustedNav": 2.66311824
+      }
     },
     {
       "id": "efe71f1778e5245e",
@@ -50866,7 +51226,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 199,
+        "startDate": "2022-12-26",
+        "endDate": "2026-07-10",
+        "latestNav": 2.5009,
+        "latestCumulativeNav": 2.5009,
+        "latestAdjustedNav": 2.5009
+      }
     },
     {
       "id": "af7fe022214a2830",
@@ -51290,7 +51658,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 258,
+        "startDate": "2025-06-19",
+        "endDate": "2026-07-10",
+        "latestNav": 0.9766,
+        "latestCumulativeNav": 1.6116,
+        "latestAdjustedNav": 1.596741
+      }
     },
     {
       "id": "bdfea4991dbc6d52",
@@ -52079,7 +52455,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 662,
+        "startDate": "2021-01-18",
+        "endDate": "2026-07-10",
+        "latestNav": 2.5312,
+        "latestCumulativeNav": 2.5312,
+        "latestAdjustedNav": 2.5312
+      }
     },
     {
       "id": "ee481acd1ecb47b8",
@@ -52905,7 +53289,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 365,
+        "startDate": "2020-03-11",
+        "endDate": "2026-07-10",
+        "latestNav": 4.0855,
+        "latestCumulativeNav": 4.0855,
+        "latestAdjustedNav": 4.0855
+      }
     },
     {
       "id": "424aae4fefe304ff",
@@ -54098,7 +54490,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 512,
+        "startDate": "2018-10-09",
+        "endDate": "2026-07-10",
+        "latestNav": 8.9324,
+        "latestCumulativeNav": 8.9324,
+        "latestAdjustedNav": 8.9324
+      }
     },
     {
       "id": "f9c85fb340685045",
@@ -54260,7 +54660,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 63,
+        "startDate": "2025-05-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0315,
+        "latestCumulativeNav": 1.5815,
+        "latestAdjustedNav": 1.67707607
+      }
     },
     {
       "id": "a3915047a3db0318",
@@ -54491,7 +54899,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 61,
+        "startDate": "2025-05-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1259,
+        "latestCumulativeNav": 1.5528,
+        "latestAdjustedNav": 1.60654671
+      }
     },
     {
       "id": "75ba37501a0a7107",
@@ -54645,7 +55061,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 890,
+        "startDate": "2022-11-08",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6962,
+        "latestCumulativeNav": 1.6962,
+        "latestAdjustedNav": 1.6962
+      }
     },
     {
       "id": "942af58c4f86ca9a",
@@ -56663,7 +57087,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 223,
+        "startDate": "2022-07-06",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9989,
+        "latestCumulativeNav": 2.1989,
+        "latestAdjustedNav": 2.30872472
+      }
     },
     {
       "id": "bc108f608b52763c",
@@ -56760,7 +57192,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 281,
+        "startDate": "2021-07-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.8888,
+        "latestCumulativeNav": 1.9688,
+        "latestAdjustedNav": 2.03723222
+      }
     },
     {
       "id": "a468be3a87fdfead",
@@ -57130,7 +57570,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 127,
+        "startDate": "2024-03-05",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7447,
+        "latestCumulativeNav": 1.8447,
+        "latestAdjustedNav": 1.85511706
+      }
     },
     {
       "id": "2518f50353484b7f",
@@ -57207,7 +57655,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 366,
+        "startDate": "2020-12-22",
+        "endDate": "2026-07-10",
+        "latestNav": 2.4742,
+        "latestCumulativeNav": 2.4742,
+        "latestAdjustedNav": 2.4742
+      }
     },
     {
       "id": "40a5b66b02324304",
@@ -57284,7 +57740,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 85,
+        "startDate": "2024-11-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6033,
+        "latestCumulativeNav": 1.6033,
+        "latestAdjustedNav": 1.6033
+      }
     },
     {
       "id": "36f8ba833f7ef35d",
@@ -57685,7 +58149,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 244,
+        "startDate": "2021-09-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7356,
+        "latestCumulativeNav": 2.1124,
+        "latestAdjustedNav": 2.16369998
+      }
     },
     {
       "id": "a044485fb85ea4af",
@@ -57856,7 +58328,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 222,
+        "startDate": "2022-08-25",
+        "endDate": "2026-07-10",
+        "latestNav": 2.5614,
+        "latestCumulativeNav": 2.5914,
+        "latestAdjustedNav": 2.63704202
+      }
     },
     {
       "id": "2788163f9b569f7f",
@@ -58257,7 +58737,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 339,
+        "startDate": "2020-09-03",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1386,
+        "latestCumulativeNav": 2.3489,
+        "latestAdjustedNav": 2.82244154
+      }
     },
     {
       "id": "3e131f945c16e13b",
@@ -58838,7 +59326,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 211,
+        "startDate": "2022-12-30",
+        "endDate": "2026-07-10",
+        "latestNav": 2.6384,
+        "latestCumulativeNav": 2.6384,
+        "latestAdjustedNav": 2.6384
+      }
     },
     {
       "id": "d5d1148979a25bfa",
@@ -59069,7 +59565,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1156,
+        "startDate": "2021-06-21",
+        "endDate": "2026-07-10",
+        "latestNav": 2.6221,
+        "latestCumulativeNav": 3.1299,
+        "latestAdjustedNav": 3.39124963
+      }
     },
     {
       "id": "bd280f5ba397c081",
@@ -59231,7 +59735,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 142,
+        "startDate": "2023-12-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0903,
+        "latestCumulativeNav": 2.4984,
+        "latestAdjustedNav": 2.63032551
+      }
     },
     {
       "id": "11ca2d145cbd7644",
@@ -59385,7 +59897,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 94,
+        "startDate": "2024-10-29",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7054,
+        "latestCumulativeNav": 1.7054,
+        "latestAdjustedNav": 1.7054
+      }
     },
     {
       "id": "70e52f4f5b52d39e",
@@ -59632,7 +60152,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 144,
+        "startDate": "2023-08-11",
+        "endDate": "2026-07-10",
+        "latestNav": 2.1448,
+        "latestCumulativeNav": 2.4531,
+        "latestAdjustedNav": 2.63339152
+      }
     },
     {
       "id": "1617093a9976f6ab",
@@ -59709,7 +60237,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 234,
+        "startDate": "2021-12-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7029,
+        "latestCumulativeNav": 1.8979,
+        "latestAdjustedNav": 2.02413972
+      }
     },
     {
       "id": "e2fb13ad4b619cc6",
@@ -60376,7 +60912,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 186,
+        "startDate": "2022-12-22",
+        "endDate": "2026-07-10",
+        "latestNav": 2.046,
+        "latestCumulativeNav": 2.25,
+        "latestAdjustedNav": 2.42544
+      }
     },
     {
       "id": "9ea56d7ff4546d2e",
@@ -61045,7 +61589,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 131,
+        "startDate": "2023-12-29",
+        "endDate": "2026-07-10",
+        "latestNav": 2.382,
+        "latestCumulativeNav": 2.382,
+        "latestAdjustedNav": 2.382
+      }
     },
     {
       "id": "be856dd0bc34408f",
@@ -61318,7 +61870,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 397,
+        "startDate": "2024-11-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5038,
+        "latestCumulativeNav": 1.5038,
+        "latestAdjustedNav": 1.5038
+      }
     },
     {
       "id": "aa0301b20699717a",
@@ -61666,7 +62226,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 196,
+        "startDate": "2023-03-24",
+        "endDate": "2026-07-10",
+        "latestNav": 1.82,
+        "latestCumulativeNav": 1.82,
+        "latestAdjustedNav": 1.82
+      }
     },
     {
       "id": "8b6798fbfecf3344",
@@ -62579,7 +63147,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 355,
+        "startDate": "2024-12-10",
+        "endDate": "2026-07-10",
+        "latestNav": 1.765,
+        "latestCumulativeNav": 1.765,
+        "latestAdjustedNav": 1.765
+      }
     },
     {
       "id": "aff92105d2071c29",
@@ -62733,7 +63309,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 422,
+        "startDate": "2019-12-18",
+        "endDate": "2026-07-10",
+        "latestNav": 2.337,
+        "latestCumulativeNav": 3.137,
+        "latestAdjustedNav": 3.66719025
+      }
     },
     {
       "id": "a054197380cc070d",
@@ -63058,7 +63642,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 171,
+        "startDate": "2023-11-23",
+        "endDate": "2026-07-10",
+        "latestNav": 2.1837,
+        "latestCumulativeNav": 2.1837,
+        "latestAdjustedNav": 2.1837
+      }
     },
     {
       "id": "43fe7a43e688a9e5",
@@ -63235,7 +63827,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 309,
+        "startDate": "2021-01-06",
+        "endDate": "2026-07-10",
+        "latestNav": 2.161,
+        "latestCumulativeNav": 2.161,
+        "latestAdjustedNav": 2.161
+      }
     },
     {
       "id": "bddae4c06d261b06",
@@ -63491,7 +64091,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 289,
+        "startDate": "2020-11-20",
+        "endDate": "2026-07-10",
+        "latestNav": 0.9951,
+        "latestCumulativeNav": 1.9626,
+        "latestAdjustedNav": 2.39322311
+      }
     },
     {
       "id": "2d8e89c0899e0146",
@@ -63747,7 +64355,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 235,
+        "startDate": "2022-04-26",
+        "endDate": "2026-07-10",
+        "latestNav": 1.8313,
+        "latestCumulativeNav": 1.9313,
+        "latestAdjustedNav": 1.96296295
+      }
     },
     {
       "id": "d486411b3f44e286",
@@ -64725,7 +65341,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 545,
+        "startDate": "2020-09-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2503,
+        "latestCumulativeNav": 2.3681,
+        "latestAdjustedNav": 2.88728912
+      }
     },
     {
       "id": "3de192c6951d8177",
@@ -65226,7 +65850,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 593,
+        "startDate": "2020-06-03",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5527,
+        "latestCumulativeNav": 2.5616,
+        "latestAdjustedNav": 3.57489121
+      }
     },
     {
       "id": "77f051a668ba9386",
@@ -65303,7 +65935,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 234,
+        "startDate": "2022-02-21",
+        "endDate": "2026-07-10",
+        "latestNav": 2.5295,
+        "latestCumulativeNav": 3.0295,
+        "latestAdjustedNav": 3.26681164
+      }
     },
     {
       "id": "854c411c2df107cc",
@@ -66545,7 +67185,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 94,
+        "startDate": "2024-11-05",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6878,
+        "latestCumulativeNav": 1.6878,
+        "latestAdjustedNav": 1.6878
+      }
     },
     {
       "id": "ac9d1b633d835ee1",
@@ -66622,7 +67270,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 128,
+        "startDate": "2024-03-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.155,
+        "latestCumulativeNav": 1.808,
+        "latestAdjustedNav": 2.00888688
+      }
     },
     {
       "id": "eb1d91ddc3bf4d63",
@@ -66784,7 +67440,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 143,
+        "startDate": "2023-09-07",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9133,
+        "latestCumulativeNav": 2.1357,
+        "latestAdjustedNav": 2.16469898
+      }
     },
     {
       "id": "1dbe49c315142962",
@@ -66938,7 +67602,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 270,
+        "startDate": "2021-09-28",
+        "endDate": "2026-07-10",
+        "latestNav": 3.7979,
+        "latestCumulativeNav": 3.8966,
+        "latestAdjustedNav": 4.17051703
+      }
     },
     {
       "id": "0aa81c59e64ce99f",
@@ -67111,7 +67783,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 93,
+        "startDate": "2024-09-27",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9535,
+        "latestCumulativeNav": 1.9535,
+        "latestAdjustedNav": 1.9535
+      }
     },
     {
       "id": "a659799bddf8c980",
@@ -67188,7 +67868,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 369,
+        "startDate": "2020-12-29",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9935,
+        "latestCumulativeNav": 2.4935,
+        "latestAdjustedNav": 2.56879147
+      }
     },
     {
       "id": "be7506560e5a14d1",
@@ -68179,7 +68867,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 222,
+        "startDate": "2022-08-10",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0025,
+        "latestCumulativeNav": 1.9525,
+        "latestAdjustedNav": 1.954875
+      }
     },
     {
       "id": "696f3259fd7613f6",
@@ -68734,7 +69430,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 161,
+        "startDate": "2023-08-17",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5861,
+        "latestCumulativeNav": 1.8587,
+        "latestAdjustedNav": 2.04792169
+      }
     },
     {
       "id": "8cf8f178ca4f44ef",
@@ -69608,7 +70312,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 108,
+        "startDate": "2024-06-14",
+        "endDate": "2026-07-10",
+        "latestNav": 2.2869,
+        "latestCumulativeNav": 2.2869,
+        "latestAdjustedNav": 2.2869
+      }
     },
     {
       "id": "15f54fa38d8927dc",
@@ -69685,7 +70397,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 323,
+        "startDate": "2025-01-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1507,
+        "latestCumulativeNav": 1.6052,
+        "latestAdjustedNav": 1.67369315
+      }
     },
     {
       "id": "1c4638557a557651",
@@ -71650,7 +72370,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 91,
+        "startDate": "2024-11-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5028,
+        "latestCumulativeNav": 1.6661,
+        "latestAdjustedNav": 1.69083712
+      }
     },
     {
       "id": "f3e6480cba51ec22",
@@ -74499,7 +75227,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 363,
+        "startDate": "2019-09-24",
+        "endDate": "2026-07-10",
+        "latestNav": 2.6769,
+        "latestCumulativeNav": 2.6769,
+        "latestAdjustedNav": 2.6769
+      }
     },
     {
       "id": "ab44458b093df323",
@@ -75354,7 +76090,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 565,
+        "startDate": "2021-02-26",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0148,
+        "latestCumulativeNav": 1.7319,
+        "latestAdjustedNav": 1.91120766
+      }
     },
     {
       "id": "e0f0d512173cc068",
@@ -75924,7 +76668,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 147,
+        "startDate": "2023-11-29",
+        "endDate": "2026-07-10",
+        "latestNav": 2.1833,
+        "latestCumulativeNav": 2.6833,
+        "latestAdjustedNav": 2.73380429
+      }
     },
     {
       "id": "e52b6eedbed659f7",
@@ -76983,7 +77735,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 92,
+        "startDate": "2024-10-18",
+        "endDate": "2026-07-10",
+        "latestNav": 2.0958,
+        "latestCumulativeNav": 2.0958,
+        "latestAdjustedNav": 2.0958
+      }
     },
     {
       "id": "a37d0272f10e0eec",
@@ -77214,7 +77974,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 88,
+        "startDate": "2024-12-12",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0836,
+        "latestCumulativeNav": 1.5815,
+        "latestAdjustedNav": 1.63034143
+      }
     },
     {
       "id": "75ffcfd1616d1803",
@@ -77724,7 +78492,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 85,
+        "startDate": "2024-12-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0082,
+        "latestCumulativeNav": 1.5713,
+        "latestAdjustedNav": 1.64701483
+      }
     },
     {
       "id": "f94f20d6ac293615",
@@ -77988,7 +78764,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 680,
+        "startDate": "2022-06-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2307,
+        "latestCumulativeNav": 1.2307,
+        "latestAdjustedNav": 1.2307
+      }
     },
     {
       "id": "c0e45375e0b59c19",
@@ -78150,7 +78934,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 116,
+        "startDate": "2024-04-19",
+        "endDate": "2026-07-10",
+        "latestNav": 1.62,
+        "latestCumulativeNav": 1.62,
+        "latestAdjustedNav": 1.62
+      }
     },
     {
       "id": "ff5f93c6e48b09df",
@@ -78304,7 +79096,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 195,
+        "startDate": "2023-04-24",
+        "endDate": "2026-07-10",
+        "latestNav": 2.0426,
+        "latestCumulativeNav": 2.0426,
+        "latestAdjustedNav": 2.0426
+      }
     },
     {
       "id": "65a88d1ef845618c",
@@ -78475,7 +79275,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 231,
+        "startDate": "2022-03-21",
+        "endDate": "2026-07-10",
+        "latestNav": 2.0058,
+        "latestCumulativeNav": 2.1258,
+        "latestAdjustedNav": 2.14578023
+      }
     },
     {
       "id": "595c684191be0cb5",
@@ -78552,7 +79360,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 325,
+        "startDate": "2020-09-22",
+        "endDate": "2026-07-10",
+        "latestNav": 2.3079,
+        "latestCumulativeNav": 2.5033,
+        "latestAdjustedNav": 2.63818178
+      }
     },
     {
       "id": "19bb118bb4b11783",
@@ -79009,7 +79825,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 305,
+        "startDate": "2024-03-28",
+        "endDate": "2026-07-10",
+        "latestNav": 2.3595,
+        "latestCumulativeNav": 2.4983,
+        "latestAdjustedNav": 2.67140343
+      }
     },
     {
       "id": "7a80efc5d302f3be",
@@ -79191,7 +80015,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 248,
+        "startDate": "2022-02-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3246,
+        "latestCumulativeNav": 2.2926,
+        "latestAdjustedNav": 2.39311067
+      }
     },
     {
       "id": "11c4470f07a7a011",
@@ -79691,7 +80523,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 198,
+        "startDate": "2022-12-29",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1439,
+        "latestCumulativeNav": 2.1613,
+        "latestAdjustedNav": 2.36698472
+      }
     },
     {
       "id": "b2243cf194e328d4",
@@ -79922,7 +80762,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 75,
+        "startDate": "2025-02-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6357,
+        "latestCumulativeNav": 1.6357,
+        "latestAdjustedNav": 1.6357
+      }
     },
     {
       "id": "553f36dd3fc13cf3",
@@ -80327,7 +81175,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 87,
+        "startDate": "2024-12-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4939,
+        "latestCumulativeNav": 1.5643,
+        "latestAdjustedNav": 1.57180412
+      }
     },
     {
       "id": "545f830238bec7dc",
@@ -80643,7 +81499,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 327,
+        "startDate": "2025-03-07",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7976,
+        "latestCumulativeNav": 1.7976,
+        "latestAdjustedNav": 1.7976
+      }
     },
     {
       "id": "dffdb73f58a88a12",
@@ -80720,7 +81584,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 93,
+        "startDate": "2024-11-08",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6243,
+        "latestCumulativeNav": 1.6243,
+        "latestAdjustedNav": 1.6243
+      }
     },
     {
       "id": "3e551bd938128551",
@@ -81275,7 +82147,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 309,
+        "startDate": "2021-01-06",
+        "endDate": "2026-07-10",
+        "latestNav": 1.529,
+        "latestCumulativeNav": 1.529,
+        "latestAdjustedNav": 1.529
+      }
     },
     {
       "id": "721480c38224fb7b",
@@ -81445,7 +82325,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 78,
+        "startDate": "2025-02-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1805,
+        "latestCumulativeNav": 1.4845,
+        "latestAdjustedNav": 1.53783546
+      }
     },
     {
       "id": "1fc05f3ce124a3fe",
@@ -81545,7 +82433,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 410,
+        "startDate": "2020-11-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5034,
+        "latestCumulativeNav": 2.2231,
+        "latestAdjustedNav": 2.60612332
+      }
     },
     {
       "id": "07404148f0317c83",
@@ -81622,7 +82518,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 242,
+        "startDate": "2022-03-23",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1043,
+        "latestCumulativeNav": 1.9128,
+        "latestAdjustedNav": 1.92984466
+      }
     },
     {
       "id": "cfab6ca9d93fb0a3",
@@ -82077,7 +82981,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 117,
+        "startDate": "2024-05-29",
+        "endDate": "2026-07-10",
+        "latestNav": 2.1877,
+        "latestCumulativeNav": 2.1877,
+        "latestAdjustedNav": 2.1877
+      }
     },
     {
       "id": "0070eca9dc0cc32f",
@@ -82409,7 +83321,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 725,
+        "startDate": "2023-07-13",
+        "endDate": "2026-07-10",
+        "latestNav": 1.641,
+        "latestCumulativeNav": 1.641,
+        "latestAdjustedNav": 1.641
+      }
     },
     {
       "id": "55d5b26ce686eea9",
@@ -82571,7 +83491,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 67,
+        "startDate": "2025-04-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6409,
+        "latestCumulativeNav": 1.6409,
+        "latestAdjustedNav": 1.6409
+      }
     },
     {
       "id": "7f8e3fd9d3c74e6e",
@@ -83118,7 +84046,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 212,
+        "startDate": "2022-10-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.854,
+        "latestCumulativeNav": 1.964,
+        "latestAdjustedNav": 1.98447985
+      }
     },
     {
       "id": "6aa6eedc8a7a4144",
@@ -83406,7 +84342,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 238,
+        "startDate": "2021-12-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.852,
+        "latestCumulativeNav": 1.852,
+        "latestAdjustedNav": 1.852
+      }
     },
     {
       "id": "ce5c9eff85646744",
@@ -83654,7 +84598,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 300,
+        "startDate": "2021-03-29",
+        "endDate": "2026-07-10",
+        "latestNav": 2.5996,
+        "latestCumulativeNav": 2.5996,
+        "latestAdjustedNav": 2.5996
+      }
     },
     {
       "id": "d131763fa523b038",
@@ -83910,7 +84862,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 221,
+        "startDate": "2022-03-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.363,
+        "latestCumulativeNav": 2.0655,
+        "latestAdjustedNav": 2.37308202
+      }
     },
     {
       "id": "e7440c909d5301e2",
@@ -84169,7 +85129,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 263,
+        "startDate": "2021-11-15",
+        "endDate": "2026-07-10",
+        "latestNav": 2.0848,
+        "latestCumulativeNav": 2.0848,
+        "latestAdjustedNav": 2.0848
+      }
     },
     {
       "id": "ade703edaca73f7b",
@@ -84400,7 +85368,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 131,
+        "startDate": "2023-12-29",
+        "endDate": "2026-07-10",
+        "latestNav": 2.1546,
+        "latestCumulativeNav": 2.8901,
+        "latestAdjustedNav": 2.93401585
+      }
     },
     {
       "id": "9f1493e69f29032c",
@@ -84497,7 +85473,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 274,
+        "startDate": "2021-05-13",
+        "endDate": "2026-07-10",
+        "latestNav": 1.497,
+        "latestCumulativeNav": 3.025,
+        "latestAdjustedNav": 5.85446189
+      }
     },
     {
       "id": "a338b9cc8049179e",
@@ -84651,7 +85635,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 231,
+        "startDate": "2021-12-31",
+        "endDate": "2026-07-10",
+        "latestNav": 2.0142,
+        "latestCumulativeNav": 2.2113,
+        "latestAdjustedNav": 2.38342117
+      }
     },
     {
       "id": "ed1650158f58aff7",
@@ -85379,7 +86371,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 261,
+        "startDate": "2021-06-04",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5857,
+        "latestCumulativeNav": 1.8281,
+        "latestAdjustedNav": 1.97022749
+      }
     },
     {
       "id": "81c5494f24356347",
@@ -85456,7 +86456,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 847,
+        "startDate": "2023-01-09",
+        "endDate": "2026-07-10",
+        "latestNav": 2.225,
+        "latestCumulativeNav": 2.225,
+        "latestAdjustedNav": 2.225
+      }
     },
     {
       "id": "641041205d9aeafa",
@@ -85533,7 +86541,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 80,
+        "startDate": "2025-02-07",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4114,
+        "latestCumulativeNav": 1.4614,
+        "latestAdjustedNav": 1.47041489
+      }
     },
     {
       "id": "1bb5887f79b12ca2",
@@ -85954,7 +86970,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 616,
+        "startDate": "2023-10-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0747,
+        "latestCumulativeNav": 1.5287,
+        "latestAdjustedNav": 1.56193168
+      }
     },
     {
       "id": "1a016a2dc4145e16",
@@ -86031,7 +87055,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 532,
+        "startDate": "2017-06-06",
+        "endDate": "2026-07-10",
+        "latestNav": 1.72,
+        "latestCumulativeNav": 2.68,
+        "latestAdjustedNav": 3.66764707
+      }
     },
     {
       "id": "116901d80650628f",
@@ -86316,7 +87348,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 412,
+        "startDate": "2018-12-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4556,
+        "latestCumulativeNav": 1.9844,
+        "latestAdjustedNav": 2.27217722
+      }
     },
     {
       "id": "c2e1e5155a3ff2b6",
@@ -86737,7 +87777,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 351,
+        "startDate": "2019-10-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1202,
+        "latestCumulativeNav": 2.8706,
+        "latestAdjustedNav": 4.67902446
+      }
     },
     {
       "id": "e298ed2f9eed8f43",
@@ -86993,7 +88041,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 271,
+        "startDate": "2025-05-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.838,
+        "latestCumulativeNav": 1.838,
+        "latestAdjustedNav": 1.838
+      }
     },
     {
       "id": "5a92167a256f3456",
@@ -88242,7 +89298,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 135,
+        "startDate": "2023-12-01",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7941,
+        "latestCumulativeNav": 1.7941,
+        "latestAdjustedNav": 1.7941
+      }
     },
     {
       "id": "2ab70243bf1ce1c0",
@@ -88917,7 +89981,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 236,
+        "startDate": "2022-05-10",
+        "endDate": "2026-07-10",
+        "latestNav": 2.337,
+        "latestCumulativeNav": 2.337,
+        "latestAdjustedNav": 2.337
+      }
     },
     {
       "id": "cb5059012bf72fe4",
@@ -88994,7 +90066,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 109,
+        "startDate": "2024-06-26",
+        "endDate": "2026-07-10",
+        "latestNav": 0.9805,
+        "latestCumulativeNav": 2.052,
+        "latestAdjustedNav": 2.19049698
+      }
     },
     {
       "id": "d12b65ba3e8237ba",
@@ -89156,7 +90236,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 222,
+        "startDate": "2022-08-12",
+        "endDate": "2026-07-10",
+        "latestNav": 1.8346,
+        "latestCumulativeNav": 1.9776,
+        "latestAdjustedNav": 2.03264414
+      }
     },
     {
       "id": "61a50018de640f1e",
@@ -89742,7 +90830,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 639,
+        "startDate": "2020-03-26",
+        "endDate": "2026-07-10",
+        "latestNav": 4.1948,
+        "latestCumulativeNav": 4.1948,
+        "latestAdjustedNav": 4.1948
+      }
     },
     {
       "id": "7a4f10d1a10bb756",
@@ -89918,7 +91014,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 143,
+        "startDate": "2023-11-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4269,
+        "latestCumulativeNav": 1.8761,
+        "latestAdjustedNav": 2.13061997
+      }
     },
     {
       "id": "99accfa105e7efa6",
@@ -90072,7 +91176,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 196,
+        "startDate": "2023-01-13",
+        "endDate": "2026-07-10",
+        "latestNav": 1.871,
+        "latestCumulativeNav": 1.871,
+        "latestAdjustedNav": 1.871
+      }
     },
     {
       "id": "65f8b6f95f6c7161",
@@ -90334,7 +91446,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 347,
+        "startDate": "2020-07-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.01,
+        "latestCumulativeNav": 1.752,
+        "latestAdjustedNav": 1.92382668
+      }
     },
     {
       "id": "1fb8e5f69b21109a",
@@ -90736,7 +91856,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 295,
+        "startDate": "2022-03-08",
+        "endDate": "2026-07-10",
+        "latestNav": 0.862,
+        "latestCumulativeNav": 0.862,
+        "latestAdjustedNav": 0.862
+      }
     },
     {
       "id": "0c405b38cf3b2fde",
@@ -91007,7 +92135,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 174,
+        "startDate": "2023-02-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1297,
+        "latestCumulativeNav": 1.7684,
+        "latestAdjustedNav": 1.8508788
+      }
     },
     {
       "id": "10ac4021e366af1e",
@@ -91084,7 +92220,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 374,
+        "startDate": "2023-12-18",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9349,
+        "latestCumulativeNav": 2.0049,
+        "latestAdjustedNav": 2.02721883
+      }
     },
     {
       "id": "e3f115cbc5dcbf53",
@@ -91238,7 +92382,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 106,
+        "startDate": "2025-06-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0729,
+        "latestCumulativeNav": 1.3859,
+        "latestAdjustedNav": 1.39272638
+      }
     },
     {
       "id": "7a15a7c5c13c1b88",
@@ -91682,7 +92834,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1179,
+        "startDate": "2021-08-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7711,
+        "latestCumulativeNav": 1.7711,
+        "latestAdjustedNav": 1.7711
+      }
     },
     {
       "id": "6cef8e9cf7689b1a",
@@ -92562,7 +93722,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 857,
+        "startDate": "2021-12-21",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7774,
+        "latestCumulativeNav": 1.7774,
+        "latestAdjustedNav": 1.7774
+      }
     },
     {
       "id": "ec255695db975399",
@@ -92724,7 +93892,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 131,
+        "startDate": "2023-12-18",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9028,
+        "latestCumulativeNav": 1.9028,
+        "latestAdjustedNav": 1.9028
+      }
     },
     {
       "id": "2fbdcdb4ae5f5239",
@@ -92955,7 +94131,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 181,
+        "startDate": "2023-01-12",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6321,
+        "latestCumulativeNav": 1.6321,
+        "latestAdjustedNav": 1.6321
+      }
     },
     {
       "id": "daaf108b4640ba31",
@@ -93109,7 +94293,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 701,
+        "startDate": "2023-08-16",
+        "endDate": "2026-07-10",
+        "latestNav": 2.3797,
+        "latestCumulativeNav": 2.3797,
+        "latestAdjustedNav": 2.3797
+      }
     },
     {
       "id": "1cb55cac730386d2",
@@ -93209,7 +94401,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 922,
+        "startDate": "2020-03-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.8028,
+        "latestCumulativeNav": 3.0487,
+        "latestAdjustedNav": 3.0780207
+      }
     },
     {
       "id": "84785ec277e59eb4",
@@ -93525,7 +94725,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 87,
+        "startDate": "2025-04-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4188,
+        "latestCumulativeNav": 1.4188,
+        "latestAdjustedNav": 1.4188
+      }
     },
     {
       "id": "b10250057c43fc84",
@@ -94191,7 +95399,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 165,
+        "startDate": "2023-02-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.993,
+        "latestCumulativeNav": 1.993,
+        "latestAdjustedNav": 1.993
+      }
     },
     {
       "id": "40513dc5f448aa58",
@@ -94521,7 +95737,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 268,
+        "startDate": "2023-03-29",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1665,
+        "latestCumulativeNav": 1.84,
+        "latestAdjustedNav": 1.9879188
+      }
     },
     {
       "id": "21944fb0b5fea5f8",
@@ -94752,7 +95976,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 182,
+        "startDate": "2023-03-13",
+        "endDate": "2026-07-10",
+        "latestNav": 1.576,
+        "latestCumulativeNav": 1.576,
+        "latestAdjustedNav": 1.576
+      }
     },
     {
       "id": "437217c041175f84",
@@ -95915,7 +97147,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 283,
+        "startDate": "2021-07-08",
+        "endDate": "2026-07-10",
+        "latestNav": 1.978,
+        "latestCumulativeNav": 2.058,
+        "latestAdjustedNav": 2.07963471
+      }
     },
     {
       "id": "c4d3b839bb73a5ae",
@@ -96211,7 +97451,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 102,
+        "startDate": "2023-11-17",
+        "endDate": "2026-07-10",
+        "latestNav": 1.719,
+        "latestCumulativeNav": 1.719,
+        "latestAdjustedNav": 1.719
+      }
     },
     {
       "id": "a523118836f8b805",
@@ -96296,7 +97544,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 53,
+        "startDate": "2025-07-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.379,
+        "latestCumulativeNav": 1.379,
+        "latestAdjustedNav": 1.379
+      }
     },
     {
       "id": "531cc53a230bdb6b",
@@ -97091,7 +98347,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 220,
+        "startDate": "2022-07-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9745,
+        "latestCumulativeNav": 1.9745,
+        "latestAdjustedNav": 1.9745
+      }
     },
     {
       "id": "6917e8573ae9aff3",
@@ -97342,7 +98606,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 264,
+        "startDate": "2021-11-11",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9165,
+        "latestCumulativeNav": 1.9165,
+        "latestAdjustedNav": 1.9165
+      }
     },
     {
       "id": "6972c8b8168698f5",
@@ -97727,7 +98999,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 280,
+        "startDate": "2021-07-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.934,
+        "latestCumulativeNav": 1.934,
+        "latestAdjustedNav": 1.87186058
+      }
     },
     {
       "id": "dc0d88c59b2f05e7",
@@ -97833,7 +99113,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 444,
+        "startDate": "2018-07-18",
+        "endDate": "2026-07-10",
+        "latestNav": 2.323,
+        "latestCumulativeNav": 2.323,
+        "latestAdjustedNav": 2.323
+      }
     },
     {
       "id": "8f9f06cdfe674dd4",
@@ -98064,7 +99352,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 796,
+        "startDate": "2023-03-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5068,
+        "latestCumulativeNav": 1.8068,
+        "latestAdjustedNav": 1.822088
+      }
     },
     {
       "id": "f54326a907390c20",
@@ -98218,7 +99514,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 313,
+        "startDate": "2020-12-10",
+        "endDate": "2026-07-10",
+        "latestNav": 1.481,
+        "latestCumulativeNav": 1.481,
+        "latestAdjustedNav": 1.481
+      }
     },
     {
       "id": "01064b5608f47dfc",
@@ -98744,7 +100048,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1378,
+        "startDate": "2020-10-29",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3388,
+        "latestCumulativeNav": 1.8388,
+        "latestAdjustedNav": 2.04171785
+      }
     },
     {
       "id": "ae60e185c8619e65",
@@ -98821,7 +100133,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 534,
+        "startDate": "2019-09-30",
+        "endDate": "2026-07-10",
+        "latestNav": 3.035,
+        "latestCumulativeNav": 3.585,
+        "latestAdjustedNav": 3.83900799
+      }
     },
     {
       "id": "5cf5e678c0816302",
@@ -99092,7 +100412,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 230,
+        "startDate": "2023-11-27",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0226,
+        "latestCumulativeNav": 1.7256,
+        "latestAdjustedNav": 1.83389052
+      }
     },
     {
       "id": "891dbdf8e9231e5d",
@@ -99493,7 +100821,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 235,
+        "startDate": "2022-04-27",
+        "endDate": "2026-07-10",
+        "latestNav": 2.4606,
+        "latestCumulativeNav": 2.4606,
+        "latestAdjustedNav": 2.4606
+      }
     },
     {
       "id": "83cab4bcefe4385c",
@@ -99928,7 +101264,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 753,
+        "startDate": "2023-06-01",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9029,
+        "latestCumulativeNav": 1.9029,
+        "latestAdjustedNav": 1.9029
+      }
     },
     {
       "id": "2092d0a1cbea98aa",
@@ -101604,7 +102948,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 163,
+        "startDate": "2023-07-10",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5802,
+        "latestCumulativeNav": 1.5802,
+        "latestAdjustedNav": 1.5802
+      }
     },
     {
       "id": "eb956223b4692299",
@@ -101681,7 +103033,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 222,
+        "startDate": "2022-10-11",
+        "endDate": "2026-07-10",
+        "latestNav": 1.139,
+        "latestCumulativeNav": 1.912,
+        "latestAdjustedNav": 2.21153966
+      }
     },
     {
       "id": "713e771b0ebd44e0",
@@ -101758,7 +103118,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 263,
+        "startDate": "2021-11-15",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9806,
+        "latestCumulativeNav": 1.9806,
+        "latestAdjustedNav": 1.9806
+      }
     },
     {
       "id": "ac22771608970e38",
@@ -101934,7 +103302,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 195,
+        "startDate": "2023-04-17",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7402,
+        "latestCumulativeNav": 1.7402,
+        "latestAdjustedNav": 1.7402
+      }
     },
     {
       "id": "15124ba88c764064",
@@ -102011,7 +103387,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 238,
+        "startDate": "2022-04-27",
+        "endDate": "2026-07-10",
+        "latestNav": 2.4221,
+        "latestCumulativeNav": 2.4221,
+        "latestAdjustedNav": 2.4221
+      }
     },
     {
       "id": "e28ef873e69761a9",
@@ -102111,7 +103495,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 311,
+        "startDate": "2020-09-08",
+        "endDate": "2026-07-10",
+        "latestNav": 2.0132,
+        "latestCumulativeNav": 2.1048,
+        "latestAdjustedNav": 2.19882377
+      }
     },
     {
       "id": "aac7910aa0ca7d64",
@@ -102433,7 +103825,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 225,
+        "startDate": "2022-04-27",
+        "endDate": "2026-07-10",
+        "latestNav": 1.69,
+        "latestCumulativeNav": 1.74,
+        "latestAdjustedNav": 1.75803543
+      }
     },
     {
       "id": "ffa8870b94a5753b",
@@ -103261,7 +104661,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 92,
+        "startDate": "2024-11-19",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3661,
+        "latestCumulativeNav": 1.6551,
+        "latestAdjustedNav": 1.65136221
+      }
     },
     {
       "id": "90141917c9f25ff8",
@@ -103811,7 +105219,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1020,
+        "startDate": "2022-04-13",
+        "endDate": "2026-07-10",
+        "latestNav": 1.577,
+        "latestCumulativeNav": 1.7713,
+        "latestAdjustedNav": 1.89844018
+      }
     },
     {
       "id": "6aaafd7bf16740d7",
@@ -103965,7 +105381,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 436,
+        "startDate": "2023-07-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.8104,
+        "latestCumulativeNav": 1.8454,
+        "latestAdjustedNav": 1.86178207
+      }
     },
     {
       "id": "33c508dc686be9e1",
@@ -104293,7 +105717,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 245,
+        "startDate": "2021-10-26",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5718,
+        "latestCumulativeNav": 1.5718,
+        "latestAdjustedNav": 1.5718
+      }
     },
     {
       "id": "173ac41586dc5401",
@@ -104370,7 +105802,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 798,
+        "startDate": "2023-03-24",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9212,
+        "latestCumulativeNav": 1.9212,
+        "latestAdjustedNav": 1.9212
+      }
     },
     {
       "id": "9b1b1dc0140688f7",
@@ -104994,7 +106434,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 196,
+        "startDate": "2023-01-17",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9798,
+        "latestCumulativeNav": 1.9798,
+        "latestAdjustedNav": 1.9798
+      }
     },
     {
       "id": "cac0a750d357a9c9",
@@ -106215,7 +107663,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 272,
+        "startDate": "2021-09-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.014,
+        "latestCumulativeNav": 1.741,
+        "latestAdjustedNav": 1.93796943
+      }
     },
     {
       "id": "e4d94f27c36ec24f",
@@ -106383,7 +107839,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 229,
+        "startDate": "2023-11-27",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0013,
+        "latestCumulativeNav": 1.7237,
+        "latestAdjustedNav": 1.7897557
+      }
     },
     {
       "id": "78b9035606de8c30",
@@ -106537,7 +108001,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 191,
+        "startDate": "2022-09-19",
+        "endDate": "2026-07-10",
+        "latestNav": 2.791,
+        "latestCumulativeNav": 2.791,
+        "latestAdjustedNav": 2.791
+      }
     },
     {
       "id": "c2b74d3612eceb47",
@@ -106691,7 +108163,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 91,
+        "startDate": "2025-06-13",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1888,
+        "latestCumulativeNav": 1.6599,
+        "latestAdjustedNav": 1.65550307
+      }
     },
     {
       "id": "08ad3511cb860df3",
@@ -107795,7 +109275,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 176,
+        "startDate": "2023-02-10",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3257,
+        "latestCumulativeNav": 1.8257,
+        "latestAdjustedNav": 1.82573772
+      }
     },
     {
       "id": "08d73ba5961d87d6",
@@ -108356,7 +109844,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 271,
+        "startDate": "2021-12-14",
+        "endDate": "2026-07-10",
+        "latestNav": 1.528,
+        "latestCumulativeNav": 1.528,
+        "latestAdjustedNav": 1.528
+      }
     },
     {
       "id": "3e844aaf76c776f6",
@@ -108518,7 +110014,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 230,
+        "startDate": "2022-05-31",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7976,
+        "latestCumulativeNav": 1.7976,
+        "latestAdjustedNav": 1.7976
+      }
     },
     {
       "id": "87cebc6000eee0ab",
@@ -109158,7 +110662,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 215,
+        "startDate": "2023-05-05",
+        "endDate": "2026-07-10",
+        "latestNav": 1.243,
+        "latestCumulativeNav": 1.885,
+        "latestAdjustedNav": 2.08839246
+      }
     },
     {
       "id": "08e1b3f9ad708f8f",
@@ -110362,7 +111874,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 474,
+        "startDate": "2018-06-13",
+        "endDate": "2026-07-10",
+        "latestNav": 3.9266,
+        "latestCumulativeNav": 3.9266,
+        "latestAdjustedNav": 3.9266
+      }
     },
     {
       "id": "4bec8c3f61fa8cf8",
@@ -110439,7 +111959,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 213,
+        "startDate": "2022-09-26",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9611,
+        "latestCumulativeNav": 1.9611,
+        "latestAdjustedNav": 1.9611
+      }
     },
     {
       "id": "af169450b88f6348",
@@ -110593,7 +112121,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 226,
+        "startDate": "2022-05-11",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5832,
+        "latestCumulativeNav": 1.5832,
+        "latestAdjustedNav": 1.5832
+      }
     },
     {
       "id": "207a1d721c0599e9",
@@ -110824,7 +112360,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 77,
+        "startDate": "2025-02-21",
+        "endDate": "2026-07-10",
+        "latestNav": 2.546,
+        "latestCumulativeNav": 2.546,
+        "latestAdjustedNav": 2.546
+      }
     },
     {
       "id": "01cb20fe452b9e3b",
@@ -110901,7 +112445,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 136,
+        "startDate": "2024-01-12",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6671,
+        "latestCumulativeNav": 1.9878,
+        "latestAdjustedNav": 2.20173897
+      }
     },
     {
       "id": "e44b9e0e00d3bad8",
@@ -111286,7 +112838,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 142,
+        "startDate": "2023-09-27",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9972,
+        "latestCumulativeNav": 1.9972,
+        "latestAdjustedNav": 1.9972
+      }
     },
     {
       "id": "3d7dc9a58a4d138d",
@@ -111602,7 +113162,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 169,
+        "startDate": "2023-10-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0971,
+        "latestCumulativeNav": 1.7821,
+        "latestAdjustedNav": 1.93910965
+      }
     },
     {
       "id": "bbd9e78afdb112ef",
@@ -112046,7 +113614,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 507,
+        "startDate": "2022-10-17",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6173,
+        "latestCumulativeNav": 1.6173,
+        "latestAdjustedNav": 1.6173
+      }
     },
     {
       "id": "58c21ebd7e2797e0",
@@ -112374,7 +113950,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 702,
+        "startDate": "2022-02-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.798,
+        "latestCumulativeNav": 1.9583,
+        "latestAdjustedNav": 2.08472841
+      }
     },
     {
       "id": "cb9f636f31e7fe05",
@@ -112477,7 +114061,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 383,
+        "startDate": "2019-10-09",
+        "endDate": "2026-07-10",
+        "latestNav": 0.8268,
+        "latestCumulativeNav": 4.9505,
+        "latestAdjustedNav": 7.59033103
+      }
     },
     {
       "id": "b2f0646b6bcce1ab",
@@ -112679,7 +114271,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 105,
+        "startDate": "2024-07-12",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4205,
+        "latestCumulativeNav": 1.4205,
+        "latestAdjustedNav": 1.4205
+      }
     },
     {
       "id": "a9688658115e0a92",
@@ -112927,7 +114527,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 174,
+        "startDate": "2022-01-10",
+        "endDate": "2026-07-10",
+        "latestNav": 3.228,
+        "latestCumulativeNav": 3.228,
+        "latestAdjustedNav": 3.228
+      }
     },
     {
       "id": "4351620dfba16ada",
@@ -113110,7 +114718,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 109,
+        "startDate": "2025-06-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3255,
+        "latestCumulativeNav": 1.3255,
+        "latestAdjustedNav": 1.3255
+      }
     },
     {
       "id": "0a6fd15d48880863",
@@ -113500,7 +115116,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 285,
+        "startDate": "2021-06-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.8759,
+        "latestCumulativeNav": 1.8759,
+        "latestAdjustedNav": 1.8759
+      }
     },
     {
       "id": "449decbfafd9f202",
@@ -114698,7 +116322,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 183,
+        "startDate": "2022-12-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0331,
+        "latestCumulativeNav": 1.8146,
+        "latestAdjustedNav": 1.84046765
+      }
     },
     {
       "id": "60609637f06c733b",
@@ -114982,7 +116614,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 142,
+        "startDate": "2023-12-01",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4938,
+        "latestCumulativeNav": 1.4938,
+        "latestAdjustedNav": 1.4938
+      }
     },
     {
       "id": "6c70275040b46f93",
@@ -115542,7 +117182,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 202,
+        "startDate": "2022-12-07",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7477,
+        "latestCumulativeNav": 1.7477,
+        "latestAdjustedNav": 1.7477
+      }
     },
     {
       "id": "299f8e5de47bae72",
@@ -115951,7 +117599,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 221,
+        "startDate": "2022-09-05",
+        "endDate": "2026-07-10",
+        "latestNav": 1.087,
+        "latestCumulativeNav": 1.948,
+        "latestAdjustedNav": 2.25752325
+      }
     },
     {
       "id": "3d5c3cb406970cd9",
@@ -119441,7 +121097,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 212,
+        "startDate": "2022-04-18",
+        "endDate": "2026-07-10",
+        "latestNav": 2.384,
+        "latestCumulativeNav": 2.384,
+        "latestAdjustedNav": 2.384
+      }
     },
     {
       "id": "bf64819c826009a9",
@@ -120184,7 +121848,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 140,
+        "startDate": "2023-11-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4834,
+        "latestCumulativeNav": 1.575,
+        "latestAdjustedNav": 1.62051346
+      }
     },
     {
       "id": "94af097f59e0b6cd",
@@ -120372,7 +122044,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 227,
+        "startDate": "2022-02-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.302,
+        "latestCumulativeNav": 1.4344,
+        "latestAdjustedNav": 1.48032865
+      }
     },
     {
       "id": "a477feb5e13a1da4",
@@ -120623,7 +122303,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 250,
+        "startDate": "2022-01-12",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6613,
+        "latestCumulativeNav": 1.6613,
+        "latestAdjustedNav": 1.6613
+      }
     },
     {
       "id": "d7dde45d4857eae5",
@@ -121122,7 +122810,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 170,
+        "startDate": "2023-07-05",
+        "endDate": "2026-07-10",
+        "latestNav": 1.21,
+        "latestCumulativeNav": 1.69,
+        "latestAdjustedNav": 1.85782311
+      }
     },
     {
       "id": "cf6eefac83cb5e69",
@@ -121199,7 +122895,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 375,
+        "startDate": "2024-12-19",
+        "endDate": "2026-07-10",
+        "latestNav": 2.0274,
+        "latestCumulativeNav": 2.0274,
+        "latestAdjustedNav": 2.0274
+      }
     },
     {
       "id": "b2f0272c94a223f5",
@@ -121869,7 +123573,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 126,
+        "startDate": "2024-04-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0481,
+        "latestCumulativeNav": 1.9141,
+        "latestAdjustedNav": 2.09649195
+      }
     },
     {
       "id": "4c387663a501ee25",
@@ -121946,7 +123658,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 75,
+        "startDate": "2025-03-07",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0985,
+        "latestCumulativeNav": 1.2401,
+        "latestAdjustedNav": 1.2540476
+      }
     },
     {
       "id": "be02950b59f07dc5",
@@ -122023,7 +123743,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 263,
+        "startDate": "2021-10-29",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7056,
+        "latestCumulativeNav": 1.7056,
+        "latestAdjustedNav": 1.7056
+      }
     },
     {
       "id": "41e4b5a138587f20",
@@ -122185,7 +123913,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 282,
+        "startDate": "2025-05-14",
+        "endDate": "2026-07-10",
+        "latestNav": 0.9293,
+        "latestCumulativeNav": 1.4512,
+        "latestAdjustedNav": 1.41430167
+      }
     },
     {
       "id": "ca5cbfe45b9ef437",
@@ -122361,7 +124097,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 192,
+        "startDate": "2023-02-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1414,
+        "latestCumulativeNav": 1.8307,
+        "latestAdjustedNav": 2.06047357
+      }
     },
     {
       "id": "d14836d3b6161b6a",
@@ -122592,7 +124336,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 83,
+        "startDate": "2025-01-15",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3402,
+        "latestCumulativeNav": 1.3402,
+        "latestAdjustedNav": 1.3402
+      }
     },
     {
       "id": "1874c0a1285abbc2",
@@ -122843,7 +124595,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 85,
+        "startDate": "2024-12-04",
+        "endDate": "2026-07-10",
+        "latestNav": 1.055,
+        "latestCumulativeNav": 1.358,
+        "latestAdjustedNav": 1.374665
+      }
     },
     {
       "id": "02703be1d0d258f0",
@@ -123261,7 +125021,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 133,
+        "startDate": "2024-01-24",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4281,
+        "latestCumulativeNav": 1.6253,
+        "latestAdjustedNav": 1.63670839
+      }
     },
     {
       "id": "87df19319f96b0e6",
@@ -125306,7 +127074,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 197,
+        "startDate": "2023-01-18",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1029,
+        "latestCumulativeNav": 1.6268,
+        "latestAdjustedNav": 1.69340822
+      }
     },
     {
       "id": "5bc40899585e6995",
@@ -125608,7 +127384,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 304,
+        "startDate": "2020-11-18",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1535,
+        "latestCumulativeNav": 1.1935,
+        "latestAdjustedNav": 1.19672248
+      }
     },
     {
       "id": "968d01110f8b27c2",
@@ -125964,7 +127748,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 471,
+        "startDate": "2021-09-15",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2694,
+        "latestCumulativeNav": 2.6409,
+        "latestAdjustedNav": 3.0103821
+      }
     },
     {
       "id": "efe89e1b698b038e",
@@ -126414,7 +128206,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 423,
+        "startDate": "2021-06-21",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2165,
+        "latestCumulativeNav": 1.4423,
+        "latestAdjustedNav": 1.48278273
+      }
     },
     {
       "id": "1defb90b6a4e246b",
@@ -126491,7 +128291,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 266,
+        "startDate": "2021-06-07",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3752,
+        "latestCumulativeNav": 1.3752,
+        "latestAdjustedNav": 1.3752
+      }
     },
     {
       "id": "6307854602b5f7e4",
@@ -126585,7 +128393,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 878,
+        "startDate": "2022-11-24",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4102,
+        "latestCumulativeNav": 2.4472,
+        "latestAdjustedNav": 3.11203805
+      }
     },
     {
       "id": "f50f0093118f18a7",
@@ -126662,7 +128478,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 747,
+        "startDate": "2021-03-03",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1426,
+        "latestCumulativeNav": 1.1426,
+        "latestAdjustedNav": 1.1426
+      }
     },
     {
       "id": "640fb65e3511f9c7",
@@ -126753,7 +128577,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 182,
+        "startDate": "2023-04-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1268,
+        "latestCumulativeNav": 1.8185,
+        "latestAdjustedNav": 1.94776932
+      }
     },
     {
       "id": "f03ecb665b3b4817",
@@ -126844,7 +128676,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 651,
+        "startDate": "2023-11-02",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1167,
+        "latestCumulativeNav": 1.4087,
+        "latestAdjustedNav": 1.4596459
+      }
     },
     {
       "id": "b0dad3d47cddf9db",
@@ -127271,7 +129111,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 366,
+        "startDate": "2021-10-21",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4591,
+        "latestCumulativeNav": 1.4591,
+        "latestAdjustedNav": 1.4591
+      }
     },
     {
       "id": "8192e6815db990c5",
@@ -127528,7 +129376,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 2177,
+        "startDate": "2016-12-02",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1257,
+        "latestCumulativeNav": 1.1257,
+        "latestAdjustedNav": 1.1257
+      }
     },
     {
       "id": "98a701bae16af441",
@@ -127605,7 +129461,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 143,
+        "startDate": "2023-12-14",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3033,
+        "latestCumulativeNav": 1.3033,
+        "latestAdjustedNav": 1.3033
+      }
     },
     {
       "id": "146d26f7052e250e",
@@ -127682,7 +129546,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 218,
+        "startDate": "2022-08-01",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7591,
+        "latestCumulativeNav": 1.7591,
+        "latestAdjustedNav": 1.7591
+      }
     },
     {
       "id": "763dd78c91c7653f",
@@ -127844,7 +129716,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 227,
+        "startDate": "2022-06-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1878,
+        "latestCumulativeNav": 1.4774,
+        "latestAdjustedNav": 1.54874582
+      }
     },
     {
       "id": "908e6499fc7573a4",
@@ -128023,7 +129903,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 350,
+        "startDate": "2020-03-19",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9261,
+        "latestCumulativeNav": 1.9261,
+        "latestAdjustedNav": 1.9261
+      }
     },
     {
       "id": "cb9a0d5bdc6ce342",
@@ -128297,7 +130185,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 166,
+        "startDate": "2023-04-21",
+        "endDate": "2026-07-10",
+        "latestNav": 1.8124,
+        "latestCumulativeNav": 1.8124,
+        "latestAdjustedNav": 1.8124
+      }
     },
     {
       "id": "0bd1b165e62077a6",
@@ -129564,7 +131460,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 144,
+        "startDate": "2023-09-27",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6675,
+        "latestCumulativeNav": 1.6675,
+        "latestAdjustedNav": 1.6675
+      }
     },
     {
       "id": "ed76d26fd37269dd",
@@ -129889,7 +131793,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 298,
+        "startDate": "2021-09-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0992,
+        "latestCumulativeNav": 1.3205,
+        "latestAdjustedNav": 1.34245296
+      }
     },
     {
       "id": "d5a65fd470c79f88",
@@ -130468,7 +132380,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 181,
+        "startDate": "2023-03-21",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7065,
+        "latestCumulativeNav": 1.7065,
+        "latestAdjustedNav": 1.7065
+      }
     },
     {
       "id": "94598c4f71f4c730",
@@ -131003,7 +132923,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 106,
+        "startDate": "2024-06-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5481,
+        "latestCumulativeNav": 1.5481,
+        "latestAdjustedNav": 1.5481
+      }
     },
     {
       "id": "953edb36ad178cad",
@@ -131348,7 +133276,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 154,
+        "startDate": "2023-06-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.586,
+        "latestCumulativeNav": 3.109,
+        "latestAdjustedNav": 4.001478
+      }
     },
     {
       "id": "3b4200d7e8ea5651",
@@ -131579,7 +133515,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 169,
+        "startDate": "2023-10-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1287,
+        "latestCumulativeNav": 1.5879,
+        "latestAdjustedNav": 1.70642201
+      }
     },
     {
       "id": "cf37ea974097c3af",
@@ -131858,7 +133802,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 118,
+        "startDate": "2024-05-10",
+        "endDate": "2026-07-10",
+        "latestNav": 1.425,
+        "latestCumulativeNav": 1.475,
+        "latestAdjustedNav": 1.49557221
+      }
     },
     {
       "id": "7b0a570832dcb365",
@@ -132286,7 +134238,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 185,
+        "startDate": "2022-11-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.8468,
+        "latestCumulativeNav": 1.8468,
+        "latestAdjustedNav": 1.8468
+      }
     },
     {
       "id": "8252863156d099c8",
@@ -132440,7 +134400,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 860,
+        "startDate": "2022-12-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7139,
+        "latestCumulativeNav": 1.7139,
+        "latestAdjustedNav": 1.7139
+      }
     },
     {
       "id": "3656c866dc81cdc0",
@@ -132704,7 +134672,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 253,
+        "startDate": "2022-01-26",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4564,
+        "latestCumulativeNav": 1.8544,
+        "latestAdjustedNav": 2.08824624
+      }
     },
     {
       "id": "54f7ee556d0c32eb",
@@ -132894,7 +134870,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 126,
+        "startDate": "2024-04-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7023,
+        "latestCumulativeNav": 1.7023,
+        "latestAdjustedNav": 1.7023
+      }
     },
     {
       "id": "57b95f15759dc795",
@@ -133276,7 +135260,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 498,
+        "startDate": "2021-09-29",
+        "endDate": "2026-07-10",
+        "latestNav": 2.3371,
+        "latestCumulativeNav": 2.3371,
+        "latestAdjustedNav": 2.3371
+      }
     },
     {
       "id": "1622403bf48241bc",
@@ -133463,7 +135455,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 119,
+        "startDate": "2024-05-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.319,
+        "latestCumulativeNav": 1.319,
+        "latestAdjustedNav": 1.319
+      }
     },
     {
       "id": "8b17d70fcff4e8e1",
@@ -133949,7 +135949,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1388,
+        "startDate": "2020-10-12",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3325,
+        "latestCumulativeNav": 1.7155,
+        "latestAdjustedNav": 1.8428475
+      }
     },
     {
       "id": "e3aab46037218f8f",
@@ -135143,7 +137151,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 401,
+        "startDate": "2021-03-15",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0772,
+        "latestCumulativeNav": 1.0772,
+        "latestAdjustedNav": 1.0772
+      }
     },
     {
       "id": "3a31ff70cfbc60e7",
@@ -135220,7 +137236,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 351,
+        "startDate": "2021-10-14",
+        "endDate": "2026-07-10",
+        "latestNav": 1.8502,
+        "latestCumulativeNav": 1.8502,
+        "latestAdjustedNav": 1.8502
+      }
     },
     {
       "id": "9ed8726c1870dd4a",
@@ -136605,7 +138629,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 804,
+        "startDate": "2023-03-15",
+        "endDate": "2026-07-10",
+        "latestNav": 2.8413,
+        "latestCumulativeNav": 3.6373,
+        "latestAdjustedNav": 3.78836034
+      }
     },
     {
       "id": "4b25bf3f5653e6cb",
@@ -137727,7 +139759,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 529,
+        "startDate": "2020-11-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1894,
+        "latestCumulativeNav": 1.8401,
+        "latestAdjustedNav": 2.08646044
+      }
     },
     {
       "id": "c40cd8fb38b9f874",
@@ -137932,7 +139972,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 412,
+        "startDate": "2019-03-27",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7961,
+        "latestCumulativeNav": 2.3864,
+        "latestAdjustedNav": 2.40542348
+      }
     },
     {
       "id": "f7b92b01679f7ceb",
@@ -138200,7 +140248,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 440,
+        "startDate": "2018-08-30",
+        "endDate": "2026-07-10",
+        "latestNav": 2.4819,
+        "latestCumulativeNav": 2.4819,
+        "latestAdjustedNav": 2.4819
+      }
     },
     {
       "id": "0f1876077b5637f6",
@@ -139158,7 +141214,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 606,
+        "startDate": "2022-03-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.49,
+        "latestCumulativeNav": 1.49,
+        "latestAdjustedNav": 1.49
+      }
     },
     {
       "id": "4cbe24f3ee659e47",
@@ -139312,7 +141376,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 254,
+        "startDate": "2022-01-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0121,
+        "latestCumulativeNav": 1.5956,
+        "latestAdjustedNav": 1.68326937
+      }
     },
     {
       "id": "3b8a4b9b1dba1709",
@@ -139654,7 +141726,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 243,
+        "startDate": "2022-03-14",
+        "endDate": "2026-07-10",
+        "latestNav": 2.214,
+        "latestCumulativeNav": 2.214,
+        "latestAdjustedNav": 2.214
+      }
     },
     {
       "id": "87b9d18c72ff49dd",
@@ -140321,7 +142401,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 90,
+        "startDate": "2024-11-29",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3718,
+        "latestCumulativeNav": 1.3718,
+        "latestAdjustedNav": 1.3718
+      }
     },
     {
       "id": "4ec728287735084a",
@@ -140825,7 +142913,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 251,
+        "startDate": "2021-08-13",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0113,
+        "latestCumulativeNav": 1.7751,
+        "latestAdjustedNav": 1.75160184
+      }
     },
     {
       "id": "6a49fbc98c687a26",
@@ -141100,7 +143196,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 421,
+        "startDate": "2022-08-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.269,
+        "latestCumulativeNav": 2.151,
+        "latestAdjustedNav": 2.47810785
+      }
     },
     {
       "id": "5d114108abd7032c",
@@ -142022,7 +144126,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 114,
+        "startDate": "2024-06-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6886,
+        "latestCumulativeNav": 1.6886,
+        "latestAdjustedNav": 1.6886
+      }
     },
     {
       "id": "9c33ccfb936c38ff",
@@ -142484,7 +144596,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 549,
+        "startDate": "2024-04-03",
+        "endDate": "2026-07-10",
+        "latestNav": 1.345,
+        "latestCumulativeNav": 1.645,
+        "latestAdjustedNav": 1.66831731
+      }
     },
     {
       "id": "a44232aa9723de60",
@@ -142669,7 +144789,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 205,
+        "startDate": "2022-09-20",
+        "endDate": "2026-07-10",
+        "latestNav": 2.5883,
+        "latestCumulativeNav": 2.5883,
+        "latestAdjustedNav": 2.5883
+      }
     },
     {
       "id": "9d21341a9d994691",
@@ -142928,7 +145056,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 71,
+        "startDate": "2025-03-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0947,
+        "latestCumulativeNav": 1.2447,
+        "latestAdjustedNav": 1.2554017
+      }
     },
     {
       "id": "aa9209d40af8e328",
@@ -143812,7 +145948,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 233,
+        "startDate": "2021-06-21",
+        "endDate": "2026-07-10",
+        "latestNav": 4.356,
+        "latestCumulativeNav": 4.742,
+        "latestAdjustedNav": 4.64735609
+      }
     },
     {
       "id": "d553bf7499420a54",
@@ -143889,7 +146033,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 163,
+        "startDate": "2023-05-12",
+        "endDate": "2026-07-10",
+        "latestNav": 2.1609,
+        "latestCumulativeNav": 2.1609,
+        "latestAdjustedNav": 2.1609
+      }
     },
     {
       "id": "fcfb82d670b79eb4",
@@ -143980,7 +146132,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 183,
+        "startDate": "2023-04-19",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3764,
+        "latestCumulativeNav": 1.7647,
+        "latestAdjustedNav": 1.94635743
+      }
     },
     {
       "id": "e5af1c811012b857",
@@ -144379,7 +146539,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 107,
+        "startDate": "2024-07-16",
+        "endDate": "2026-07-10",
+        "latestNav": 0.9884,
+        "latestCumulativeNav": 1.9767,
+        "latestAdjustedNav": 1.96513805
+      }
     },
     {
       "id": "2cf25f9ad00b7430",
@@ -144923,7 +147091,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 279,
+        "startDate": "2021-07-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0279,
+        "latestCumulativeNav": 1.6464,
+        "latestAdjustedNav": 1.73075231
+      }
     },
     {
       "id": "113777463c1218a8",
@@ -145014,7 +147190,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 180,
+        "startDate": "2023-01-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1801,
+        "latestCumulativeNav": 1.1801,
+        "latestAdjustedNav": 1.1801
+      }
     },
     {
       "id": "e1101523afa1a8a6",
@@ -146794,7 +148978,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 238,
+        "startDate": "2022-04-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.629,
+        "latestCumulativeNav": 1.629,
+        "latestAdjustedNav": 1.629
+      }
     },
     {
       "id": "c9673a8a61dedcf9",
@@ -147041,7 +149233,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 175,
+        "startDate": "2023-05-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.262,
+        "latestCumulativeNav": 1.785,
+        "latestAdjustedNav": 1.95765729
+      }
     },
     {
       "id": "17c4d7b70e3bfdaf",
@@ -148189,7 +150389,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1264,
+        "startDate": "2021-04-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1063,
+        "latestCumulativeNav": 1.6001,
+        "latestAdjustedNav": 1.71413752
+      }
     },
     {
       "id": "a6d16c7ebf4ad883",
@@ -148882,7 +151090,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 0,
+        "startDate": "",
+        "endDate": "",
+        "latestNav": null,
+        "latestCumulativeNav": null,
+        "latestAdjustedNav": null
+      }
     },
     {
       "id": "831911879f332bb3",
@@ -149050,7 +151266,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 159,
+        "startDate": "2023-03-02",
+        "endDate": "2026-07-10",
+        "latestNav": 1.119,
+        "latestCumulativeNav": 1.238,
+        "latestAdjustedNav": 1.252161
+      }
     },
     {
       "id": "884450a9a32cf4ac",
@@ -149218,7 +151442,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 180,
+        "startDate": "2023-01-17",
+        "endDate": "2026-07-10",
+        "latestNav": 1.574,
+        "latestCumulativeNav": 1.672,
+        "latestAdjustedNav": 1.69265538
+      }
     },
     {
       "id": "c3e8d19e20b93fa6",
@@ -149324,7 +151556,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1265,
+        "startDate": "2017-11-30",
+        "endDate": "2026-07-10",
+        "latestNav": 0.9958,
+        "latestCumulativeNav": 1.3649,
+        "latestAdjustedNav": 1.35194338
+      }
     },
     {
       "id": "07892cd62be438a1",
@@ -149401,7 +151641,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 77,
+        "startDate": "2025-02-21",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2072,
+        "latestCumulativeNav": 1.2072,
+        "latestAdjustedNav": 1.2072
+      }
     },
     {
       "id": "1b33b8ac1d0346f0",
@@ -149809,7 +152057,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 139,
+        "startDate": "2023-11-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2268,
+        "latestCumulativeNav": 1.5393,
+        "latestAdjustedNav": 1.54233498
+      }
     },
     {
       "id": "278ca6a44d156007",
@@ -149900,7 +152156,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 146,
+        "startDate": "2023-05-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0251,
+        "latestCumulativeNav": 2.0491,
+        "latestAdjustedNav": 2.45061896
+      }
     },
     {
       "id": "c7b6906d14144f09",
@@ -150720,7 +152984,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 470,
+        "startDate": "2022-11-18",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5221,
+        "latestCumulativeNav": 1.5721,
+        "latestAdjustedNav": 1.57108307
+      }
     },
     {
       "id": "49009d25541639b5",
@@ -151581,7 +153853,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 269,
+        "startDate": "2021-09-23",
+        "endDate": "2026-07-10",
+        "latestNav": 0.6252,
+        "latestCumulativeNav": 0.6252,
+        "latestAdjustedNav": 0.6252
+      }
     },
     {
       "id": "7f119a5cbf50ee8e",
@@ -153801,7 +156081,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 492,
+        "startDate": "2021-09-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4503,
+        "latestCumulativeNav": 1.5003,
+        "latestAdjustedNav": 1.5183892
+      }
     },
     {
       "id": "b4904398de772974",
@@ -153907,7 +156195,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 456,
+        "startDate": "2017-10-12",
+        "endDate": "2026-07-10",
+        "latestNav": 1.508,
+        "latestCumulativeNav": 1.508,
+        "latestAdjustedNav": 1.508
+      }
     },
     {
       "id": "021640723d666cdf",
@@ -153984,7 +156280,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1145,
+        "startDate": "2021-10-21",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2623,
+        "latestCumulativeNav": 1.2866,
+        "latestAdjustedNav": 1.28583672
+      }
     },
     {
       "id": "bef239464eceb14a",
@@ -154081,7 +156385,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 680,
+        "startDate": "2021-02-10",
+        "endDate": "2026-07-10",
+        "latestNav": 1.116,
+        "latestCumulativeNav": 1.116,
+        "latestAdjustedNav": 1.116
+      }
     },
     {
       "id": "58b4008de3b794e1",
@@ -154889,7 +157201,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 890,
+        "startDate": "2022-11-08",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1327,
+        "latestCumulativeNav": 1.1327,
+        "latestAdjustedNav": 1.1327
+      }
     },
     {
       "id": "a14b459aa1e6ecd5",
@@ -155708,7 +158028,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 455,
+        "startDate": "2023-03-10",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4157,
+        "latestCumulativeNav": 1.4857,
+        "latestAdjustedNav": 1.48236599
+      }
     },
     {
       "id": "39946794e4f54266",
@@ -156356,7 +158684,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 73,
+        "startDate": "2025-02-17",
+        "endDate": "2026-07-10",
+        "latestNav": 1.189,
+        "latestCumulativeNav": 1.189,
+        "latestAdjustedNav": 1.189
+      }
     },
     {
       "id": "353d8a79b4c25952",
@@ -157155,7 +159491,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 551,
+        "startDate": "2022-06-24",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1814,
+        "latestCumulativeNav": 1.612,
+        "latestAdjustedNav": 1.7384089
+      }
     },
     {
       "id": "893a45c4c30d32d4",
@@ -157232,7 +159576,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 425,
+        "startDate": "2023-06-21",
+        "endDate": "2026-07-10",
+        "latestNav": 0.9554,
+        "latestCumulativeNav": 1.3593,
+        "latestAdjustedNav": 1.38557716
+      }
     },
     {
       "id": "a62851c942999db7",
@@ -157879,7 +160231,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 85,
+        "startDate": "2024-11-29",
+        "endDate": "2026-07-10",
+        "latestNav": 0.9932,
+        "latestCumulativeNav": 1.2558,
+        "latestAdjustedNav": 1.25401432
+      }
     },
     {
       "id": "5a16bae16f4104b4",
@@ -157956,7 +160316,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 315,
+        "startDate": "2021-12-02",
+        "endDate": "2026-07-10",
+        "latestNav": 1.201,
+        "latestCumulativeNav": 1.831,
+        "latestAdjustedNav": 2.10240216
+      }
     },
     {
       "id": "50fc2203135a425b",
@@ -159291,7 +161659,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 273,
+        "startDate": "2021-09-17",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3157,
+        "latestCumulativeNav": 1.3157,
+        "latestAdjustedNav": 1.3157
+      }
     },
     {
       "id": "3900d3ddd5764a75",
@@ -159479,7 +161855,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 68,
+        "startDate": "2024-04-15",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0938,
+        "latestCumulativeNav": 1.8363,
+        "latestAdjustedNav": 1.89998076
+      }
     },
     {
       "id": "964e37110cc3a4e1",
@@ -159910,7 +162294,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 228,
+        "startDate": "2022-07-06",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3687,
+        "latestCumulativeNav": 1.5687,
+        "latestAdjustedNav": 1.5975303
+      }
     },
     {
       "id": "42725e4895d39c22",
@@ -161259,7 +163651,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 325,
+        "startDate": "2025-03-11",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2634,
+        "latestCumulativeNav": 1.2634,
+        "latestAdjustedNav": 1.2634
+      }
     },
     {
       "id": "1d35a838d925eea6",
@@ -161871,7 +164271,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 615,
+        "startDate": "2020-07-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4333,
+        "latestCumulativeNav": 1.4333,
+        "latestAdjustedNav": 1.4333
+      }
     },
     {
       "id": "eb838518f296bc19",
@@ -162047,7 +164455,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 251,
+        "startDate": "2023-04-26",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7305,
+        "latestCumulativeNav": 1.7305,
+        "latestAdjustedNav": 1.7305
+      }
     },
     {
       "id": "af87994affd22ce3",
@@ -162687,7 +165103,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 746,
+        "startDate": "2023-03-15",
+        "endDate": "2026-07-10",
+        "latestNav": 0.976,
+        "latestCumulativeNav": 2.038,
+        "latestAdjustedNav": 2.22273947
+      }
     },
     {
       "id": "a3b355c56bfe37f4",
@@ -163305,7 +165729,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 198,
+        "startDate": "2023-07-11",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7182,
+        "latestCumulativeNav": 1.7182,
+        "latestAdjustedNav": 1.7182
+      }
     },
     {
       "id": "ddeb5a325bf5922e",
@@ -163393,7 +165825,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 139,
+        "startDate": "2024-01-03",
+        "endDate": "2026-07-10",
+        "latestNav": 2.0641,
+        "latestCumulativeNav": 2.0641,
+        "latestAdjustedNav": 2.0641
+      }
     },
     {
       "id": "1987ee4d4e03b34c",
@@ -164212,7 +166652,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1047,
+        "startDate": "2022-03-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3343,
+        "latestCumulativeNav": 1.3343,
+        "latestAdjustedNav": 1.3343
+      }
     },
     {
       "id": "fa1d1d18cc3f9390",
@@ -164698,7 +167146,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 264,
+        "startDate": "2023-03-17",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4272,
+        "latestCumulativeNav": 1.4272,
+        "latestAdjustedNav": 1.4272
+      }
     },
     {
       "id": "0cc221003e4fe974",
@@ -164993,7 +167449,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 130,
+        "startDate": "2024-02-06",
+        "endDate": "2026-07-10",
+        "latestNav": 1.296,
+        "latestCumulativeNav": 1.296,
+        "latestAdjustedNav": 1.296
+      }
     },
     {
       "id": "6e994929eca5b0bd",
@@ -165235,7 +167699,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 677,
+        "startDate": "2022-06-22",
+        "endDate": "2026-07-10",
+        "latestNav": 0.9791,
+        "latestCumulativeNav": 0.9791,
+        "latestAdjustedNav": 0.9791
+      }
     },
     {
       "id": "66d14145ec2be48d",
@@ -165494,7 +167966,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 157,
+        "startDate": "2023-09-12",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4512,
+        "latestCumulativeNav": 2.5381,
+        "latestAdjustedNav": 2.60747932
+      }
     },
     {
       "id": "5b2ffe676c394862",
@@ -166020,7 +168500,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 188,
+        "startDate": "2022-11-18",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3344,
+        "latestCumulativeNav": 1.3344,
+        "latestAdjustedNav": 1.3344
+      }
     },
     {
       "id": "9e9f52f12ef14e1b",
@@ -166202,7 +168690,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 114,
+        "startDate": "2024-06-04",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3843,
+        "latestCumulativeNav": 1.3843,
+        "latestAdjustedNav": 1.3843
+      }
     },
     {
       "id": "4385e270f6417f18",
@@ -166376,7 +168872,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 317,
+        "startDate": "2020-08-17",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0711,
+        "latestCumulativeNav": 1.0711,
+        "latestAdjustedNav": 1.0711
+      }
     },
     {
       "id": "80f594aa67c83fdd",
@@ -166453,7 +168957,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 633,
+        "startDate": "2022-12-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0022,
+        "latestCumulativeNav": 1.1719,
+        "latestAdjustedNav": 1.17888607
+      }
     },
     {
       "id": "1fddb86383f0e813",
@@ -167122,7 +169634,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 144,
+        "startDate": "2023-09-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3551,
+        "latestCumulativeNav": 1.3551,
+        "latestAdjustedNav": 1.3551
+      }
     },
     {
       "id": "9b38b8207d0d1901",
@@ -167398,7 +169918,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 189,
+        "startDate": "2023-01-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2404,
+        "latestCumulativeNav": 1.3509,
+        "latestAdjustedNav": 1.36619468
+      }
     },
     {
       "id": "ae1af11f71238b6d",
@@ -167475,7 +170003,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 697,
+        "startDate": "2023-08-22",
+        "endDate": "2026-07-10",
+        "latestNav": 2.2787,
+        "latestCumulativeNav": 2.2832,
+        "latestAdjustedNav": 2.28895415
+      }
     },
     {
       "id": "528b1b8717592800",
@@ -167799,7 +170335,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 195,
+        "startDate": "2023-01-18",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1206,
+        "latestCumulativeNav": 1.7043,
+        "latestAdjustedNav": 1.71523111
+      }
     },
     {
       "id": "68d59ea28983254e",
@@ -168157,7 +170701,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 92,
+        "startDate": "2024-08-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0776,
+        "latestCumulativeNav": 1.0776,
+        "latestAdjustedNav": 1.0776
+      }
     },
     {
       "id": "af0bfdd06e5f200c",
@@ -168774,7 +171326,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 583,
+        "startDate": "2022-02-17",
+        "endDate": "2026-07-10",
+        "latestNav": 1.22,
+        "latestCumulativeNav": 1.631,
+        "latestAdjustedNav": 1.73628817
+      }
     },
     {
       "id": "c9d022007c674289",
@@ -169066,7 +171626,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 193,
+        "startDate": "2023-02-07",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4167,
+        "latestCumulativeNav": 1.4167,
+        "latestAdjustedNav": 1.4167
+      }
     },
     {
       "id": "189fbf7c2c12465c",
@@ -169324,7 +171892,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 130,
+        "startDate": "2024-02-05",
+        "endDate": "2026-07-10",
+        "latestNav": 1.002,
+        "latestCumulativeNav": 1.1681,
+        "latestAdjustedNav": 1.17300637
+      }
     },
     {
       "id": "eb5cf71c158b869a",
@@ -169401,7 +171977,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 362,
+        "startDate": "2019-05-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3507,
+        "latestCumulativeNav": 1.4016,
+        "latestAdjustedNav": 1.41077026
+      }
     },
     {
       "id": "c377e40c45d950d3",
@@ -169868,7 +172452,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 94,
+        "startDate": "2024-11-07",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2316,
+        "latestCumulativeNav": 1.2316,
+        "latestAdjustedNav": 1.2316
+      }
     },
     {
       "id": "bf0745d7387bd025",
@@ -170545,7 +173137,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 252,
+        "startDate": "2022-01-07",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1354,
+        "latestCumulativeNav": 1.4781,
+        "latestAdjustedNav": 1.54363703
+      }
     },
     {
       "id": "05c86042201e1ce6",
@@ -170810,7 +173410,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 599,
+        "startDate": "2021-08-24",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2498,
+        "latestCumulativeNav": 1.2498,
+        "latestAdjustedNav": 1.2498
+      }
     },
     {
       "id": "69ce78e84be47885",
@@ -171765,7 +174373,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 549,
+        "startDate": "2024-04-03",
+        "endDate": "2026-07-10",
+        "latestNav": 1.095,
+        "latestCumulativeNav": 1.3081,
+        "latestAdjustedNav": 1.32797175
+      }
     },
     {
       "id": "e5068bf7d737b15a",
@@ -171927,7 +174543,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 99,
+        "startDate": "2024-08-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2586,
+        "latestCumulativeNav": 1.3886,
+        "latestAdjustedNav": 1.39273777
+      }
     },
     {
       "id": "4fb880bc0a56df95",
@@ -176260,7 +178884,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 333,
+        "startDate": "2022-05-10",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0554,
+        "latestCumulativeNav": 1.2486,
+        "latestAdjustedNav": 1.26651534
+      }
     },
     {
       "id": "e5491a4a9c8227c6",
@@ -176436,7 +179068,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 179,
+        "startDate": "2023-03-31",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6295,
+        "latestCumulativeNav": 1.6295,
+        "latestAdjustedNav": 1.6295
+      }
     },
     {
       "id": "4e069d4e343536f7",
@@ -177380,7 +180020,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 222,
+        "startDate": "2022-03-15",
+        "endDate": "2026-07-10",
+        "latestNav": 0.7787,
+        "latestCumulativeNav": 2.2978,
+        "latestAdjustedNav": 2.90327336
+      }
     },
     {
       "id": "c08276521a81c634",
@@ -177559,7 +180207,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 205,
+        "startDate": "2022-11-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.193,
+        "latestCumulativeNav": 1.193,
+        "latestAdjustedNav": 1.193
+      }
     },
     {
       "id": "b5b96caa930137ef",
@@ -177647,7 +180303,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 124,
+        "startDate": "2024-12-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.574,
+        "latestCumulativeNav": 1.574,
+        "latestAdjustedNav": 1.574
+      }
     },
     {
       "id": "70497a9d88661225",
@@ -177809,7 +180473,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 73,
+        "startDate": "2025-02-14",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0419,
+        "latestCumulativeNav": 1.1735,
+        "latestAdjustedNav": 1.17900943
+      }
     },
     {
       "id": "811a9430d48903e3",
@@ -178871,7 +181543,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 765,
+        "startDate": "2023-05-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.056,
+        "latestCumulativeNav": 1.056,
+        "latestAdjustedNav": 1.056
+      }
     },
     {
       "id": "a9df2cc8a79575c1",
@@ -180836,7 +183516,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 182,
+        "startDate": "2023-04-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1914,
+        "latestCumulativeNav": 1.3539,
+        "latestAdjustedNav": 1.3850025
+      }
     },
     {
       "id": "acf6db30bc8e4fe6",
@@ -181291,7 +183979,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 139,
+        "startDate": "2024-01-08",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5765,
+        "latestCumulativeNav": 1.5765,
+        "latestAdjustedNav": 1.5765
+      }
     },
     {
       "id": "e764f12c21426e7f",
@@ -182238,7 +184934,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 866,
+        "startDate": "2018-06-04",
+        "endDate": "2026-07-10",
+        "latestNav": 2.4944,
+        "latestCumulativeNav": 2.4944,
+        "latestAdjustedNav": 2.4944
+      }
     },
     {
       "id": "e123b0bf613b4f80",
@@ -183863,7 +186567,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 263,
+        "startDate": "2021-06-08",
+        "endDate": "2026-07-10",
+        "latestNav": 1.8695,
+        "latestCumulativeNav": 1.8695,
+        "latestAdjustedNav": 1.8695
+      }
     },
     {
       "id": "68d75f0068dfea6d",
@@ -184017,7 +186729,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 568,
+        "startDate": "2020-01-13",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2519,
+        "latestCumulativeNav": 1.2519,
+        "latestAdjustedNav": 1.2519
+      }
     },
     {
       "id": "5e5c195dd8b2261f",
@@ -184285,7 +187005,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 216,
+        "startDate": "2022-04-29",
+        "endDate": "2026-07-10",
+        "latestNav": 2.539,
+        "latestCumulativeNav": 2.539,
+        "latestAdjustedNav": 2.539
+      }
     },
     {
       "id": "bc9559dd6e93076f",
@@ -184533,7 +187261,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 169,
+        "startDate": "2023-05-31",
+        "endDate": "2026-07-10",
+        "latestNav": 1.177,
+        "latestCumulativeNav": 1.177,
+        "latestAdjustedNav": 1.177
+      }
     },
     {
       "id": "98a688c86bd41e19",
@@ -184621,7 +187357,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 132,
+        "startDate": "2023-12-29",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0903,
+        "latestCumulativeNav": 1.0903,
+        "latestAdjustedNav": 1.0903
+      }
     },
     {
       "id": "51c7c6d01c7126e6",
@@ -184863,7 +187607,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 137,
+        "startDate": "2023-12-29",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0911,
+        "latestCumulativeNav": 1.3376,
+        "latestAdjustedNav": 1.37616678
+      }
     },
     {
       "id": "4c9e869744f91348",
@@ -185017,7 +187769,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 226,
+        "startDate": "2022-04-27",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0762,
+        "latestCumulativeNav": 1.5555,
+        "latestAdjustedNav": 1.58874239
+      }
     },
     {
       "id": "1b9da99d26632bb8",
@@ -185570,7 +188330,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 158,
+        "startDate": "2023-09-15",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0615,
+        "latestCumulativeNav": 1.2865,
+        "latestAdjustedNav": 1.29338107
+      }
     },
     {
       "id": "846ed9947b48fe63",
@@ -185647,7 +188415,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 299,
+        "startDate": "2021-02-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4153,
+        "latestCumulativeNav": 1.4153,
+        "latestAdjustedNav": 1.4153
+      }
     },
     {
       "id": "209317f7c996bda1",
@@ -186595,7 +189371,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 294,
+        "startDate": "2021-06-03",
+        "endDate": "2026-07-10",
+        "latestNav": 1.602,
+        "latestCumulativeNav": 1.602,
+        "latestAdjustedNav": 1.602
+      }
     },
     {
       "id": "bf936e6e3152771e",
@@ -187304,7 +190088,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 222,
+        "startDate": "2022-05-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2241,
+        "latestCumulativeNav": 1.3041,
+        "latestAdjustedNav": 1.31339315
+      }
     },
     {
       "id": "80225285b4e2aa35",
@@ -187620,7 +190412,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 175,
+        "startDate": "2023-05-18",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3237,
+        "latestCumulativeNav": 1.3237,
+        "latestAdjustedNav": 1.3237
+      }
     },
     {
       "id": "e6e4accc392f702f",
@@ -187711,7 +190511,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 380,
+        "startDate": "2023-12-13",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3604,
+        "latestCumulativeNav": 1.3604,
+        "latestAdjustedNav": 1.3604
+      }
     },
     {
       "id": "4b7c204f17619073",
@@ -188917,7 +191725,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 136,
+        "startDate": "2024-01-26",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0817,
+        "latestCumulativeNav": 1.1775,
+        "latestAdjustedNav": 1.18532686
+      }
     },
     {
       "id": "e12f141aa4486952",
@@ -189005,7 +191821,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 170,
+        "startDate": "2024-10-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1442,
+        "latestCumulativeNav": 1.3836,
+        "latestAdjustedNav": 1.33203617
+      }
     },
     {
       "id": "4ba17ac8f0f0b62f",
@@ -190078,7 +192902,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 422,
+        "startDate": "2023-03-01",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0523,
+        "latestCumulativeNav": 1.5797,
+        "latestAdjustedNav": 1.67652305
+      }
     },
     {
       "id": "2747784e7e408703",
@@ -190613,7 +193445,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 200,
+        "startDate": "2022-12-23",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2564,
+        "latestCumulativeNav": 1.3164,
+        "latestAdjustedNav": 1.32400937
+      }
     },
     {
       "id": "3d77249d72f05307",
@@ -191149,7 +193989,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 721,
+        "startDate": "2023-07-19",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6162,
+        "latestCumulativeNav": 1.6162,
+        "latestAdjustedNav": 1.6162
+      }
     },
     {
       "id": "8303aca7c43ae7db",
@@ -191406,7 +194254,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 835,
+        "startDate": "2021-05-12",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0599,
+        "latestCumulativeNav": 1.2398,
+        "latestAdjustedNav": 1.25205957
+      }
     },
     {
       "id": "645177bfb23c96f4",
@@ -192255,7 +195111,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 136,
+        "startDate": "2023-03-01",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2446,
+        "latestCumulativeNav": 1.2446,
+        "latestAdjustedNav": 1.2446
+      }
     },
     {
       "id": "e15962f6b771d988",
@@ -192343,7 +195207,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 117,
+        "startDate": "2024-04-12",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0335,
+        "latestCumulativeNav": 1.0835,
+        "latestAdjustedNav": 1.08429123
+      }
     },
     {
       "id": "7b6d5d59c93f5b54",
@@ -193110,7 +195982,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 107,
+        "startDate": "2024-03-14",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2333,
+        "latestCumulativeNav": 1.2333,
+        "latestAdjustedNav": 1.2333
+      }
     },
     {
       "id": "049325703369293c",
@@ -193630,7 +196510,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 356,
+        "startDate": "2020-04-03",
+        "endDate": "2026-07-10",
+        "latestNav": 1.8465,
+        "latestCumulativeNav": 1.8465,
+        "latestAdjustedNav": 1.8465
+      }
     },
     {
       "id": "491718de8d7104d0",
@@ -194874,7 +197762,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 264,
+        "startDate": "2021-05-19",
+        "endDate": "2026-07-10",
+        "latestNav": 2.284,
+        "latestCumulativeNav": 2.284,
+        "latestAdjustedNav": 2.284
+      }
     },
     {
       "id": "5eb8e288212af4dd",
@@ -194951,7 +197847,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 769,
+        "startDate": "2021-04-19",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6748,
+        "latestCumulativeNav": 1.848,
+        "latestAdjustedNav": 1.92703944
+      }
     },
     {
       "id": "73b33ce66f0fa8b6",
@@ -195224,7 +198128,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 110,
+        "startDate": "2024-07-26",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0571,
+        "latestCumulativeNav": 1.0571,
+        "latestAdjustedNav": 1.0571
+      }
     },
     {
       "id": "6788b59fd9a720b7",
@@ -195409,7 +198321,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 359,
+        "startDate": "2022-12-20",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0769,
+        "latestCumulativeNav": 1.0769,
+        "latestAdjustedNav": 1.0769
+      }
     },
     {
       "id": "233718fbc6dd0400",
@@ -196658,7 +199578,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 465,
+        "startDate": "2018-04-25",
+        "endDate": "2026-07-10",
+        "latestNav": 3.828,
+        "latestCumulativeNav": 4.497,
+        "latestAdjustedNav": 4.93280808
+      }
     },
     {
       "id": "7ba70b01cc538b65",
@@ -196823,7 +199751,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 243,
+        "startDate": "2023-05-18",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2087,
+        "latestCumulativeNav": 1.2087,
+        "latestAdjustedNav": 1.2087
+      }
     },
     {
       "id": "eb84a62cfd2b3e85",
@@ -197522,7 +200458,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 112,
+        "startDate": "2023-09-11",
+        "endDate": "2026-07-10",
+        "latestNav": 0.8437,
+        "latestCumulativeNav": 0.8529,
+        "latestAdjustedNav": 0.85178394
+      }
     },
     {
       "id": "d2ab93da1315f0fb",
@@ -197705,7 +200649,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 790,
+        "startDate": "2023-04-06",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2358,
+        "latestCumulativeNav": 1.2358,
+        "latestAdjustedNav": 1.2358
+      }
     },
     {
       "id": "251437de805d298d",
@@ -197870,7 +200822,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 495,
+        "startDate": "2024-06-26",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0531,
+        "latestCumulativeNav": 1.2294,
+        "latestAdjustedNav": 1.23876153
+      }
     },
     {
       "id": "054aad10e8bcb3cf",
@@ -198297,7 +201257,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 263,
+        "startDate": "2023-02-10",
+        "endDate": "2026-07-10",
+        "latestNav": 2.5837,
+        "latestCumulativeNav": 2.5837,
+        "latestAdjustedNav": 2.5837
+      }
     },
     {
       "id": "35fb0f806ed40a9a",
@@ -198761,7 +201729,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 148,
+        "startDate": "2021-12-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2101,
+        "latestCumulativeNav": 1.2101,
+        "latestAdjustedNav": 1.2101
+      }
     },
     {
       "id": "8639d2ed2fc6d3d4",
@@ -198932,7 +201908,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 637,
+        "startDate": "2022-02-24",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2308,
+        "latestCumulativeNav": 1.2308,
+        "latestAdjustedNav": 1.2308
+      }
     },
     {
       "id": "6eac22c638e3177a",
@@ -199490,7 +202474,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 153,
+        "startDate": "2023-07-19",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4952,
+        "latestCumulativeNav": 1.4952,
+        "latestAdjustedNav": 1.4952
+      }
     },
     {
       "id": "1e0028a669f05dd8",
@@ -199567,7 +202559,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 136,
+        "startDate": "2024-01-03",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3439,
+        "latestCumulativeNav": 1.3439,
+        "latestAdjustedNav": 1.3439
+      }
     },
     {
       "id": "5f329e6e80de1554",
@@ -199835,7 +202835,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 134,
+        "startDate": "2024-01-03",
+        "endDate": "2026-07-10",
+        "latestNav": 1.044,
+        "latestCumulativeNav": 1.1356,
+        "latestAdjustedNav": 1.13731459
+      }
     },
     {
       "id": "cdb286bdf3714bf9",
@@ -200190,7 +203198,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 307,
+        "startDate": "2021-08-02",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9711,
+        "latestCumulativeNav": 2.271,
+        "latestAdjustedNav": 2.59722942
+      }
     },
     {
       "id": "e22faada3b5c0e97",
@@ -200284,7 +203300,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 466,
+        "startDate": "2022-06-15",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2309,
+        "latestCumulativeNav": 1.2309,
+        "latestAdjustedNav": 1.2309
+      }
     },
     {
       "id": "ea8c1d79ea3b1c38",
@@ -200813,7 +203837,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 57,
+        "startDate": "2025-07-03",
+        "endDate": "2026-07-10",
+        "latestNav": 1.015,
+        "latestCumulativeNav": 1.056,
+        "latestAdjustedNav": 1.056615
+      }
     },
     {
       "id": "73d3be75806bd983",
@@ -201018,7 +204050,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 235,
+        "startDate": "2022-02-15",
+        "endDate": "2026-07-10",
+        "latestNav": 1.112,
+        "latestCumulativeNav": 1.977,
+        "latestAdjustedNav": 2.32660156
+      }
     },
     {
       "id": "39b0babcd18174fe",
@@ -201581,7 +204621,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 428,
+        "startDate": "2022-07-04",
+        "endDate": "2026-07-10",
+        "latestNav": 1.115,
+        "latestCumulativeNav": 1.4564,
+        "latestAdjustedNav": 1.495661
+      }
     },
     {
       "id": "b5026c6be2a66500",
@@ -201658,7 +204706,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 118,
+        "startDate": "2024-05-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.009,
+        "latestCumulativeNav": 1.112,
+        "latestAdjustedNav": 1.10892981
+      }
     },
     {
       "id": "5c1836ee406d070f",
@@ -201735,7 +204791,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 153,
+        "startDate": "2023-07-27",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1333,
+        "latestCumulativeNav": 1.1333,
+        "latestAdjustedNav": 1.1333
+      }
     },
     {
       "id": "4fe7c9f92f4ffe9b",
@@ -202723,7 +205787,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 182,
+        "startDate": "2023-03-21",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2783,
+        "latestCumulativeNav": 1.2783,
+        "latestAdjustedNav": 1.2783
+      }
     },
     {
       "id": "abcce8fc1c0d9e96",
@@ -203112,7 +206184,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 195,
+        "startDate": "2023-01-11",
+        "endDate": "2026-07-10",
+        "latestNav": 1.334,
+        "latestCumulativeNav": 1.334,
+        "latestAdjustedNav": 1.334
+      }
     },
     {
       "id": "ccd423ac7a0c90ad",
@@ -203200,7 +206280,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 133,
+        "startDate": "2024-04-11",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1309,
+        "latestCumulativeNav": 1.1309,
+        "latestAdjustedNav": 1.1309
+      }
     },
     {
       "id": "785b27691344f38c",
@@ -203391,7 +206479,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 463,
+        "startDate": "2019-02-13",
+        "endDate": "2026-07-10",
+        "latestNav": 1.952,
+        "latestCumulativeNav": 2.302,
+        "latestAdjustedNav": 2.3859445
+      }
     },
     {
       "id": "e6e728beea8a20f3",
@@ -204071,7 +207167,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 263,
+        "startDate": "2022-12-12",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4878,
+        "latestCumulativeNav": 1.4878,
+        "latestAdjustedNav": 1.4878
+      }
     },
     {
       "id": "9fd921954c23a610",
@@ -204148,7 +207252,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 184,
+        "startDate": "2023-03-08",
+        "endDate": "2026-07-10",
+        "latestNav": 0.836,
+        "latestCumulativeNav": 1.026,
+        "latestAdjustedNav": 0.97584856
+      }
     },
     {
       "id": "d672f7df678f3e3d",
@@ -204353,7 +207465,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1290,
+        "startDate": "2021-03-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0805,
+        "latestCumulativeNav": 1.4035,
+        "latestAdjustedNav": 1.4295015
+      }
     },
     {
       "id": "adf8c1bd8313774d",
@@ -204547,7 +207667,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 357,
+        "startDate": "2020-03-24",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1283,
+        "latestCumulativeNav": 1.4056,
+        "latestAdjustedNav": 1.44114631
+      }
     },
     {
       "id": "5f52675d36bfb8f0",
@@ -205244,7 +208372,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 105,
+        "startDate": "2024-06-21",
+        "endDate": "2026-07-10",
+        "latestNav": 1.08,
+        "latestCumulativeNav": 1.08,
+        "latestAdjustedNav": 1.08
+      }
     },
     {
       "id": "03f02142701651a5",
@@ -205577,7 +208713,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 486,
+        "startDate": "2024-05-27",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2125,
+        "latestCumulativeNav": 1.2125,
+        "latestAdjustedNav": 1.2125
+      }
     },
     {
       "id": "e7ef32e7d4946304",
@@ -207085,7 +210229,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 54,
+        "startDate": "2025-06-27",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0412,
+        "latestCumulativeNav": 1.0412,
+        "latestAdjustedNav": 1.0412
+      }
     },
     {
       "id": "67fa25e23e2d1cd2",
@@ -207864,7 +211016,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 939,
+        "startDate": "2022-06-23",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0365,
+        "latestCumulativeNav": 1.4925,
+        "latestAdjustedNav": 1.57967814
+      }
     },
     {
       "id": "0ccc7c77cdc568c2",
@@ -208188,7 +211348,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 2595,
+        "startDate": "2015-03-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0208,
+        "latestCumulativeNav": 1.0208,
+        "latestAdjustedNav": 1.0208
+      }
     },
     {
       "id": "9f348cae7910f859",
@@ -208370,7 +211538,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 158,
+        "startDate": "2023-05-30",
+        "endDate": "2026-07-10",
+        "latestNav": 0.972,
+        "latestCumulativeNav": 1.254,
+        "latestAdjustedNav": 1.2660021
+      }
     },
     {
       "id": "8d413b2eae180c11",
@@ -209522,7 +212698,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 194,
+        "startDate": "2022-09-13",
+        "endDate": "2026-07-10",
+        "latestNav": 1.6617,
+        "latestCumulativeNav": 1.7407,
+        "latestAdjustedNav": 1.77447861
+      }
     },
     {
       "id": "28ce4bc7a2dcaf30",
@@ -209879,7 +213063,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 396,
+        "startDate": "2019-07-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0884,
+        "latestCumulativeNav": 2.3371,
+        "latestAdjustedNav": 3.30855114
+      }
     },
     {
       "id": "fa9d85fb391070a7",
@@ -210150,7 +213342,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 351,
+        "startDate": "2019-10-22",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2404,
+        "latestCumulativeNav": 1.2404,
+        "latestAdjustedNav": 1.2404
+      }
     },
     {
       "id": "97bef112b5499d9e",
@@ -210509,7 +213709,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1010,
+        "startDate": "2022-05-13",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3661,
+        "latestCumulativeNav": 1.3661,
+        "latestAdjustedNav": 1.3661
+      }
     },
     {
       "id": "66d10e2ff499d842",
@@ -210671,7 +213879,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 321,
+        "startDate": "2021-10-15",
+        "endDate": "2026-07-10",
+        "latestNav": 1.095,
+        "latestCumulativeNav": 1.29,
+        "latestAdjustedNav": 1.32222915
+      }
     },
     {
       "id": "a2b30a638e7f7a15",
@@ -211361,7 +214577,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 386,
+        "startDate": "2018-12-21",
+        "endDate": "2026-07-10",
+        "latestNav": 1.773,
+        "latestCumulativeNav": 1.773,
+        "latestAdjustedNav": 1.773
+      }
     },
     {
       "id": "004fcca3e3b40ecd",
@@ -213225,7 +216449,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 165,
+        "startDate": "2023-04-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0671,
+        "latestCumulativeNav": 1.1622,
+        "latestAdjustedNav": 1.16788579
+      }
     },
     {
       "id": "60262b492b8d8afb",
@@ -213664,7 +216896,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 492,
+        "startDate": "2022-05-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2714,
+        "latestCumulativeNav": 1.3336,
+        "latestAdjustedNav": 1.3504969
+      }
     },
     {
       "id": "719388ba76030c4f",
@@ -214617,7 +217857,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 526,
+        "startDate": "2020-10-26",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0916,
+        "latestCumulativeNav": 1.0916,
+        "latestAdjustedNav": 1.0916
+      }
     },
     {
       "id": "04a78e32487388cd",
@@ -214694,7 +217942,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 1195,
+        "startDate": "2020-10-27",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0489,
+        "latestCumulativeNav": 1.0489,
+        "latestAdjustedNav": 1.0489
+      }
     },
     {
       "id": "df78150d9c91659c",
@@ -215099,7 +218355,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 248,
+        "startDate": "2021-09-07",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4369,
+        "latestCumulativeNav": 1.4369,
+        "latestAdjustedNav": 1.4369
+      }
     },
     {
       "id": "848832030bc2eff2",
@@ -215261,7 +218525,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 557,
+        "startDate": "2022-08-24",
+        "endDate": "2026-07-10",
+        "latestNav": 1.284,
+        "latestCumulativeNav": 1.284,
+        "latestAdjustedNav": 1.284
+      }
     },
     {
       "id": "9f24e70e558bb67f",
@@ -216691,7 +219963,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 318,
+        "startDate": "2020-11-05",
+        "endDate": "2026-07-10",
+        "latestNav": 1.5985,
+        "latestCumulativeNav": 1.5985,
+        "latestAdjustedNav": 1.5985
+      }
     },
     {
       "id": "7735dd9274901427",
@@ -216887,7 +220167,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 112,
+        "startDate": "2023-02-13",
+        "endDate": "2026-07-10",
+        "latestNav": 0.9533,
+        "latestCumulativeNav": 0.9533,
+        "latestAdjustedNav": 0.9533
+      }
     },
     {
       "id": "24e1c0a092c7da01",
@@ -217041,7 +220329,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 169,
+        "startDate": "2023-07-10",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0003,
+        "latestCumulativeNav": 1.0003,
+        "latestAdjustedNav": 1.0003
+      }
     },
     {
       "id": "2015f8f62765252f",
@@ -217118,7 +220414,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 294,
+        "startDate": "2021-04-06",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3746,
+        "latestCumulativeNav": 1.3746,
+        "latestAdjustedNav": 1.3746
+      }
     },
     {
       "id": "bc532ad0df3441a3",
@@ -217561,7 +220865,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 158,
+        "startDate": "2023-09-19",
+        "endDate": "2026-07-10",
+        "latestNav": 0.9102,
+        "latestCumulativeNav": 1.5091,
+        "latestAdjustedNav": 1.50338777
+      }
     },
     {
       "id": "f5977fcdbead9dc2",
@@ -218573,7 +221885,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 305,
+        "startDate": "2022-04-29",
+        "endDate": "2026-07-10",
+        "latestNav": 1.9846,
+        "latestCumulativeNav": 1.9846,
+        "latestAdjustedNav": 1.9846
+      }
     },
     {
       "id": "e08e2ba345fc9284",
@@ -219096,7 +222416,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 254,
+        "startDate": "2022-03-16",
+        "endDate": "2026-07-10",
+        "latestNav": 1.3192,
+        "latestCumulativeNav": 1.4692,
+        "latestAdjustedNav": 1.48349758
+      }
     },
     {
       "id": "1c2c157bbfe65aee",
@@ -220339,7 +223667,15 @@
       },
       "managerScale": "5-10亿元",
       "managerScaleCode": "4",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 197,
+        "startDate": "2023-03-15",
+        "endDate": "2026-07-10",
+        "latestNav": 1.7673,
+        "latestCumulativeNav": 1.7673,
+        "latestAdjustedNav": 1.7673
+      }
     },
     {
       "id": "887bc45e9ccc73f2",
@@ -220527,7 +223863,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 182,
+        "startDate": "2022-11-23",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1607,
+        "latestCumulativeNav": 1.1607,
+        "latestAdjustedNav": 1.1607
+      }
     },
     {
       "id": "a8edef75c1fba492",
@@ -220681,7 +224025,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 118,
+        "startDate": "2024-04-18",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0916,
+        "latestCumulativeNav": 1.1866,
+        "latestAdjustedNav": 1.19194942
+      }
     },
     {
       "id": "a41ce2b7254edec0",
@@ -221259,7 +224611,15 @@
       },
       "managerScale": "0-5亿元",
       "managerScaleCode": "5",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 888,
+        "startDate": "2020-01-14",
+        "endDate": "2026-07-10",
+        "latestNav": 1.2225,
+        "latestCumulativeNav": 1.2225,
+        "latestAdjustedNav": 1.2225
+      }
     },
     {
       "id": "24a722dfea2a4983",
@@ -221359,7 +224719,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 320,
+        "startDate": "2020-07-28",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4279,
+        "latestCumulativeNav": 1.4279,
+        "latestAdjustedNav": 1.4279
+      }
     },
     {
       "id": "342ac98811f9598e",
@@ -222381,7 +225749,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 180,
+        "startDate": "2023-01-06",
+        "endDate": "2026-07-10",
+        "latestNav": 1.1487,
+        "latestCumulativeNav": 1.1849,
+        "latestAdjustedNav": 1.1872485
+      }
     },
     {
       "id": "0e21418c6e1b5826",
@@ -222750,7 +226126,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 339,
+        "startDate": "2020-12-25",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0743,
+        "latestCumulativeNav": 1.1608,
+        "latestAdjustedNav": 1.1618149
+      }
     },
     {
       "id": "6134fdc31f20af1e",
@@ -222904,7 +226288,15 @@
       },
       "managerScale": "10-20亿元",
       "managerScaleCode": "3",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 58,
+        "startDate": "2025-05-30",
+        "endDate": "2026-07-10",
+        "latestNav": 1.0166,
+        "latestCumulativeNav": 1.0166,
+        "latestAdjustedNav": 1.0166
+      }
     },
     {
       "id": "4b516aea96846e58",
@@ -223058,7 +226450,15 @@
       },
       "managerScale": "100亿元以上",
       "managerScaleCode": "6",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 847,
+        "startDate": "2023-01-09",
+        "endDate": "2026-07-10",
+        "latestNav": 1.4969,
+        "latestCumulativeNav": 1.4969,
+        "latestAdjustedNav": 1.4969
+      }
     },
     {
       "id": "d58b9741c21df82a",
@@ -223249,7 +226649,15 @@
       },
       "managerScale": "50-100亿元",
       "managerScaleCode": "1",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 160,
+        "startDate": "2023-09-19",
+        "endDate": "2026-07-10",
+        "latestNav": 1.269,
+        "latestCumulativeNav": 1.269,
+        "latestAdjustedNav": 1.269
+      }
     },
     {
       "id": "9e7521cbaf5f645a",
@@ -223494,7 +226902,15 @@
       },
       "managerScale": "20-50亿元",
       "managerScaleCode": "2",
-      "managerScaleSource": "huofuniu"
+      "managerScaleSource": "huofuniu",
+      "navSummary": {
+        "rows": 622,
+        "startDate": "2023-04-06",
+        "endDate": "2026-07-10",
+        "latestNav": 1.089,
+        "latestCumulativeNav": 1.294,
+        "latestAdjustedNav": 1.31534118
+      }
     },
     {
       "id": "829051d994dd26fc",

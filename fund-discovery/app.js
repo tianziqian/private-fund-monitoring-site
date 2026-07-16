@@ -71,6 +71,30 @@ const qualityRules = [
 
 const strategyOverviewColumns = [
   { key: "pastWeekReturn", label: "近1周收益", format: "percent" },
+  {
+    key: "pastWeekPositiveRate",
+    header: "近1周正收益占比",
+    format: "percent1",
+    compute: (items) => positiveRate(items, "pastWeekReturn"),
+  },
+  {
+    key: "pastWeekExcessMedian",
+    header: "近1周超额中位数",
+    format: "percent",
+    compute: (items) => median(items.map((fund) => fund.pastWeekExcessReturn)),
+  },
+  {
+    key: "pastWeekExcessPositiveRate",
+    header: "近1周正超额占比",
+    format: "percent1",
+    compute: (items) => positiveRate(items, "pastWeekExcessReturn"),
+  },
+  {
+    key: "pastWeekDispersion",
+    header: "近1周离散度(P90-P10)",
+    format: "percent",
+    compute: (items) => dispersionP90P10(items, "pastWeekReturn"),
+  },
   { key: "lastOneMonthReturn", label: "近1月收益", format: "percent" },
   { key: "lastOneMonthMaxDrawdown", label: "近1月回撤", format: "percent" },
   { key: "lastOneMonthSharpeRatio", label: "近1月夏普", format: "number" },
@@ -250,6 +274,23 @@ function median(values) {
   if (!valid.length) return null;
   const mid = Math.floor(valid.length / 2);
   return valid.length % 2 ? valid[mid] : (valid[mid - 1] + valid[mid]) / 2;
+}
+
+function positiveRate(items, key) {
+  const valid = items.map((fund) => num(fund[key])).filter((value) => value !== null);
+  return valid.length ? valid.filter((value) => value > 0).length / valid.length : null;
+}
+
+function dispersionP90P10(items, key) {
+  const valid = items.map((fund) => num(fund[key])).filter((value) => value !== null).sort((a, b) => a - b);
+  if (valid.length < 2) return null;
+  const pick = (q) => {
+    const idx = (valid.length - 1) * q;
+    const lo = Math.floor(idx);
+    const hi = Math.ceil(idx);
+    return lo === hi ? valid[lo] : valid[lo] + (valid[hi] - valid[lo]) * (idx - lo);
+  };
+  return pick(0.9) - pick(0.1);
 }
 
 function selectedQualityRuleKeys() {
@@ -513,12 +554,15 @@ function renderStrategyOverview(funds) {
     return;
   }
   els.strategyOverviewTable.innerHTML = `
-    <thead><tr><th>二级策略</th><th>样本</th>${strategyOverviewColumns.map((column) => `<th>${column.label}中位数</th>`).join("")}</tr></thead>
+    <thead><tr><th>二级策略</th><th>样本</th>${strategyOverviewColumns.map((column) => `<th>${column.header || `${column.label}中位数`}</th>`).join("")}</tr></thead>
     <tbody>${rows
       .map(([strategy, items]) => {
         const values = strategyOverviewColumns
           .map((column) => {
-            const value = median(items.map((fund) => metricValue(fund, column.key)));
+            const value = column.compute
+              ? column.compute(items)
+              : median(items.map((fund) => metricValue(fund, column.key)));
+            if (column.format === "percent1") return `<td>${fmtPercent(value, 1)}</td>`;
             return `<td>${column.format === "percent" ? fmtPercent(value) : fmtNumber(value, 2)}</td>`;
           })
           .join("");
@@ -2450,7 +2494,7 @@ els.openCompare.addEventListener("click", renderCompareModal);
 els.openAnalysisBar.addEventListener("click", () => openAnalysis(selectedFunds()));
 els.subTabs.addEventListener("click", (event) => {
   const btn = event.target.closest(".sub-tab");
-  if (!btn) return;
+  if (!btn || !btn.dataset.tab) return;
   switchTab(btn.dataset.tab);
 });
 els.closeCompare.addEventListener("click", () => {

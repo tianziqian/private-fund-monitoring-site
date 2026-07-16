@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>净值跟踪 | 私募资产挖掘机</title>
-    <link rel="stylesheet" href="./styles.css?v=20260714-overview2" />
+    <link rel="stylesheet" href="./styles.css?v=20260716-weeklyreview" />
       <link rel="stylesheet" href="../assets/platform.css?v=20260628-unified" />
     <link rel="stylesheet" href="../assets/ai-analysis.css?v=20260628" />
 </head>
@@ -38,6 +38,7 @@
         <button class="sub-tab active" data-tab="browse">净值浏览</button>
         <button class="sub-tab" data-tab="compare">对比</button>
         <button class="sub-tab" data-tab="analysis">净值分析</button>
+        <a class="sub-tab sub-tab-link" href="./weekly-review/">周度复盘</a>
       </nav>
       <div id="tabPrompt" class="tab-prompt" hidden></div>
 
@@ -55,7 +56,7 @@
             <button id="strategyOverviewToggle" class="strategy-overview-toggle" type="button" aria-expanded="false">查看策略中位数 <span class="overview-toggle-arrow" aria-hidden="true">⌄</span></button>
           </div>
           <div id="strategyOverviewDetails" class="strategy-overview-details" hidden>
-            <p>按当前策略、规模和搜索条件汇总；不受五项优选展示上限影响。指增策略使用超额口径。</p>
+            <p>按当前策略、规模和搜索条件汇总；不受五项优选展示上限影响。指增策略使用超额口径。近1周超额/正超额列直接取数据源自带基准（fundIndexName）的超额，各基金披露区间长短不齐，仅作快速参考；严格按统一日历周重算、统一基准映射的口径见「周度复盘」报告。</p>
             <div class="strategy-overview-table-wrap"><table id="strategyOverviewTable" class="strategy-overview-table"></table></div>
           </div>
         </div>
@@ -158,6 +159,6 @@
     </aside>
 
     <script src="../assets/ai-render.js?v=20260628-subtabs"></script>
-    <script src="./app.js?v=20260714-overview2"></script>
+    <script src="./app.js?v=20260716-weeklyreview"></script>
   </body>
 </html>

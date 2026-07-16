@@ -1,0 +1,2442 @@
+{
+ "meta": {
+  "generatedAt": "2026-07-16T16:02:06.845964+08:00",
+  "week": {
+   "start": "2026-07-06",
+   "end": "2026-07-10"
+  },
+  "toleranceDays": 4,
+  "gapRange": [
+   3,
+   11
+  ],
+  "outlierThreshold": 0.15,
+  "bigScaleDefinition": [
+   "100亿元以上",
+   "50-100亿元"
+  ],
+  "sourceDataGeneratedAt": "2026-07-16T07:59:40.206Z",
+  "scriptVersion": "1.0"
+ },
+ "marketEnvironment": {
+  "broad": [
+   {
+    "name": "中证全指",
+    "code": "000985.CSI",
+    "weekly_return": -0.029555149199299358,
+    "ytd_return": 0.05000721982894962,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "上证指数",
+    "code": "000001.SH",
+    "weekly_return": -0.011742282306213436,
+    "ytd_return": 0.00688400119722643,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "深证成指",
+    "code": "399001.SZ",
+    "weekly_return": -0.035316024384299816,
+    "ytd_return": 0.11250603584934439,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "上证50",
+    "code": "000016.SH",
+    "weekly_return": 0.008268255185825746,
+    "ytd_return": -0.02494310859681237,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "中证红利",
+    "code": "000922.CSI",
+    "weekly_return": -0.004486199421134263,
+    "ytd_return": -0.05811862148075663,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "沪深300",
+    "code": "000300.SH",
+    "weekly_return": -0.012677570819072614,
+    "ytd_return": 0.03258081450092365,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "中证A500",
+    "code": "000510.SH",
+    "weekly_return": -0.01822677154856278,
+    "ytd_return": 0.06433845704261865,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "中证500",
+    "code": "000905.SH",
+    "weekly_return": -0.027590967070884598,
+    "ytd_return": 0.13909128382917957,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "中证1000",
+    "code": "000852.SH",
+    "weekly_return": -0.04900721031484279,
+    "ytd_return": 0.07939443216379849,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "中证2000",
+    "code": "932000.CSI",
+    "weekly_return": -0.06156675645802478,
+    "ytd_return": 0.02177669371986468,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "万得全A等权指数",
+    "code": "8841388.WI",
+    "weekly_return": -0.04082843655047741,
+    "ytd_return": -0.0072861765217494545,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "微盘股",
+    "code": "883418.TI",
+    "weekly_return": -0.030852328201663504,
+    "ytd_return": -0.06025973974095922,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "创业板指",
+    "code": "399006.SZ",
+    "weekly_return": -0.04408099625314755,
+    "ytd_return": 0.19966450752546305,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "科创50",
+    "code": "000688.SH",
+    "weekly_return": 0.045239671733161124,
+    "ytd_return": 0.5362113470895185,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "恒生指数",
+    "code": "HSI.HI",
+    "weekly_return": 0.03533571477210096,
+    "ytd_return": -0.05678460149493536,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "恒生科技",
+    "code": "HSTECH.HI",
+    "weekly_return": 0.049490997999555475,
+    "ytd_return": -0.14400342278253364,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "纳斯达克指数",
+    "code": "IXIC.GI",
+    "weekly_return": 0.01737876882258016,
+    "ytd_return": 0.13078140038783248,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "标普500",
+    "code": "SPX.GI",
+    "weekly_return": 0.012314558934365394,
+    "ytd_return": 0.10662373822218975,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "MSCI全球",
+    "code": "892400.MI",
+    "weekly_return": 0.0024277194430846194,
+    "ytd_return": 0.11030389308031863,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "道琼斯工业平均",
+    "code": "DJI.GI",
+    "weekly_return": -0.004972811945239464,
+    "ytd_return": 0.09516031674069737,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "罗素2000指数",
+    "code": "RTY.GI",
+    "weekly_return": -0.006107919936183981,
+    "ytd_return": 0.19980579473067128,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "万得美国科技七巨头指数",
+    "code": "MAGS.WI",
+    "weekly_return": 0.03244045397334916,
+    "ytd_return": 0.05082360492797067,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "纳斯达克中国金龙指数",
+    "code": "HXC.GI",
+    "weekly_return": 0.03526866550114938,
+    "ytd_return": -0.18712477472007283,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "沪港AH溢价",
+    "code": "H50066.CSI",
+    "weekly_return": 0.022229666656629288,
+    "ytd_return": 0.020133123981098233,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "美元指数(Tushare合成)",
+    "code": "USDX.FX",
+    "weekly_return": 0.00043230215202205713,
+    "ytd_return": 0.026240975356441654,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "CBOE波动率",
+    "code": "VIX.GI",
+    "weekly_return": -0.049335863377609195,
+    "ytd_return": 0.005351170568561825,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "万得可转债等权指数",
+    "code": "889033.WI",
+    "weekly_return": -0.012550134550273095,
+    "ytd_return": 0.017579528592806204,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "CFFEX2年期国债期货",
+    "code": "TS.CFE",
+    "weekly_return": 0.00019488238847853445,
+    "ytd_return": 0.0018740117516153898,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "CFFEX5年期国债期货",
+    "code": "TF.CFE",
+    "weekly_return": 0.0009403799134850566,
+    "ytd_return": 0.006429652042359901,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "CFFEX10年期国债期货",
+    "code": "T.CFE",
+    "weekly_return": 0.0015132755537212716,
+    "ytd_return": 0.012423511959948064,
+    "source": "dashboard_data.json"
+   },
+   {
+    "name": "CFFEX30年期国债期货",
+    "code": "TL.CFE",
+    "weekly_return": 0.0015132755537212716,
+    "ytd_return": 0.012423511959948064,
+    "source": "dashboard_data.json"
+   }
+  ],
+  "commodities": [
+   {
+    "name": "南华商品指数",
+    "weekly_return": 0.010514446272436473,
+    "source": "cta-series.json"
+   },
+   {
+    "name": "南华农产品指数",
+    "weekly_return": 0.013667254201502388,
+    "source": "cta-series.json"
+   },
+   {
+    "name": "南华能化指数",
+    "weekly_return": 0.026460423737720395,
+    "source": "cta-series.json"
+   },
+   {
+    "name": "南华黑色指数",
+    "weekly_return": 0.004370587956602057,
+    "source": "cta-series.json"
+   },
+   {
+    "name": "南华有色金属指数",
+    "weekly_return": -0.0009839113194299864,
+    "source": "cta-series.json"
+   },
+   {
+    "name": "南华贵金属指数",
+    "weekly_return": -0.02354117538262357,
+    "source": "cta-series.json"
+   },
+   {
+    "name": "黄金",
+    "weekly_return": -0.01479993571742022,
+    "source": "cta-series.json"
+   }
+  ],
+  "dashboard_week_matched": true
+ },
+ "sections": [
+  {
+   "title": "权益多头",
+   "strategies": [
+    "主观多头",
+    "量化选股"
+   ]
+  },
+  {
+   "title": "指增策略",
+   "strategies": [
+    "300指增",
+    "500指增",
+    "A500指增",
+    "1000指增",
+    "2000指增"
+   ]
+  },
+  {
+   "title": "另类策略",
+   "strategies": [
+    "股票市场中性",
+    "股票多空"
+   ]
+  },
+  {
+   "title": "CTA策略",
+   "strategies": [
+    "量化期货",
+    "主观期货"
+   ]
+  },
+  {
+   "title": "其他策略",
+   "strategies": [
+    "宏观策略",
+    "复合策略"
+   ]
+  }
+ ],
+ "byStrategy": {
+  "主观多头": {
+   "strategy": "主观多头",
+   "benchmark": {
+    "type": "index",
+    "name": "中证全指",
+    "weekly_return": -0.029555149199299358,
+    "source": "dashboard_data.json"
+   },
+   "sample": {
+    "n_total": 864,
+    "n_covered": 834,
+    "coverage_rate": 0.9652777777777778,
+    "exclusion_reasons": {
+     "no_nav_near_week_end": 29,
+     "no_nav_near_week_start": 1
+    }
+   },
+   "returns": {
+    "n": 834,
+    "median": -0.021044388413406723,
+    "mean": -0.027066984967243975,
+    "positive_rate": 0.2182254196642686,
+    "p10": -0.07713442164876798,
+    "p90": 0.012348396322686986,
+    "min": -0.28764742400337595,
+    "max": 0.37555309734513287
+   },
+   "returns_ex_outliers": {
+    "n": 816,
+    "median": -0.020131429675491364,
+    "mean": -0.024757727183957457,
+    "positive_rate": 0.22058823529411764,
+    "p10": -0.07277499625862871,
+    "p90": 0.0123340107392923,
+    "min": -0.14889336016096588,
+    "max": 0.11946700739253457
+   },
+   "outliers": [
+    {
+     "fundShortName": "赤祺天祺一号",
+     "advisor": "上海赤祺资管",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.37555309734513287
+    },
+    {
+     "fundShortName": "钜融百川1号",
+     "advisor": "中海外钜融资管",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.28764742400337595
+    },
+    {
+     "fundShortName": "朴信3号",
+     "advisor": "上海朴信投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.2612035851472472
+    },
+    {
+     "fundShortName": "明泽远见12号复合策略",
+     "advisor": "安徽明泽投资",
+     "managerScale": "5-10亿元",
+     "weekly_return": -0.20383146662095475
+    },
+    {
+     "fundShortName": "鑫垣基金翔尹成长三号",
+     "advisor": "上海鑫垣",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.19590426844312847
+    },
+    {
+     "fundShortName": "红孩尔道禾2号",
+     "advisor": "广州红孩尔",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.19368520323971905
+    },
+    {
+     "fundShortName": "诺和红棉1号",
+     "advisor": "海南诺和",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.17587665438668298
+    },
+    {
+     "fundShortName": "金羿1期",
+     "advisor": "珠海金羿资管",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.1755725197956466
+    },
+    {
+     "fundShortName": "中兴价值成长",
+     "advisor": "苏州中兴正辞投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.17190335828927295
+    },
+    {
+     "fundShortName": "湘财科创9号",
+     "advisor": "东莞市湘财资管",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.16840882788482148
+    },
+    {
+     "fundShortName": "延信启元1号",
+     "advisor": "深圳前海延信投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.16551065355067573
+    },
+    {
+     "fundShortName": "蓝宝石知行一号",
+     "advisor": "深圳蓝宝石",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.1647240557222639
+    },
+    {
+     "fundShortName": "厚毅-新征程8号",
+     "advisor": "北京厚毅资管",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.16084432763914924
+    },
+    {
+     "fundShortName": "海南优择多资产策略1号A类",
+     "advisor": "海南优择",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.15831703325216573
+    },
+    {
+     "fundShortName": "允朗进取一号",
+     "advisor": "北京允朗投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.15649903201116566
+    },
+    {
+     "fundShortName": "和沐盘古天地",
+     "advisor": "深圳和沐投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.15497835078126876
+    },
+    {
+     "fundShortName": "胜拓",
+     "advisor": "广州胜拓",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.15207090696248404
+    },
+    {
+     "fundShortName": "诺岐昌稳健成长尊享1号",
+     "advisor": "北京诺昌投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.15128054977859717
+    }
+   ],
+   "excess": {
+    "n": 834,
+    "median": 0.008510760785892635,
+    "mean": 0.0024881642320553816,
+    "positive_rate": 0.6127098321342925,
+    "p10": -0.04757927244946862,
+    "p90": 0.04190354552198634,
+    "min": -0.2580922748040766,
+    "max": 0.4051082465444322
+   },
+   "excess_ex_outliers": {
+    "n": 816,
+    "median": 0.009423719523807994,
+    "mean": 0.004797422015341904,
+    "positive_rate": 0.6237745098039216,
+    "p10": -0.04321984705932935,
+    "p90": 0.04188915993859166,
+    "min": -0.11933821096166652,
+    "max": 0.14902215659183393
+   },
+   "scaleSplit": {
+    "big": {
+     "n": 57,
+     "returns": {
+      "n": 57,
+      "median": -0.022941582336706512,
+      "mean": -0.025098915724050992,
+      "positive_rate": 0.21052631578947367,
+      "p10": -0.06887698787118315,
+      "p90": 0.012875388855827685,
+      "min": -0.11270829518403214,
+      "max": 0.09962895555945073
+     },
+     "excess": {
+      "n": 57,
+      "median": 0.006613566862592846,
+      "mean": 0.004456233475248366,
+      "positive_rate": 0.5614035087719298,
+      "p10": -0.03932183867188379,
+      "p90": 0.042430538055127046,
+      "min": -0.08315314598473278,
+      "max": 0.12918410475875008
+     }
+    },
+    "small": {
+     "n": 777,
+     "returns": {
+      "n": 777,
+      "median": -0.02054414214325373,
+      "mean": -0.027211360703231106,
+      "positive_rate": 0.2187902187902188,
+      "p10": -0.07884137952047218,
+      "p90": 0.011971302666065138,
+      "min": -0.28764742400337595,
+      "max": 0.37555309734513287
+     },
+     "excess": {
+      "n": 777,
+      "median": 0.009011007056045628,
+      "mean": 0.002343788496068252,
+      "positive_rate": 0.6164736164736164,
+      "p10": -0.049286230321172825,
+      "p90": 0.041526451865364494,
+      "min": -0.2580922748040766,
+      "max": 0.4051082465444322
+     }
+    }
+   },
+   "top_positive": [
+    {
+     "fundShortName": "赤祺天祺一号",
+     "advisor": "上海赤祺资管",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.37555309734513287,
+     "excess": 0.4051082465444322
+    },
+    {
+     "fundShortName": "金羿1期",
+     "advisor": "珠海金羿资管",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.1755725197956466,
+     "excess": 0.20512766899494594
+    },
+    {
+     "fundShortName": "景瑞星晟1号",
+     "advisor": "珠海景瑞",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.11946700739253457,
+     "excess": 0.14902215659183393
+    },
+    {
+     "fundShortName": "慧创蚨祥裕己1号",
+     "advisor": "广州慧创蚨祥",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.11094095639179669,
+     "excess": 0.14049610559109604
+    },
+    {
+     "fundShortName": "千惠价投策略1号",
+     "advisor": "深圳千惠资本",
+     "managerScale": "50-100亿元",
+     "weekly_return": 0.09962895555945073,
+     "excess": 0.12918410475875008
+    }
+   ],
+   "top_negative": [
+    {
+     "fundShortName": "钜融百川1号",
+     "advisor": "中海外钜融资管",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.28764742400337595,
+     "excess": -0.2580922748040766
+    },
+    {
+     "fundShortName": "朴信3号",
+     "advisor": "上海朴信投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.2612035851472472,
+     "excess": -0.23164843594794782
+    },
+    {
+     "fundShortName": "明泽远见12号复合策略",
+     "advisor": "安徽明泽投资",
+     "managerScale": "5-10亿元",
+     "weekly_return": -0.20383146662095475,
+     "excess": -0.1742763174216554
+    },
+    {
+     "fundShortName": "鑫垣基金翔尹成长三号",
+     "advisor": "上海鑫垣",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.19590426844312847,
+     "excess": -0.1663491192438291
+    },
+    {
+     "fundShortName": "红孩尔道禾2号",
+     "advisor": "广州红孩尔",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.19368520323971905,
+     "excess": -0.1641300540404197
+    }
+   ]
+  },
+  "量化选股": {
+   "strategy": "量化选股",
+   "benchmark": {
+    "type": "index",
+    "name": "中证全指",
+    "weekly_return": -0.029555149199299358,
+    "source": "dashboard_data.json"
+   },
+   "sample": {
+    "n_total": 194,
+    "n_covered": 187,
+    "coverage_rate": 0.9639175257731959,
+    "exclusion_reasons": {
+     "no_nav_near_week_end": 6,
+     "no_nav_rows": 1
+    }
+   },
+   "returns": {
+    "n": 187,
+    "median": -0.0386025448144971,
+    "mean": -0.035276681138797165,
+    "positive_rate": 0.06951871657754011,
+    "p10": -0.06291889986947896,
+    "p90": -0.004876694436234041,
+    "min": -0.09225941525370618,
+    "max": 0.09808811305070653
+   },
+   "returns_ex_outliers": null,
+   "outliers": [],
+   "excess": {
+    "n": 187,
+    "median": -0.00904739561519774,
+    "mean": -0.005721531939497807,
+    "positive_rate": 0.35294117647058826,
+    "p10": -0.033363750670179604,
+    "p90": 0.024678454763065315,
+    "min": -0.06270426605440682,
+    "max": 0.12764326225000588
+   },
+   "excess_ex_outliers": null,
+   "scaleSplit": {
+    "big": {
+     "n": 37,
+     "returns": {
+      "n": 37,
+      "median": -0.04539602574867052,
+      "mean": -0.04810505972212993,
+      "positive_rate": 0.0,
+      "p10": -0.06763600580869136,
+      "p90": -0.025524580656474807,
+      "min": -0.09225941525370618,
+      "max": -0.017540986621143673
+     },
+     "excess": {
+      "n": 37,
+      "median": -0.015840876549371163,
+      "mean": -0.018549910522830573,
+      "positive_rate": 0.1891891891891892,
+      "p10": -0.038080856609392,
+      "p90": 0.004030568542824551,
+      "min": -0.06270426605440682,
+      "max": 0.012014162578155685
+     }
+    },
+    "small": {
+     "n": 150,
+     "returns": {
+      "n": 150,
+      "median": -0.03609001786221755,
+      "mean": -0.03211234775490842,
+      "positive_rate": 0.08666666666666667,
+      "p10": -0.06131631613937551,
+      "p90": -0.0035750817483734113,
+      "min": -0.07756756756756766,
+      "max": 0.09808811305070653
+     },
+     "excess": {
+      "n": 150,
+      "median": -0.006534868662918192,
+      "mean": -0.002557198555609058,
+      "positive_rate": 0.3933333333333333,
+      "p10": -0.03176116694007615,
+      "p90": 0.025980067450925945,
+      "min": -0.048012418368268306,
+      "max": 0.12764326225000588
+     }
+    }
+   },
+   "top_positive": [
+    {
+     "fundShortName": "子正开源1号",
+     "advisor": "天津子正资管",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.09808811305070653,
+     "excess": 0.12764326225000588
+    },
+    {
+     "fundShortName": "懋良锐奕基石",
+     "advisor": "上海懋良投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.05040448039825751,
+     "excess": 0.07995962959755687
+    },
+    {
+     "fundShortName": "积露资产量化对冲",
+     "advisor": "北京积露资管",
+     "managerScale": "10-20亿元",
+     "weekly_return": 0.04820843963523003,
+     "excess": 0.07776358883452938
+    },
+    {
+     "fundShortName": "恒穗基业常青-激进成长1号",
+     "advisor": "上海恒穗投资",
+     "managerScale": "5-10亿元",
+     "weekly_return": 0.03144233889434256,
+     "excess": 0.060997488093641916
+    },
+    {
+     "fundShortName": "和裕水木同华二号",
+     "advisor": "成都瑞智和裕投资",
+     "managerScale": "5-10亿元",
+     "weekly_return": 0.025510201148519318,
+     "excess": 0.055065350347818676
+    }
+   ],
+   "top_negative": [
+    {
+     "fundShortName": "衍合量化选股进取1号",
+     "advisor": "上海衍合",
+     "managerScale": "50-100亿元",
+     "weekly_return": -0.09225941525370618,
+     "excess": -0.06270426605440682
+    },
+    {
+     "fundShortName": "瞰点量化选股专享二号",
+     "advisor": "海南瞰点",
+     "managerScale": "5-10亿元",
+     "weekly_return": -0.07756756756756766,
+     "excess": -0.048012418368268306
+    },
+    {
+     "fundShortName": "盛丰量化选股1号",
+     "advisor": "海南盛丰",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.07693057450876739,
+     "excess": -0.04737542530946803
+    },
+    {
+     "fundShortName": "安贤量化多头1号",
+     "advisor": "北京安贤",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.07581015433525395,
+     "excess": -0.0462550051359546
+    },
+    {
+     "fundShortName": "凡德成长",
+     "advisor": "广东凡德投资",
+     "managerScale": "5-10亿元",
+     "weekly_return": -0.0736887732986562,
+     "excess": -0.04413362409935684
+    }
+   ]
+  },
+  "300指增": {
+   "strategy": "300指增",
+   "benchmark": {
+    "type": "index",
+    "name": "沪深300",
+    "weekly_return": -0.012677570819072614,
+    "source": "dashboard_data.json"
+   },
+   "sample": {
+    "n_total": 29,
+    "n_covered": 27,
+    "coverage_rate": 0.9310344827586207,
+    "exclusion_reasons": {
+     "no_nav_near_week_end": 2
+    }
+   },
+   "returns": {
+    "n": 27,
+    "median": -0.01737159913602182,
+    "mean": -0.021499985115435463,
+    "positive_rate": 0.0,
+    "p10": -0.038141962114249806,
+    "p90": -0.00809234774962404,
+    "min": -0.09323163166842796,
+    "max": -0.004141775923253266
+   },
+   "returns_ex_outliers": null,
+   "outliers": [],
+   "excess": {
+    "n": 27,
+    "median": -0.004694028316949206,
+    "mean": -0.008822414296362846,
+    "positive_rate": 0.37037037037037035,
+    "p10": -0.02546439129517719,
+    "p90": 0.004585223069448575,
+    "min": -0.08055406084935535,
+    "max": 0.008535794895819349
+   },
+   "excess_ex_outliers": null,
+   "scaleSplit": {
+    "big": {
+     "n": 16,
+     "returns": {
+      "n": 16,
+      "median": -0.018412133163129618,
+      "mean": -0.019112247799467748,
+      "positive_rate": 0.0,
+      "p10": -0.03087311075207272,
+      "p90": -0.007345210379181677,
+      "min": -0.04636731547504336,
+      "max": -0.004141775923253266
+     },
+     "excess": {
+      "n": 16,
+      "median": -0.005734562344057004,
+      "mean": -0.006434676980395133,
+      "positive_rate": 0.375,
+      "p10": -0.018195539933000104,
+      "p90": 0.0053323604398909374,
+      "min": -0.033689744655970744,
+      "max": 0.008535794895819349
+     }
+    },
+    "small": {
+     "n": 11,
+     "returns": {
+      "n": 11,
+      "median": -0.015022721197540778,
+      "mean": -0.02497305757502486,
+      "positive_rate": 0.0,
+      "p10": -0.04830857570840108,
+      "p90": -0.008305479590803189,
+      "min": -0.09323163166842796,
+      "max": -0.007772649987855318
+     },
+     "excess": {
+      "n": 11,
+      "median": -0.0023451503784681638,
+      "mean": -0.012295486755952247,
+      "positive_rate": 0.36363636363636365,
+      "p10": -0.035631004889328466,
+      "p90": 0.004372091228269426,
+      "min": -0.08055406084935535,
+      "max": 0.0049049208312172965
+     }
+    }
+   },
+   "top_positive": [
+    {
+     "fundShortName": "钧富沪深300指数增强1号",
+     "advisor": "杭州钧富投资",
+     "managerScale": "50-100亿元",
+     "weekly_return": -0.004141775923253266,
+     "excess": 0.008535794895819349
+    },
+    {
+     "fundShortName": "磐松大盘股指数增强1号",
+     "advisor": "上海磐松",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.006089074460681965,
+     "excess": 0.00658849635839065
+    },
+    {
+     "fundShortName": "众量资产添运1号",
+     "advisor": "上海众量",
+     "managerScale": "20-50亿元",
+     "weekly_return": -0.007772649987855318,
+     "excess": 0.0049049208312172965
+    },
+    {
+     "fundShortName": "信展300增强",
+     "advisor": "广东信展",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.008305479590803189,
+     "excess": 0.004372091228269426
+    },
+    {
+     "fundShortName": "翰荣沪深300指数增强一号",
+     "advisor": "深圳翰荣",
+     "managerScale": "50-100亿元",
+     "weekly_return": -0.00860134629768139,
+     "excess": 0.004076224521391225
+    }
+   ],
+   "top_negative": [
+    {
+     "fundShortName": "竹润量化多策略选股3号",
+     "advisor": "上海竹润投资",
+     "managerScale": "20-50亿元",
+     "weekly_return": -0.09323163166842796,
+     "excess": -0.08055406084935535
+    },
+    {
+     "fundShortName": "长鲸探源优选1号",
+     "advisor": "北京长鲸九州",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.04830857570840108,
+     "excess": -0.035631004889328466
+    },
+    {
+     "fundShortName": "幻方量化300指数专享16号3期",
+     "advisor": "宁波幻方量化投资",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.04636731547504336,
+     "excess": -0.033689744655970744
+    },
+    {
+     "fundShortName": "灵均沪深300指数增强1号",
+     "advisor": "宁波灵均投资",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.032658393207054104,
+     "excess": -0.01998082238798149
+    },
+    {
+     "fundShortName": "衍合300指数增强1号",
+     "advisor": "上海衍合",
+     "managerScale": "50-100亿元",
+     "weekly_return": -0.029087828297091334,
+     "excess": -0.01641025747801872
+    }
+   ]
+  },
+  "500指增": {
+   "strategy": "500指增",
+   "benchmark": {
+    "type": "index",
+    "name": "中证500",
+    "weekly_return": -0.027590967070884598,
+    "source": "dashboard_data.json"
+   },
+   "sample": {
+    "n_total": 123,
+    "n_covered": 121,
+    "coverage_rate": 0.983739837398374,
+    "exclusion_reasons": {
+     "no_nav_near_week_end": 2
+    }
+   },
+   "returns": {
+    "n": 121,
+    "median": -0.04099791568367639,
+    "mean": -0.03965248768304842,
+    "positive_rate": 0.01652892561983471,
+    "p10": -0.0581701931767451,
+    "p90": -0.017154070167481494,
+    "min": -0.13798852874483125,
+    "max": 0.03741496655543264
+   },
+   "returns_ex_outliers": null,
+   "outliers": [],
+   "excess": {
+    "n": 121,
+    "median": -0.013406948612791791,
+    "mean": -0.012061520612163817,
+    "positive_rate": 0.21487603305785125,
+    "p10": -0.030579226105860502,
+    "p90": 0.010436896903403103,
+    "min": -0.11039756167394665,
+    "max": 0.06500593362631724
+   },
+   "excess_ex_outliers": null,
+   "scaleSplit": {
+    "big": {
+     "n": 43,
+     "returns": {
+      "n": 43,
+      "median": -0.0436787391012744,
+      "mean": -0.04213440711829165,
+      "positive_rate": 0.0,
+      "p10": -0.05748772507648259,
+      "p90": -0.02509899430489579,
+      "min": -0.07175572519083973,
+      "max": -0.015085124102426573
+     },
+     "excess": {
+      "n": 43,
+      "median": -0.016087772030389802,
+      "mean": -0.014543440047407057,
+      "positive_rate": 0.18604651162790697,
+      "p10": -0.02989675800559799,
+      "p90": 0.0024919727659888087,
+      "min": -0.04416475811995513,
+      "max": 0.012505842968458025
+     }
+    },
+    "small": {
+     "n": 78,
+     "returns": {
+      "n": 78,
+      "median": -0.03790518528812975,
+      "mean": -0.03828425004567073,
+      "positive_rate": 0.02564102564102564,
+      "p10": -0.05872700065654881,
+      "p90": -0.01446475938873808,
+      "min": -0.13798852874483125,
+      "max": 0.03741496655543264
+     },
+     "excess": {
+      "n": 78,
+      "median": -0.010314218217245152,
+      "mean": -0.010693282974786132,
+      "positive_rate": 0.23076923076923078,
+      "p10": -0.031136033585664212,
+      "p90": 0.013126207682146517,
+      "min": -0.11039756167394665,
+      "max": 0.06500593362631724
+     }
+    }
+   },
+   "top_positive": [
+    {
+     "fundShortName": "和裕水木同华五号",
+     "advisor": "成都瑞智和裕投资",
+     "managerScale": "5-10亿元",
+     "weekly_return": 0.03741496655543264,
+     "excess": 0.06500593362631724
+    },
+    {
+     "fundShortName": "东恺多策略精选一号",
+     "advisor": "上海东恺投资",
+     "managerScale": "10-20亿元",
+     "weekly_return": 0.0012730725400684761,
+     "excess": 0.028864039610953074
+    },
+    {
+     "fundShortName": "柯凡汀福星成长进化1号",
+     "advisor": "青岛柯凡汀投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.004552351126200116,
+     "excess": 0.023038615944684482
+    },
+    {
+     "fundShortName": "满风积分2号中证500指数增强",
+     "advisor": "上海满风资管",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.008984184412205387,
+     "excess": 0.01860678265867921
+    },
+    {
+     "fundShortName": "国标中证500股指B类",
+     "advisor": "杭州国标资管",
+     "managerScale": "5-10亿元",
+     "weekly_return": -0.011047619047618973,
+     "excess": 0.016543348023265625
+    }
+   ],
+   "top_negative": [
+    {
+     "fundShortName": "卓胜中证500指数增强一号",
+     "advisor": "上海卓胜",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.13798852874483125,
+     "excess": -0.11039756167394665
+    },
+    {
+     "fundShortName": "瞰点中证500指增951号",
+     "advisor": "海南瞰点",
+     "managerScale": "5-10亿元",
+     "weekly_return": -0.07734303912647855,
+     "excess": -0.049752072055593954
+    },
+    {
+     "fundShortName": "竹润量化多策略选股2号",
+     "advisor": "上海竹润投资",
+     "managerScale": "20-50亿元",
+     "weekly_return": -0.07481322280216962,
+     "excess": -0.04722225573128502
+    },
+    {
+     "fundShortName": "涌现均衡",
+     "advisor": "上海涌现",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.07400485890487762,
+     "excess": -0.046413891833993026
+    },
+    {
+     "fundShortName": "盛丰中证500指数增强1号",
+     "advisor": "海南盛丰",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.07175572519083973,
+     "excess": -0.04416475811995513
+    }
+   ]
+  },
+  "A500指增": {
+   "strategy": "A500指增",
+   "benchmark": {
+    "type": "index",
+    "name": "中证A500",
+    "weekly_return": -0.01822677154856278,
+    "source": "dashboard_data.json"
+   },
+   "sample": {
+    "n_total": 24,
+    "n_covered": 24,
+    "coverage_rate": 1.0,
+    "exclusion_reasons": {}
+   },
+   "returns": {
+    "n": 24,
+    "median": -0.0243998128159455,
+    "mean": -0.021965659387247715,
+    "positive_rate": 0.0,
+    "p10": -0.03038961086816221,
+    "p90": -0.01067424683366871,
+    "min": -0.038969201759899486,
+    "max": -0.005023564141074077
+   },
+   "returns_ex_outliers": null,
+   "outliers": [],
+   "excess": {
+    "n": 24,
+    "median": -0.006173041267382717,
+    "mean": -0.0037388878386849325,
+    "positive_rate": 0.375,
+    "p10": -0.012162839319599428,
+    "p90": 0.007552524714894071,
+    "min": -0.020742430211336704,
+    "max": 0.013203207407488704
+   },
+   "excess_ex_outliers": null,
+   "scaleSplit": {
+    "big": {
+     "n": 16,
+     "returns": {
+      "n": 16,
+      "median": -0.0243998128159455,
+      "mean": -0.021714451069569998,
+      "positive_rate": 0.0,
+      "p10": -0.034078723746960415,
+      "p90": -0.010743399129577225,
+      "min": -0.038969201759899486,
+      "max": -0.005023564141074077
+     },
+     "excess": {
+      "n": 16,
+      "median": -0.006173041267382717,
+      "mean": -0.003487679521007217,
+      "positive_rate": 0.4375,
+      "p10": -0.015851952198397634,
+      "p90": 0.007483372418985557,
+      "min": -0.020742430211336704,
+      "max": 0.013203207407488704
+     }
+    },
+    "small": {
+     "n": 8,
+     "returns": {
+      "n": 8,
+      "median": -0.024291413679531138,
+      "mean": -0.022468076022603145,
+      "positive_rate": 0.0,
+      "p10": -0.029229961460415642,
+      "p90": -0.013490528418988524,
+      "min": -0.03025540275049121,
+      "max": -0.006995205533286142
+     },
+     "excess": {
+      "n": 8,
+      "median": -0.006064642130968356,
+      "mean": -0.004241304474040364,
+      "positive_rate": 0.25,
+      "p10": -0.011003189911852862,
+      "p90": 0.004736243129574257,
+      "min": -0.01202863120192843,
+      "max": 0.01123156601527664
+     }
+    }
+   },
+   "top_positive": [
+    {
+     "fundShortName": "磐松核心资产指数增强1号",
+     "advisor": "上海磐松",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.005023564141074077,
+     "excess": 0.013203207407488704
+    },
+    {
+     "fundShortName": "骅逸永兴-千里3号",
+     "advisor": "厦门骅逸永兴资管",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.006995205533286142,
+     "excess": 0.01123156601527664
+    },
+    {
+     "fundShortName": "致远中证A500兴泰2号1期",
+     "advisor": "珠海致诚卓远投资",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.010570518389805938,
+     "excess": 0.007656253158756843
+    },
+    {
+     "fundShortName": "子午中证A500指数增强一号",
+     "advisor": "上海子午投资",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.01091627986934851,
+     "excess": 0.0073104916792142705
+    },
+    {
+     "fundShortName": "蒙玺中证A500指数量化1号",
+     "advisor": "上海蒙玺投资",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.012289325842696708,
+     "excess": 0.0059374457058660735
+    }
+   ],
+   "top_negative": [
+    {
+     "fundShortName": "灵均中证A500指数增强1号",
+     "advisor": "宁波灵均投资",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.038969201759899486,
+     "excess": -0.020742430211336704
+    },
+    {
+     "fundShortName": "进化论致远中证A500指数增强一号",
+     "advisor": "海南进化论",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.03771031886104248,
+     "excess": -0.0194835473124797
+    },
+    {
+     "fundShortName": "悦海盈和A500指数增强1号",
+     "advisor": "青岛悦海盈和",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.03044712863287835,
+     "excess": -0.01222035708431557
+    },
+    {
+     "fundShortName": "东源省心享中证A500兴泰进享1号",
+     "advisor": "天津东源投资",
+     "managerScale": "20-50亿元",
+     "weekly_return": -0.03025540275049121,
+     "excess": -0.01202863120192843
+    },
+    {
+     "fundShortName": "进益稳进中证A500指数增强1号",
+     "advisor": "北京进益资管",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.02879048662181183,
+     "excess": -0.010563715073249047
+    }
+   ]
+  },
+  "1000指增": {
+   "strategy": "1000指增",
+   "benchmark": {
+    "type": "index",
+    "name": "中证1000",
+    "weekly_return": -0.04900721031484279,
+    "source": "dashboard_data.json"
+   },
+   "sample": {
+    "n_total": 122,
+    "n_covered": 121,
+    "coverage_rate": 0.9918032786885246,
+    "exclusion_reasons": {
+     "no_nav_near_week_end": 1
+    }
+   },
+   "returns": {
+    "n": 121,
+    "median": -0.04970633021535775,
+    "mean": -0.0462203039193219,
+    "positive_rate": 0.01652892561983471,
+    "p10": -0.0638268256851291,
+    "p90": -0.028120266549856,
+    "min": -0.08613663401422533,
+    "max": 0.03712583510851997
+   },
+   "returns_ex_outliers": null,
+   "outliers": [],
+   "excess": {
+    "n": 121,
+    "median": -0.0006991199005149593,
+    "mean": 0.002786906395520894,
+    "positive_rate": 0.4628099173553719,
+    "p10": -0.014819615370286303,
+    "p90": 0.020886943764986794,
+    "min": -0.03712942369938254,
+    "max": 0.08613304542336275
+   },
+   "excess_ex_outliers": null,
+   "scaleSplit": {
+    "big": {
+     "n": 44,
+     "returns": {
+      "n": 44,
+      "median": -0.05382762290026821,
+      "mean": -0.05286621570197539,
+      "positive_rate": 0.0,
+      "p10": -0.06385309599346328,
+      "p90": -0.039025604002606136,
+      "min": -0.07316075771534702,
+      "max": -0.034002022029479106
+     },
+     "excess": {
+      "n": 44,
+      "median": -0.0048204125854254196,
+      "mean": -0.003859005387132593,
+      "positive_rate": 0.2727272727272727,
+      "p10": -0.01484588567862049,
+      "p90": 0.009981606312236654,
+      "min": -0.02415354740050423,
+      "max": 0.015005188285363687
+     }
+    },
+    "small": {
+     "n": 77,
+     "returns": {
+      "n": 77,
+      "median": -0.045861487503565224,
+      "mean": -0.04242264004351991,
+      "positive_rate": 0.025974025974025976,
+      "p10": -0.06243251770438032,
+      "p90": -0.012805964340677342,
+      "min": -0.08613663401422533,
+      "max": 0.03712583510851997
+     },
+     "excess": {
+      "n": 77,
+      "median": 0.0031457228112775695,
+      "mean": 0.0065845702713228866,
+      "positive_rate": 0.5714285714285714,
+      "p10": -0.013425307389537525,
+      "p90": 0.03620124597416545,
+      "min": -0.03712942369938254,
+      "max": 0.08613304542336275
+     }
+    }
+   },
+   "top_positive": [
+    {
+     "fundShortName": "巨量边界科创智能ETF轮动",
+     "advisor": "北京巨量边界",
+     "managerScale": "20-50亿元",
+     "weekly_return": 0.03712583510851997,
+     "excess": 0.08613304542336275
+    },
+    {
+     "fundShortName": "安值福慧量化10号",
+     "advisor": "青岛安值投资",
+     "managerScale": "20-50亿元",
+     "weekly_return": 0.003478682954453527,
+     "excess": 0.05248589326929632
+    },
+    {
+     "fundShortName": "银杏善利1号",
+     "advisor": "上海银杏",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.002310485201892365,
+     "excess": 0.04669672511295043
+    },
+    {
+     "fundShortName": "东恺红利指增一号",
+     "advisor": "上海东恺投资",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.004056799105105813,
+     "excess": 0.04495041120973698
+    },
+    {
+     "fundShortName": "鸣瑜1000指增1号",
+     "advisor": "广州鸣瑜",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.006115243979321727,
+     "excess": 0.042891966335521066
+    }
+   ],
+   "top_negative": [
+    {
+     "fundShortName": "今通量化价值成长六号",
+     "advisor": "上海今通投资",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.08613663401422533,
+     "excess": -0.03712942369938254
+    },
+    {
+     "fundShortName": "君睿中证1000指数增强1号",
+     "advisor": "北京君睿",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.07477341273572036,
+     "excess": -0.025766202420877564
+    },
+    {
+     "fundShortName": "鸣熙天玑中证1000指数增强尊享1号",
+     "advisor": "鸣熙资本",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.07316075771534702,
+     "excess": -0.02415354740050423
+    },
+    {
+     "fundShortName": "艳珍中证1000指数增强",
+     "advisor": "北京艳珍",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.07158614126908613,
+     "excess": -0.02257893095424334
+    },
+    {
+     "fundShortName": "天辉浪涌1号中证1000指数增强",
+     "advisor": "上海天辉",
+     "managerScale": "20-50亿元",
+     "weekly_return": -0.06905451910885718,
+     "excess": -0.02004730879401439
+    }
+   ]
+  },
+  "2000指增": {
+   "strategy": "2000指增",
+   "benchmark": {
+    "type": "index",
+    "name": "中证2000",
+    "weekly_return": -0.06156675645802478,
+    "source": "dashboard_data.json"
+   },
+   "sample": {
+    "n_total": 25,
+    "n_covered": 24,
+    "coverage_rate": 0.96,
+    "exclusion_reasons": {
+     "no_nav_near_week_end": 1
+    }
+   },
+   "returns": {
+    "n": 24,
+    "median": -0.05679305752502728,
+    "mean": -0.0531826859020206,
+    "positive_rate": 0.0,
+    "p10": -0.0651461965086644,
+    "p90": -0.037749498173990426,
+    "min": -0.07635923980806292,
+    "max": -0.02242888359350914
+   },
+   "returns_ex_outliers": null,
+   "outliers": [],
+   "excess": {
+    "n": 24,
+    "median": 0.0047736989329974985,
+    "mean": 0.008384070556004182,
+    "positive_rate": 0.7083333333333334,
+    "p10": -0.003579440050639622,
+    "p90": 0.023817258284034352,
+    "min": -0.01479248335003814,
+    "max": 0.03913787286451564
+   },
+   "excess_ex_outliers": null,
+   "scaleSplit": {
+    "big": {
+     "n": 15,
+     "returns": {
+      "n": 15,
+      "median": -0.056111888111888164,
+      "mean": -0.05299389933930943,
+      "positive_rate": 0.0,
+      "p10": -0.06494414630632679,
+      "p90": -0.040595471564017216,
+      "min": -0.06666666666666654,
+      "max": -0.03840804536214826
+     },
+     "excess": {
+      "n": 15,
+      "median": 0.005454868346136614,
+      "mean": 0.008572857118715345,
+      "positive_rate": 0.8,
+      "p10": -0.003377389848302011,
+      "p90": 0.020971284894007562,
+      "min": -0.005099910208641763,
+      "max": 0.02315871109587652
+     }
+    },
+    "small": {
+     "n": 9,
+     "returns": {
+      "n": 9,
+      "median": -0.06095031117257732,
+      "mean": -0.05349733017320587,
+      "positive_rate": 0.0,
+      "p10": -0.06743830012806476,
+      "p90": -0.03378297927522178,
+      "min": -0.07635923980806292,
+      "max": -0.02242888359350914
+     },
+     "excess": {
+      "n": 9,
+      "median": 0.0006164452854474575,
+      "mean": 0.008069426284818913,
+      "positive_rate": 0.5555555555555556,
+      "p10": -0.0058715436700399765,
+      "p90": 0.027783777182803,
+      "min": -0.01479248335003814,
+      "max": 0.03913787286451564
+     }
+    }
+   },
+   "top_positive": [
+    {
+     "fundShortName": "全成阳星成长",
+     "advisor": "全成基金",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.02242888359350914,
+     "excess": 0.03913787286451564
+    },
+    {
+     "fundShortName": "九招股票量化小市值增强1号",
+     "advisor": "武汉九招",
+     "managerScale": "5-10亿元",
+     "weekly_return": -0.03662150319564994,
+     "excess": 0.024945253262374838
+    },
+    {
+     "fundShortName": "杨湜微盘股增强1号",
+     "advisor": "上海杨湜投资",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.037467263664779926,
+     "excess": 0.024099492793244852
+    },
+    {
+     "fundShortName": "托特中证2000指数增强5号",
+     "advisor": "三亚托特",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.03840804536214826,
+     "excess": 0.02315871109587652
+    },
+    {
+     "fundShortName": "天算中证2000指数增强1号",
+     "advisor": "北京天算",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.03986134885287684,
+     "excess": 0.021705407605147935
+    }
+   ],
+   "top_negative": [
+    {
+     "fundShortName": "嘉策宏运1号",
+     "advisor": "上海嘉策百煅",
+     "managerScale": "5-10亿元",
+     "weekly_return": -0.07635923980806292,
+     "excess": -0.01479248335003814
+    },
+    {
+     "fundShortName": "千衍六和36号2000增强",
+     "advisor": "上海千衍",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.06666666666666654,
+     "excess": -0.005099910208641763
+    },
+    {
+     "fundShortName": "益清证金玄德1号量化",
+     "advisor": "深圳证金投资",
+     "managerScale": "5-10亿元",
+     "weekly_return": -0.06520806520806521,
+     "excess": -0.0036413087500404354
+    },
+    {
+     "fundShortName": "合骥睿源2000增强1号A类",
+     "advisor": "上海合骥",
+     "managerScale": "100亿元以上",
+     "weekly_return": -0.0650018362100625,
+     "excess": -0.0034350797520377244
+    },
+    {
+     "fundShortName": "星阔晴山2号中证2000指数增强",
+     "advisor": "青岛星阔投资",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.06488912354804643,
+     "excess": -0.0033223670900216565
+    }
+   ]
+  },
+  "股票市场中性": {
+   "strategy": "股票市场中性",
+   "benchmark": {
+    "type": "absolute",
+    "name": null,
+    "weekly_return": null,
+    "source": null
+   },
+   "sample": {
+    "n_total": 84,
+    "n_covered": 83,
+    "coverage_rate": 0.9880952380952381,
+    "exclusion_reasons": {
+     "no_nav_near_week_end": 1
+    }
+   },
+   "returns": {
+    "n": 83,
+    "median": -0.011661812523187098,
+    "mean": -0.014352676621481352,
+    "positive_rate": 0.1686746987951807,
+    "p10": -0.03464947145509798,
+    "p90": 0.0013755642004750865,
+    "min": -0.09085872332170819,
+    "max": 0.027261677374544213
+   },
+   "returns_ex_outliers": null,
+   "outliers": [],
+   "excess": null,
+   "excess_ex_outliers": null,
+   "scaleSplit": {
+    "big": {
+     "n": 24,
+     "returns": {
+      "n": 24,
+      "median": -0.01597014724543061,
+      "mean": -0.01763263903296909,
+      "positive_rate": 0.041666666666666664,
+      "p10": -0.03403406710192464,
+      "p90": -0.004912116792581269,
+      "min": -0.04966913816471341,
+      "max": 0.00025372420428104725
+     },
+     "excess": null
+    },
+    "small": {
+     "n": 59,
+     "returns": {
+      "n": 59,
+      "median": -0.009096763806150321,
+      "mean": -0.013018454623588038,
+      "positive_rate": 0.22033898305084745,
+      "p10": -0.0349179534726153,
+      "p90": 0.0017776271374070343,
+      "min": -0.09085872332170819,
+      "max": 0.027261677374544213
+     },
+     "excess": null
+    }
+   },
+   "top_positive": [
+    {
+     "fundShortName": "逻绎进取德尔塔一号",
+     "advisor": "天津逻绎",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.027261677374544213
+    },
+    {
+     "fundShortName": "银杏进取2号",
+     "advisor": "上海银杏",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.019338560706465335
+    },
+    {
+     "fundShortName": "鼎森鲲鹏灵活配置2号",
+     "advisor": "江西鼎森投资",
+     "managerScale": "5-10亿元",
+     "weekly_return": 0.003968253968253954
+    },
+    {
+     "fundShortName": "倚天阁",
+     "advisor": "深圳倚天阁资管",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.003595685177786523
+    },
+    {
+     "fundShortName": "赢仕创鑫五号",
+     "advisor": "上海赢仕投资",
+     "managerScale": "10-20亿元",
+     "weekly_return": 0.002714231368188269
+    }
+   ],
+   "top_negative": [
+    {
+     "fundShortName": "招金套利稳健1号",
+     "advisor": "烟台招金",
+     "managerScale": "5-10亿元",
+     "weekly_return": -0.09085872332170819
+    },
+    {
+     "fundShortName": "建隆安升6号",
+     "advisor": "北京建隆资管",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.06623483258826746
+    },
+    {
+     "fundShortName": "同花顺方块Ｑ",
+     "advisor": "浙江同花顺",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.058864628820960774
+    },
+    {
+     "fundShortName": "衍盛铭量万得全A等权指数增强1号",
+     "advisor": "深圳衍盛",
+     "managerScale": "50-100亿元",
+     "weekly_return": -0.04966913816471341
+    },
+    {
+     "fundShortName": "若谷米参1号",
+     "advisor": "海南若谷",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.04115143277692357
+    }
+   ]
+  },
+  "股票多空": {
+   "strategy": "股票多空",
+   "benchmark": {
+    "type": "absolute",
+    "name": null,
+    "weekly_return": null,
+    "source": null
+   },
+   "sample": {
+    "n_total": 43,
+    "n_covered": 41,
+    "coverage_rate": 0.9534883720930233,
+    "exclusion_reasons": {
+     "no_nav_near_week_end": 2
+    }
+   },
+   "returns": {
+    "n": 41,
+    "median": -0.0217391294847763,
+    "mean": -0.02137948634857123,
+    "positive_rate": 0.12195121951219512,
+    "p10": -0.044321712115981904,
+    "p90": 0.0005359014226384851,
+    "min": -0.08098068385251933,
+    "max": 0.020020625425538174
+   },
+   "returns_ex_outliers": null,
+   "outliers": [],
+   "excess": null,
+   "excess_ex_outliers": null,
+   "scaleSplit": {
+    "big": {
+     "n": 6,
+     "returns": {
+      "n": 6,
+      "median": -0.012301620930921853,
+      "mean": -0.007794795668102779,
+      "positive_rate": 0.3333333333333333,
+      "p10": -0.021361029497474815,
+      "p90": 0.01027826342408833,
+      "min": -0.024229074973536546,
+      "max": 0.020020625425538174
+     },
+     "excess": null
+    },
+    "small": {
+     "n": 35,
+     "returns": {
+      "n": 35,
+      "median": -0.02270127988673387,
+      "mean": -0.023708290465222964,
+      "positive_rate": 0.08571428571428572,
+      "p10": -0.04749335381407389,
+      "p90": -0.0008813345923827734,
+      "min": -0.08098068385251933,
+      "max": 0.010351966883117125
+     },
+     "excess": null
+    }
+   },
+   "top_positive": [
+    {
+     "fundShortName": "沁源全球精选",
+     "advisor": "浙江沁源",
+     "managerScale": "50-100亿元",
+     "weekly_return": 0.020020625425538174
+    },
+    {
+     "fundShortName": "星际健安中证1000指数多空1号",
+     "advisor": "长兴星际",
+     "managerScale": "5-10亿元",
+     "weekly_return": 0.010351966883117125
+    },
+    {
+     "fundShortName": "观彻东临石",
+     "advisor": "上海观彻投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.004479948279729529
+    },
+    {
+     "fundShortName": "澎湃柏瑞进取绝对收益1号",
+     "advisor": "海南澎湃",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.001959554789151774
+    },
+    {
+     "fundShortName": "呈瑞正乾43号",
+     "advisor": "上海呈瑞投资",
+     "managerScale": "50-100亿元",
+     "weekly_return": 0.0005359014226384851
+    }
+   ],
+   "top_negative": [
+    {
+     "fundShortName": "巨子3号A类",
+     "advisor": "杭州巨子",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.08098068385251933
+    },
+    {
+     "fundShortName": "锐越对冲1号混合投资",
+     "advisor": "上海锐越投资顾问",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.05463965856835451
+    },
+    {
+     "fundShortName": "锋滔多空对冲1号",
+     "advisor": "上海锋滔资管",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.05269468257298715
+    },
+    {
+     "fundShortName": "宁聚量化优选基金",
+     "advisor": "宁波宁聚投资",
+     "managerScale": "20-50亿元",
+     "weekly_return": -0.04960778161280188
+    },
+    {
+     "fundShortName": "瞰点瞰山望远1号",
+     "advisor": "海南瞰点",
+     "managerScale": "5-10亿元",
+     "weekly_return": -0.044321712115981904
+    }
+   ]
+  },
+  "量化期货": {
+   "strategy": "量化期货",
+   "benchmark": {
+    "type": "commodity",
+    "name": "南华商品指数",
+    "weekly_return": 0.010514446272436473,
+    "source": "cta-series.json"
+   },
+   "sample": {
+    "n_total": 171,
+    "n_covered": 166,
+    "coverage_rate": 0.9707602339181286,
+    "exclusion_reasons": {
+     "no_nav_near_week_end": 5
+    }
+   },
+   "returns": {
+    "n": 166,
+    "median": -0.0073289824563590455,
+    "mean": -0.008938367014088459,
+    "positive_rate": 0.28313253012048195,
+    "p10": -0.02939117088434573,
+    "p90": 0.009426796350415989,
+    "min": -0.0726351345630929,
+    "max": 0.04019626867740422
+   },
+   "returns_ex_outliers": null,
+   "outliers": [],
+   "excess": {
+    "n": 166,
+    "median": -0.01784342872879552,
+    "mean": -0.01945281328652493,
+    "positive_rate": 0.09036144578313253,
+    "p10": -0.0399056171567822,
+    "p90": -0.0010876499220204838,
+    "min": -0.08314958083552937,
+    "max": 0.02968182240496775
+   },
+   "excess_ex_outliers": null,
+   "scaleSplit": {
+    "big": {
+     "n": 18,
+     "returns": {
+      "n": 18,
+      "median": -0.009748226151612027,
+      "mean": -0.012560445406194689,
+      "positive_rate": 0.2222222222222222,
+      "p10": -0.02869664105835933,
+      "p90": 0.0028217543930246797,
+      "min": -0.05891119728314953,
+      "max": 0.0060400808889431445
+     },
+     "excess": {
+      "n": 18,
+      "median": -0.0202626724240485,
+      "mean": -0.023074891678631162,
+      "positive_rate": 0.0,
+      "p10": -0.0392110873307958,
+      "p90": -0.007692691879411793,
+      "min": -0.069425643555586,
+      "max": -0.004474365383493328
+     }
+    },
+    "small": {
+     "n": 148,
+     "returns": {
+      "n": 148,
+      "median": -0.007164219560803209,
+      "mean": -0.008497843966399863,
+      "positive_rate": 0.2905405405405405,
+      "p10": -0.029177993879267946,
+      "p90": 0.010328535020212434,
+      "min": -0.0726351345630929,
+      "max": 0.04019626867740422
+     },
+     "excess": {
+      "n": 148,
+      "median": -0.017678665833239682,
+      "mean": -0.019012290238836337,
+      "positive_rate": 0.10135135135135136,
+      "p10": -0.03969244015170442,
+      "p90": -0.00018591125222403826,
+      "min": -0.08314958083552937,
+      "max": 0.02968182240496775
+     }
+    }
+   },
+   "top_positive": [
+    {
+     "fundShortName": "元三号量化",
+     "advisor": "广州和元达",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.04019626867740422,
+     "excess": 0.02968182240496775
+    },
+    {
+     "fundShortName": "朴时CTA二号",
+     "advisor": "上海朴时投资",
+     "managerScale": "10-20亿元",
+     "weekly_return": 0.028211881767632452,
+     "excess": 0.01769743549519598
+    },
+    {
+     "fundShortName": "量衍海锦聚配专享一号A类",
+     "advisor": "浙江量衍投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.02752911733564334,
+     "excess": 0.017014671063206865
+    },
+    {
+     "fundShortName": "秋实瑞盈1号",
+     "advisor": "珠海横琴锐实",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.025998732341523834,
+     "excess": 0.01548428606908736
+    },
+    {
+     "fundShortName": "量信进取1号",
+     "advisor": "北京量信投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.025451211767694604,
+     "excess": 0.01493676549525813
+    }
+   ],
+   "top_negative": [
+    {
+     "fundShortName": "锦福源私享一号",
+     "advisor": "海南锦福源",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.0726351345630929,
+     "excess": -0.08314958083552937
+    },
+    {
+     "fundShortName": "玄信股票优选8号",
+     "advisor": "上海玄信投资",
+     "managerScale": "50-100亿元",
+     "weekly_return": -0.05891119728314953,
+     "excess": -0.069425643555586
+    },
+    {
+     "fundShortName": "成益量化CTA",
+     "advisor": "广东成益",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.05805687203791465,
+     "excess": -0.06857131831035113
+    },
+    {
+     "fundShortName": "唐德傲梅量化CTA一号",
+     "advisor": "深圳唐德",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.053940615516534285,
+     "excess": -0.06445506178897076
+    },
+    {
+     "fundShortName": "富鑫稳进CTA1号",
+     "advisor": "深圳前海富鑫资本投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.048960138648180274,
+     "excess": -0.059474584920616747
+    }
+   ]
+  },
+  "主观期货": {
+   "strategy": "主观期货",
+   "benchmark": {
+    "type": "commodity",
+    "name": "南华商品指数",
+    "weekly_return": 0.010514446272436473,
+    "source": "cta-series.json"
+   },
+   "sample": {
+    "n_total": 98,
+    "n_covered": 93,
+    "coverage_rate": 0.9489795918367347,
+    "exclusion_reasons": {
+     "no_nav_near_week_end": 5
+    }
+   },
+   "returns": {
+    "n": 93,
+    "median": -0.0009493978739554265,
+    "mean": -0.007022289481164492,
+    "positive_rate": 0.45161290322580644,
+    "p10": -0.03280961292880933,
+    "p90": 0.01234192049329823,
+    "min": -0.10005820721769498,
+    "max": 0.07274132902273611
+   },
+   "returns_ex_outliers": null,
+   "outliers": [],
+   "excess": {
+    "n": 93,
+    "median": -0.0114638441463919,
+    "mean": -0.017536735753600964,
+    "positive_rate": 0.13978494623655913,
+    "p10": -0.0433240592012458,
+    "p90": 0.0018274742208617572,
+    "min": -0.11057265349013146,
+    "max": 0.06222688275029964
+   },
+   "excess_ex_outliers": null,
+   "scaleSplit": {
+    "big": {
+     "n": 3,
+     "returns": {
+      "n": 3,
+      "median": 0.008267759048990575,
+      "mean": 0.004267277521473045,
+      "positive_rate": 0.6666666666666666,
+      "p10": -0.0022424441954947746,
+      "p90": 0.009176806627433854,
+      "min": -0.004869995006616112,
+      "max": 0.009404068522044673
+     },
+     "excess": {
+      "n": 3,
+      "median": -0.002246687223445898,
+      "mean": -0.006247168750963428,
+      "positive_rate": 0.0,
+      "p10": -0.012756890467931247,
+      "p90": -0.0013376396450026195,
+      "min": -0.015384441279052585,
+      "max": -0.0011103777503918
+     }
+    },
+    "small": {
+     "n": 90,
+     "returns": {
+      "n": 90,
+      "median": -0.0012215042697210077,
+      "mean": -0.00739860838125241,
+      "positive_rate": 0.4444444444444444,
+      "p10": -0.03328735804466981,
+      "p90": 0.012519653533826924,
+      "min": -0.10005820721769498,
+      "max": 0.07274132902273611
+     },
+     "excess": {
+      "n": 90,
+      "median": -0.01173595054215748,
+      "mean": -0.017913054653688882,
+      "positive_rate": 0.14444444444444443,
+      "p10": -0.043801804317106285,
+      "p90": 0.002005207261390452,
+      "min": -0.11057265349013146,
+      "max": 0.06222688275029964
+     }
+    }
+   },
+   "top_positive": [
+    {
+     "fundShortName": "六妙星如梦令",
+     "advisor": "北京六妙星",
+     "managerScale": "20-50亿元",
+     "weekly_return": 0.07274132902273611,
+     "excess": 0.06222688275029964
+    },
+    {
+     "fundShortName": "牛伞财富1号",
+     "advisor": "上海牛伞",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.043275492624762046,
+     "excess": 0.032761046352325573
+    },
+    {
+     "fundShortName": "宏奕东哥2号",
+     "advisor": "宁波梅山宏奕投资",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.03964306739553147,
+     "excess": 0.029128621123095
+    },
+    {
+     "fundShortName": "观理摘金稳健1号A类",
+     "advisor": "广东观理",
+     "managerScale": "10-20亿元",
+     "weekly_return": 0.019658691995763533,
+     "excess": 0.00914424572332706
+    },
+    {
+     "fundShortName": "宽价种子B类",
+     "advisor": "上海宽价",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.01859504084211383,
+     "excess": 0.008080594569677357
+    }
+   ],
+   "top_negative": [
+    {
+     "fundShortName": "阿尔法喵资本-赤兔1号",
+     "advisor": "广州阿尔法喵",
+     "managerScale": "5-10亿元",
+     "weekly_return": -0.10005820721769498,
+     "excess": -0.11057265349013146
+    },
+    {
+     "fundShortName": "行必达六冠宠粉",
+     "advisor": "厦门行必达",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.09810169956140358,
+     "excess": -0.10861614583384005
+    },
+    {
+     "fundShortName": "弈祖青圭礼东",
+     "advisor": "上海弈祖投资",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.0818425216015578,
+     "excess": -0.09235696787399428
+    },
+    {
+     "fundShortName": "东航金融-梦想科技1号",
+     "advisor": "东航基金",
+     "managerScale": "20-50亿元",
+     "weekly_return": -0.06290786948176585,
+     "excess": -0.07342231575420233
+    },
+    {
+     "fundShortName": "止于至善CTA1号",
+     "advisor": "北京止于至善投资",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.05688141461605045,
+     "excess": -0.06739586088848692
+    }
+   ]
+  },
+  "宏观策略": {
+   "strategy": "宏观策略",
+   "benchmark": {
+    "type": "absolute",
+    "name": null,
+    "weekly_return": null,
+    "source": null
+   },
+   "sample": {
+    "n_total": 106,
+    "n_covered": 103,
+    "coverage_rate": 0.9716981132075472,
+    "exclusion_reasons": {
+     "no_nav_near_week_end": 3
+    }
+   },
+   "returns": {
+    "n": 103,
+    "median": -0.002466920834267694,
+    "mean": -0.007248490260610509,
+    "positive_rate": 0.4174757281553398,
+    "p10": -0.032125953917252544,
+    "p90": 0.008376774099297712,
+    "min": -0.0864086408640865,
+    "max": 0.07356286101770437
+   },
+   "returns_ex_outliers": null,
+   "outliers": [],
+   "excess": null,
+   "excess_ex_outliers": null,
+   "scaleSplit": {
+    "big": {
+     "n": 13,
+     "returns": {
+      "n": 13,
+      "median": -0.0006748052266732918,
+      "mean": -0.005101059856317506,
+      "positive_rate": 0.46153846153846156,
+      "p10": -0.030363063433840938,
+      "p90": 0.00911706913744004,
+      "min": -0.04072670777913412,
+      "max": 0.015439637124912808
+     },
+     "excess": null
+    },
+    "small": {
+     "n": 90,
+     "returns": {
+      "n": 90,
+      "median": -0.002654924826244076,
+      "mean": -0.00755867465234172,
+      "positive_rate": 0.4111111111111111,
+      "p10": -0.02779212626954016,
+      "p90": 0.0082581253944376,
+      "min": -0.0864086408640865,
+      "max": 0.07356286101770437
+     },
+     "excess": null
+    }
+   },
+   "top_positive": [
+    {
+     "fundShortName": "路远睿泽稳增",
+     "advisor": "海南路远",
+     "managerScale": "20-50亿元",
+     "weekly_return": 0.07356286101770437
+    },
+    {
+     "fundShortName": "米答维斯塔潘1号",
+     "advisor": "上海米答资管",
+     "managerScale": "5-10亿元",
+     "weekly_return": 0.02749790092359361
+    },
+    {
+     "fundShortName": "觅得潜质资产1号A类",
+     "advisor": "海南觅得",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.015756395503230936
+    },
+    {
+     "fundShortName": "元康全景1号B类",
+     "advisor": "芜湖元康",
+     "managerScale": "50-100亿元",
+     "weekly_return": 0.015439637124912808
+    },
+    {
+     "fundShortName": "思瑞乾元宏观",
+     "advisor": "海南思瑞",
+     "managerScale": "20-50亿元",
+     "weekly_return": 0.014363093251335002
+    }
+   ],
+   "top_negative": [
+    {
+     "fundShortName": "含章可贞1号",
+     "advisor": "北京含章",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.0864086408640865
+    },
+    {
+     "fundShortName": "澜音宏观全天候3号",
+     "advisor": "上海澜音",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.06690965894298373
+    },
+    {
+     "fundShortName": "佳岳升冉宏观配置",
+     "advisor": "海南佳岳",
+     "managerScale": "20-50亿元",
+     "weekly_return": -0.061699491777449156
+    },
+    {
+     "fundShortName": "赤道虹阳1号",
+     "advisor": "北京赤道阳光资管",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.05102972506847925
+    },
+    {
+     "fundShortName": "博普宏观对冲1号1期",
+     "advisor": "深圳前海博普资管",
+     "managerScale": "20-50亿元",
+     "weekly_return": -0.04529568013420959
+    }
+   ]
+  },
+  "复合策略": {
+   "strategy": "复合策略",
+   "benchmark": {
+    "type": "absolute",
+    "name": null,
+    "weekly_return": null,
+    "source": null
+   },
+   "sample": {
+    "n_total": 238,
+    "n_covered": 236,
+    "coverage_rate": 0.9915966386554622,
+    "exclusion_reasons": {
+     "no_nav_near_week_end": 2
+    }
+   },
+   "returns": {
+    "n": 236,
+    "median": -0.008998487279056555,
+    "mean": -0.018584517226324072,
+    "positive_rate": 0.2669491525423729,
+    "p10": -0.05393591601598896,
+    "p90": 0.008133344202405746,
+    "min": -0.2374626242465867,
+    "max": 0.19511385300858985
+   },
+   "returns_ex_outliers": {
+    "n": 233,
+    "median": -0.00896276379043437,
+    "mean": -0.01780157483376239,
+    "positive_rate": 0.26609442060085836,
+    "p10": -0.05168680467492437,
+    "p90": 0.007696583893096294,
+    "min": -0.1433775064178172,
+    "max": 0.04985835630456115
+   },
+   "outliers": [
+    {
+     "fundShortName": "汇誉群智1号",
+     "advisor": "云南汇誉",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.2374626242465867
+    },
+    {
+     "fundShortName": "创亮明德混合1号",
+     "advisor": "重庆创亮明德",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.19583035790784753
+    },
+    {
+     "fundShortName": "蚂金青山进取一号",
+     "advisor": "深圳巨熊",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.19511385300858985
+    }
+   ],
+   "excess": null,
+   "excess_ex_outliers": null,
+   "scaleSplit": {
+    "big": {
+     "n": 26,
+     "returns": {
+      "n": 26,
+      "median": -0.01298820601332501,
+      "mean": -0.015294807025876472,
+      "positive_rate": 0.15384615384615385,
+      "p10": -0.038992750848502344,
+      "p90": 0.0018060288321724016,
+      "min": -0.0415760362935802,
+      "max": 0.009553844545129087
+     },
+     "excess": null
+    },
+    "small": {
+     "n": 210,
+     "returns": {
+      "n": 210,
+      "median": -0.008780143666300477,
+      "mean": -0.018991814679712823,
+      "positive_rate": 0.28095238095238095,
+      "p10": -0.05547503283232515,
+      "p90": 0.008561842229397662,
+      "min": -0.2374626242465867,
+      "max": 0.19511385300858985
+     },
+     "excess": null
+    }
+   },
+   "top_positive": [
+    {
+     "fundShortName": "蚂金青山进取一号",
+     "advisor": "深圳巨熊",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.19511385300858985
+    },
+    {
+     "fundShortName": "凡旭旮旯旭1号",
+     "advisor": "珠海凡旭",
+     "managerScale": "0-5亿元",
+     "weekly_return": 0.04985835630456115
+    },
+    {
+     "fundShortName": "恒穗基业常青-家族专户1号",
+     "advisor": "上海恒穗投资",
+     "managerScale": "5-10亿元",
+     "weekly_return": 0.038973064619544084
+    },
+    {
+     "fundShortName": "百航进取2号",
+     "advisor": "上海百航投资",
+     "managerScale": "5-10亿元",
+     "weekly_return": 0.02945619335347427
+    },
+    {
+     "fundShortName": "敦方川杨1号",
+     "advisor": "海南敦方",
+     "managerScale": "5-10亿元",
+     "weekly_return": 0.026559315754392854
+    }
+   ],
+   "top_negative": [
+    {
+     "fundShortName": "汇誉群智1号",
+     "advisor": "云南汇誉",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.2374626242465867
+    },
+    {
+     "fundShortName": "创亮明德混合1号",
+     "advisor": "重庆创亮明德",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.19583035790784753
+    },
+    {
+     "fundShortName": "天辉霍格1号",
+     "advisor": "上海天辉",
+     "managerScale": "20-50亿元",
+     "weekly_return": -0.1433775064178172
+    },
+    {
+     "fundShortName": "璞宏阳光一号",
+     "advisor": "上海璞宏",
+     "managerScale": "0-5亿元",
+     "weekly_return": -0.1415529099605488
+    },
+    {
+     "fundShortName": "数法日月星辰3号",
+     "advisor": "宁波数法",
+     "managerScale": "10-20亿元",
+     "weekly_return": -0.12787560700446354
+    }
+   ]
+  }
+ },
+ "dataQualityNotes": [
+  "全市场 2121 只样本中 2060 只（97.1%）在复盘周窗口（周五锚点±4天、首尾间隔3~11天）内有可用净值并纳入统计；其余 61 只未纳入，明细见各策略 exclusion_reasons。",
+  "周收益基于 cumulative_nav 比值重算，未直接使用数据源的 pastWeekReturn（各基金披露区间长短不齐，不可直接聚合）。",
+  "异常值口径：|周收益| > 15% 标记为 outlier，计入全量统计的同时另给剔除后（*_ex_outliers）口径。",
+  "59 只基金最新净值日早于窗口容差（披露滞后或本轮增量未覆盖），为最主要的剔除原因。",
+  "1 只基金无净值序列，退化使用 pastWeekReturn（已打标 fallback）。"
+ ]
+}

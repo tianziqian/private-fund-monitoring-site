@@ -1,0 +1,257 @@
+/* 周度业绩复盘报告样式 —— 依赖 ../styles.css 的 :root CSS 变量（--red=涨 --green=跌） */
+
+.review-page {
+  width: min(1080px, calc(100vw - 96px));
+  margin: 0 auto 80px;
+}
+
+.review-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  padding: 14px 18px;
+  margin-bottom: 22px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.review-meta strong {
+  color: var(--text);
+}
+
+.review-section {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+  padding: 26px 30px;
+  margin-bottom: 22px;
+}
+
+.review-section h2 {
+  font-size: 19px;
+  margin-bottom: 6px;
+}
+
+.review-section h3 {
+  font-size: 15px;
+  margin: 22px 0 8px;
+  color: var(--wine);
+}
+
+.headline {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  padding: 10px 14px;
+  margin: 12px 0 16px;
+}
+
+.narrative {
+  line-height: 1.9;
+  margin: 10px 0;
+  color: var(--text);
+}
+
+.narrative + .narrative {
+  margin-top: 12px;
+}
+
+.stat-table-wrap {
+  overflow-x: auto;
+  margin: 12px 0;
+}
+
+/* 覆盖 ../styles.css 里给主净值表定义的全局 table/th 规则（min-width: 2240px、
+   position: sticky 等），否则本页的统计表会被强行撑宽、表头错位。 */
+.stat-table {
+  width: 100%;
+  min-width: 0;
+  table-layout: auto;
+  border-collapse: collapse;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.stat-table th,
+.stat-table td {
+  position: static;
+  top: auto;
+  min-width: 0;
+  border-bottom: 1px solid var(--line);
+  padding: 8px 12px;
+  text-align: right;
+  cursor: default;
+  user-select: auto;
+  background: transparent;
+}
+
+.stat-table th:first-child,
+.stat-table td:first-child {
+  text-align: left;
+}
+
+.stat-table thead th {
+  background: #f0f2f6;
+  color: var(--muted);
+  font-weight: 700;
+  position: sticky;
+  top: 0;
+}
+
+.stat-table tbody tr:hover {
+  background: #fafbfc;
+}
+
+.pos { color: var(--red); }   /* 红涨 */
+.neg { color: var(--green); } /* 绿跌 */
+
+.callout-flag {
+  border: 1px solid #f2c3aa;
+  border-left: 4px solid var(--warn);
+  background: #fff7f0;
+  color: #7a3c10;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 14px 0;
+  line-height: 1.8;
+}
+
+.callout-flag::before {
+  content: "⚑ 待跟进 ";
+  font-weight: 800;
+  color: var(--warn);
+}
+
+.callout-info {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--wine);
+  background: #f4f6fb;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin: 14px 0;
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 13px;
+}
+
+.review-footnotes {
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.9;
+  padding: 18px 24px;
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  background: transparent;
+}
+
+.review-footnotes h4 {
+  margin: 0 0 6px;
+  color: var(--text);
+  font-size: 13px;
+}
+
+/* —— 历史报告列表页 —— */
+.report-list {
+  display: grid;
+  gap: 14px;
+}
+
+.report-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  padding: 18px 24px;
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.report-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.report-card .report-week {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.report-card .report-summary {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 4px;
+  line-height: 1.7;
+}
+
+.report-card .report-open {
+  color: var(--accent);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media print {
+  .topbar { display: none; }
+  .review-section { box-shadow: none; break-inside: avoid; }
+}
+
+@media (max-width: 720px) {
+  .review-page {
+    width: calc(100vw - 24px);
+  }
+
+  .review-section {
+    padding: 16px 14px;
+  }
+
+  .review-section h2 {
+    font-size: 17px;
+  }
+
+  .headline {
+    font-size: 13.5px;
+    padding: 9px 12px;
+  }
+
+  .narrative {
+    font-size: 13.5px;
+    line-height: 1.75;
+  }
+
+  .stat-table {
+    font-size: 12px;
+  }
+
+  .stat-table th,
+  .stat-table td {
+    padding: 6px 8px;
+  }
+
+  .review-meta {
+    font-size: 12px;
+    padding: 12px 14px;
+    gap: 6px 14px;
+  }
+
+  .callout-flag,
+  .callout-info {
+    padding: 10px 12px;
+    font-size: 12.5px;
+  }
+
+  .review-footnotes {
+    padding: 14px 16px;
+    font-size: 11.5px;
+  }
+}
