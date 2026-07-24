@@ -139,8 +139,9 @@ function routeMatches(route) {
 
 function renderHeader() {
   const meta = state.data.meta;
+  const asOfDate = meta.asOfDate || window.SiteContext?.dataAsOfDate || meta.currentDate;
   els.summaryPills.innerHTML = [
-    `快照 ${meta.currentDate}`,
+    `数据截至 ${asOfDate}`,
     `覆盖 ${fmt(meta.currentManagers)} 家`,
     `${fmt(meta.currentPersons)} 人`,
   ]
@@ -350,5 +351,5 @@ async function init() {
 }
 
 init().catch((error)=>{console.error(error);if(els.summaryPills)els.summaryPills.textContent="数据加载失败"});
-async function loadAnalysis(){var p=document.getElementById('aiResults');if(!p)return;var r=await AiRender.loadAnalysisResult('./data/change-analysis.json');if(!r||r._parseError){AiRender.mountCollapsibleAnalysis(p,AiRender.renderEmptyState(),{open:true});return}var h='',m=r.meta;if(m&&m.analyzedAt)h+='<div class="ai-update-time" style="margin-bottom:10px;text-align:right">分析时间：'+AiRender.fmtTime(m.analyzedAt)+' · 模型：'+AiRender.escapeHtml(m.model||'-')+'</div>';h+=AiRender.renderDualColumn(r);AiRender.mountCollapsibleAnalysis(p,h)}
+async function loadAnalysis(){var p=document.getElementById('aiResults');if(!p)return;var r=await AiRender.loadAnalysisResult('./data/change-analysis.json');if(!r||r._parseError){AiRender.mountCollapsibleAnalysis(p,AiRender.renderEmptyState(),{open:true});return}var h=AiRender.renderAnalysisMeta(r.meta);h+=AiRender.renderDualColumn(r);AiRender.mountCollapsibleAnalysis(p,h)}
 loadAnalysis();

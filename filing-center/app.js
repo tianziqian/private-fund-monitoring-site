@@ -74,10 +74,11 @@ function renderAll() {
 
 function renderStatus() {
   const m = state.meta;
+  const asOfDate = m.asOfDate || window.SiteContext?.dataAsOfDate || "-";
   els.dataStatus.innerHTML = [
     `<span>口径：${escapeHtml(m.fundTypeLabel || "证券类私募")}</span>`,
     `<span>本周：${escapeHtml(m.currentWeekLabel || "-")}</span>`,
-    `<span>更新：${escapeHtml((m.generatedAt || "").slice(0, 10))}</span>`,
+    `<span>数据截至：${escapeHtml(asOfDate)}</span>`,
   ].join("");
   els.trendSubtitle.textContent = `近 ${m.weeks || state.weeklyCounts.length} 周新增备案产品数量（按备案日期所在自然周统计）`;
   els.topSubtitle.textContent = `本周（${safe(m.currentWeekLabel, "-")}）备案产品数量最多的管理人`;
@@ -287,5 +288,5 @@ els.next.addEventListener("click", () => {
 });
 els.export.addEventListener("click", exportCsv);
 
-async function loadAnalysis(){var p=document.getElementById('aiResults');if(!p)return;var r=await AiRender.loadAnalysisResult('./data/filing-analysis.json');if(!r||r._parseError){AiRender.mountCollapsibleAnalysis(p,AiRender.renderEmptyState(),{open:true});return}var h='',m=r.meta;if(m&&m.analyzedAt)h+='<div class="ai-update-time" style="margin-bottom:10px;text-align:right">分析时间：'+AiRender.fmtTime(m.analyzedAt)+' · 模型：'+AiRender.escapeHtml(m.model||'-')+'</div>';var w=r.worthWatching||[],s=r.summary||'';if(s)h+='<div class="ai-result-summary">'+AiRender.escapeHtml(s)+'</div>';h+='<div class="ai-result-col worth" style="max-width:640px"><h3>值得关注的管理人</h3><div class="ai-manager-cards">';if(w.length)w.forEach(function(it,i){h+=AiRender.renderManagerCard(it,i,'worth')});else h+='<div class="ai-state-msg"><p>暂无数据</p></div>';h+='</div></div>';AiRender.mountCollapsibleAnalysis(p,h)}
+async function loadAnalysis(){var p=document.getElementById('aiResults');if(!p)return;var r=await AiRender.loadAnalysisResult('./data/filing-analysis.json');if(!r||r._parseError){AiRender.mountCollapsibleAnalysis(p,AiRender.renderEmptyState(),{open:true});return}var h=AiRender.renderAnalysisMeta(r.meta);var w=r.worthWatching||[],s=r.summary||'';if(s)h+='<div class="ai-result-summary">'+AiRender.escapeHtml(s)+'</div>';h+='<div class="ai-result-col worth" style="max-width:640px"><h3>值得关注的管理人</h3><div class="ai-manager-cards">';if(w.length)w.forEach(function(it,i){h+=AiRender.renderManagerCard(it,i,'worth')});else h+='<div class="ai-state-msg"><p>暂无数据</p></div>';h+='</div></div>';AiRender.mountCollapsibleAnalysis(p,h)}
 loadData();loadAnalysis();

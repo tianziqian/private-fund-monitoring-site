@@ -1,6 +1,7 @@
 const state = {
   records: [],
   managers: {},
+  asOfDate: "",
   personDetailLookup: new Map(),
   filtered: [],
   page: 1,
@@ -45,6 +46,10 @@ function formatNumber(value) {
 
 function safe(value, fallback = "未披露") {
   return value === undefined || value === null || String(value).trim() === "" ? fallback : String(value);
+}
+
+function dataAsOf(meta = {}) {
+  return meta.asOfDate || window.SiteContext?.dataAsOfDate || meta.snapshotDate || "";
 }
 
 function personDetailKeys(record) {
@@ -96,7 +101,7 @@ function renderMetrics(meta) {
     ["人员总数", formatNumber(meta.personCount), "当前快照人员明细行数"],
     ["覆盖管理人", `${formatNumber(meta.coveredManagerCount)} 家`, "5亿元以上完整样本"],
     ["平均每家人员", `${meta.averagePersonsPerManager} 人`, "按登记编号聚合"],
-    ["快照日期", meta.snapshotDate, "第一期完整快照"],
+    ["数据截止日期", dataAsOf(meta), "统一展示口径"],
   ];
   els.metrics.innerHTML = cards
     .map(
@@ -260,7 +265,7 @@ function openDrawer(record) {
         <span class="tag">${safe(record.fundScale)}</span>
         <span class="tag neutral">${safe(record.certName)}</span>
         <span class="tag ${statusClass(record)}">${safe(record.statusName)}</span>
-        <span class="tag neutral">快照 ${safe(record.snapshotDate)}</span>
+        <span class="tag neutral">数据截至 ${safe(state.asOfDate)}</span>
       </div>
     </div>
 
@@ -271,7 +276,7 @@ function openDrawer(record) {
         ${detailItem("性别", record.sex)}
         ${detailItem("学历", record.educationName)}
         ${detailItem("证书状态", record.statusName)}
-        ${detailItem("快照日期", record.snapshotDate)}
+        ${detailItem("数据截止日期", state.asOfDate)}
       </div>
     </section>
 
@@ -405,6 +410,7 @@ async function init() {
   ]);
   const payload = await response.json();
   const personDetailPayload = await personDetailResponse.json();
+  state.asOfDate = dataAsOf(payload.meta);
   state.personDetailLookup = buildPersonDetailLookup(personDetailPayload.records);
   state.managers = payload.managers || {};
   state.records = payload.records;
@@ -412,7 +418,7 @@ async function init() {
   renderMetrics(payload.meta);
   setupFilters(payload.filters);
   els.dataStatus.innerHTML = [
-    `快照 ${payload.meta.snapshotDate}`,
+    `数据截至 ${state.asOfDate}`,
     `覆盖 ${formatNumber(payload.meta.coveredManagerCount)} 家`,
     `${formatNumber(payload.meta.personCount)} 人`,
   ].map((text) => `<span>${text}</span>`).join("");

@@ -436,8 +436,8 @@ async function loadData() {
   state.meta = payload.meta || {};
   setupFilters();
   applyFilters();
-  const generatedAt = state.meta.generatedAt ? new Date(state.meta.generatedAt).toLocaleString("zh-CN") : "-";
-  els.dataStatus.textContent = `更新：${generatedAt}`;
+  const asOfDate = state.meta.asOfDate || window.SiteContext?.dataAsOfDate || state.meta.navIncremental?.cutoffDate || "-";
+  els.dataStatus.textContent = `数据截至：${asOfDate}`;
   loadIndexSeries();
 }
 
@@ -2520,6 +2520,6 @@ els.drawer.addEventListener("click", (event) => {
 });
 
 loadData().catch((error)=>{els.dataStatus.textContent=error.message;els.scaleGroups.innerHTML='<div class="empty-state">'+AiRender.escapeHtml(error.message)+'</div>'});
-function renderFDAnalysis(r){var h='',m=r.meta;if(m&&m.analyzedAt)h+='<div class="ai-update-time" style="margin-bottom:10px;text-align:right">分析时间：'+AiRender.fmtTime(m.analyzedAt)+' · 模型：'+AiRender.escapeHtml(m.model||'-')+'</div>';var bs=r.byStrategy||{},ov=r.overall||{};var ks=Object.keys(bs);if(ks.length){h+='<h3 style="margin:16px 0 10px;font-size:15px;font-weight:800">按二级策略分组分析</h3><div class="ai-strategy-groups">';ks.forEach(function(n){var g=bs[n];h+='<div class="ai-strategy-group"><div class="ai-strategy-group-head"><h4>'+AiRender.escapeHtml(n)+'</h4>';if(g.strategySummary)h+='<p>'+AiRender.escapeHtml(g.strategySummary)+'</p>';h+='</div><div class="ai-strategy-group-body">'+AiRender.renderDualColumn(g)+'</div></div>'});h+='</div>'}if(ov.worthWatching||ov.atRisk||ov.summary){h+='<h3 style="margin:16px 0 10px;font-size:15px;font-weight:800">综合总览</h3>'+AiRender.renderDualColumn(ov)}if(!ks.length&&!ov.worthWatching&&!ov.atRisk)h+=AiRender.renderEmptyState();return h}
+function renderFDAnalysis(r){var h=AiRender.renderAnalysisMeta(r.meta),bs=r.byStrategy||{},ov=r.overall||{};var ks=Object.keys(bs);if(ks.length){h+='<h3 style="margin:16px 0 10px;font-size:15px;font-weight:800">按二级策略分组分析</h3><div class="ai-strategy-groups">';ks.forEach(function(n){var g=bs[n];h+='<div class="ai-strategy-group"><div class="ai-strategy-group-head"><h4>'+AiRender.escapeHtml(n)+'</h4>';if(g.strategySummary)h+='<p>'+AiRender.escapeHtml(g.strategySummary)+'</p>';h+='</div><div class="ai-strategy-group-body">'+AiRender.renderDualColumn(g)+'</div></div>'});h+='</div>'}if(ov.worthWatching||ov.atRisk||ov.summary){h+='<h3 style="margin:16px 0 10px;font-size:15px;font-weight:800">综合总览</h3>'+AiRender.renderDualColumn(ov)}if(!ks.length&&!ov.worthWatching&&!ov.atRisk)h+=AiRender.renderEmptyState();return h}
 async function loadAnalysis(){var p=document.getElementById('aiResults');if(!p)return;var r=await AiRender.loadAnalysisResult('./data/fund-discovery-analysis.json');if(!r||r._parseError){AiRender.mountCollapsibleAnalysis(p,AiRender.renderEmptyState(),{open:true});return}AiRender.mountCollapsibleAnalysis(p,renderFDAnalysis(r))}
 loadAnalysis();

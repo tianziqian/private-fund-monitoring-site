@@ -53,7 +53,6 @@
 .ai-agg-card{background:var(--ai-bg);border:1px solid var(--ai-line);border-radius:var(--ai-radius-sm);padding:16px;text-decoration:none;color:inherit;display:block;transition:border-color 160ms,box-shadow 160ms}
 .ai-agg-card:hover{border-color:var(--ai-accent);box-shadow:var(--ai-shadow-soft)}
 .ai-agg-card h4{margin:0 0 4px;font-size:14px;font-weight:800;color:var(--ai-text)}
-.ai-agg-time{font-size:11px;color:var(--ai-muted);margin-bottom:10px}
 .ai-agg-mini-row{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px}
 .ai-agg-mini-row:last-child{margin-bottom:0}
 .ai-agg-mini-label{font-size:12px;font-weight:700;flex-shrink:0}
@@ -179,10 +178,6 @@
 .ai-agg-card h4{
   margin-bottom:8px;
   font-size:15px;
-}
-
-.ai-agg-time{
-  margin-bottom:12px;
 }
 
 .ai-agg-mini-row{

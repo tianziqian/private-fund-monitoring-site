@@ -46,10 +46,11 @@ function activeItems() {
 
 function renderStatus() {
   const m = state.meta;
+  const asOfDate = m.asOfDate || window.SiteContext?.dataAsOfDate || "-";
   els.dataStatus.innerHTML = [
-    `最新 ${safe(m.latestPostTime).slice(0, 10)}`,
+    `数据截至 ${asOfDate}`,
     `来源 ${safe(m.source)}`,
-    `抓取 ${safe(m.generatedAt).slice(0, 10)}`,
+    `收录 ${formatNumber(m.sourceArticleCount)} 篇`,
   ].map((text) => `<span>${escapeHtml(text)}</span>`).join("");
 }
 
@@ -236,5 +237,5 @@ els.reset.addEventListener("click", () => {
 });
 els.export.addEventListener("click", exportCsv);
 
-async function loadAnalysis(){var p=document.getElementById('aiResults');if(!p)return;var r=await AiRender.loadAnalysisResult('./data/sentiment-analysis.json');if(!r||r._parseError){AiRender.mountCollapsibleAnalysis(p,AiRender.renderEmptyState(),{open:true});return}var h='',m=r.meta;if(m&&m.analyzedAt)h+='<div class="ai-update-time" style="margin-bottom:10px;text-align:right">分析时间：'+AiRender.fmtTime(m.analyzedAt)+' · 模型：'+AiRender.escapeHtml(m.model||'-')+'</div>';h+=AiRender.renderDualColumn(r);AiRender.mountCollapsibleAnalysis(p,h)}
+async function loadAnalysis(){var p=document.getElementById('aiResults');if(!p)return;var r=await AiRender.loadAnalysisResult('./data/sentiment-analysis.json');if(!r||r._parseError){AiRender.mountCollapsibleAnalysis(p,AiRender.renderEmptyState(),{open:true});return}var h=AiRender.renderAnalysisMeta(r.meta);h+=AiRender.renderDualColumn(r);AiRender.mountCollapsibleAnalysis(p,h)}
 loadData();loadAnalysis();

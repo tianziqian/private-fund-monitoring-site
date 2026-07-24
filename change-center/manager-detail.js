@@ -320,7 +320,7 @@ function buildProfileFromPeople(people, manager) {
     stability: previousCount ? ratio(previousCount - added - removed, previousCount) : "--",
     profileSource: {
       peopleFile: "website-mvp/personnel-center/data/personnel-data.json",
-      snapshotDate: state.personnel?.meta?.snapshotDate || "",
+      snapshotDate: state.personnel?.meta?.asOfDate || window.SiteContext?.dataAsOfDate || state.personnel?.meta?.snapshotDate || "",
     },
   };
 }
@@ -505,7 +505,7 @@ function renderAiAnalysis(a) {
     </div>
     <div class="ai-mgr-sections">${secs}</div>
     ${kps ? `<div class="ai-mgr-keypoints"><h5>尽调重点提示</h5><ul>${kps}</ul></div>` : ""}
-    <p class="ai-mgr-note">AI 解读（规则引擎 + ${escapeAi(a.model || "")}）· 生成于 ${escapeAi((a.generatedAt || "").slice(0, 10))}；仅供尽调参考，需人工复核。</p>
+    <p class="ai-mgr-note">AI 解读（规则引擎 + ${escapeAi(a.model || "")}）· 数据截至 ${escapeAi(a.asOfDate || window.SiteContext?.dataAsOfDate || "")}；仅供尽调参考，需人工复核。</p>
   `;
 }
 
@@ -623,8 +623,8 @@ async function init() {
   state.personDetails = await personDetailResponse.json();
   state.personDetailLookup = buildPersonLookup(state.personDetails.records);
   const meta = state.data.meta;
-  const latestDate = state.personnel?.meta?.snapshotDate || meta.currentDate;
-  if (els.updateLine) els.updateLine.textContent = `最近更新 ${latestDate} | 覆盖范围：${meta.coverage} | 周度区间：${meta.previousDate} — ${meta.currentDate}`;
+  const latestDate = state.personnel?.meta?.asOfDate || meta.asOfDate || window.SiteContext?.dataAsOfDate || meta.currentDate;
+  if (els.updateLine) els.updateLine.textContent = `数据截至 ${latestDate} | 覆盖范围：${meta.coverage} | 变动对比区间：${meta.previousDate} — ${meta.currentDate}`;
   state.manager = state.data.managerByRegister[registerNo]
     ? enrichManagerWithLatest(state.data.managerByRegister[registerNo])
     : buildFallbackManager(registerNo);

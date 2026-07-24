@@ -243,7 +243,8 @@ async function init() {
   }
   state.record = await loadPersonRecord(id);
   if (els.updateLine) {
-    els.updateLine.textContent = `最近更新 ${compact(state.record.snapshotDate)} | 人员详情`;
+    const asOfDate = window.SiteContext?.dataAsOfDate || state.record.snapshotDate;
+    els.updateLine.textContent = `数据截至 ${compact(asOfDate)} | 人员详情`;
   }
   if (!state.record) {
     els.personDetail.innerHTML = `<div class="empty-detail">未找到该人员详情。请返回上一页重新选择。</div>`;

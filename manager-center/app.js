@@ -51,6 +51,10 @@ function formatNumber(value) {
   return Number(value || 0).toLocaleString("zh-CN");
 }
 
+function dataAsOf(meta = {}) {
+  return meta.asOfDate || window.SiteContext?.dataAsOfDate || meta.snapshotDate || "";
+}
+
 function option(select, value) {
   const el = document.createElement("option");
   el.value = value;
@@ -393,7 +397,7 @@ function renderAiAnalysis(a) {
     </div>
     <div class="ai-mgr-sections">${secs}</div>
     ${kps ? `<div class="ai-mgr-keypoints"><h5>尽调重点提示</h5><ul>${kps}</ul></div>` : ""}
-    <p class="subtle ai-mgr-note">AI 解读（规则引擎 + ${escapeAi(a.model || "")}）· 生成于 ${escapeAi((a.generatedAt || "").slice(0, 10))}；仅供尽调参考，需人工复核。</p>
+    <p class="subtle ai-mgr-note">AI 解读（规则引擎 + ${escapeAi(a.model || "")}）· 数据截至 ${escapeAi(a.asOfDate || window.SiteContext?.dataAsOfDate || "")}；仅供尽调参考，需人工复核。</p>
   `;
 }
 
@@ -522,7 +526,7 @@ async function init() {
   renderMetrics(payload.meta);
   setupFilters();
   els.dataStatus.innerHTML = [
-    `快照 ${payload.meta.snapshotDate}`,
+    `数据截至 ${dataAsOf(payload.meta)}`,
     `覆盖 ${formatNumber(state.managers.length)} 家`,
     `${formatNumber(payload.meta.personCount)} 人`,
   ].map((text) => `<span>${text}</span>`).join("");
