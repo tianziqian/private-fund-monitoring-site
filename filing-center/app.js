@@ -70,10 +70,15 @@ function renderAll() {
   renderTop15();
   populateFilters();
   applyFilters();
+  document.querySelectorAll(".module-header p, .panel-section h2, .panel-section th, .table-toolbar span").forEach((node) => {
+    node.textContent = node.textContent.replace(/\u672c\u5468/g, "\u622a\u6b62\u5468");
+  });
 }
 
 function renderStatus() {
   const m = state.meta;
+  const cutoffWeekLabel = m.cutoffWeekLabel || m.currentWeekLabel || "-";
+  const cutoffPrefix = "\u622a\u6b62\u5468";
   const asOfDate = m.asOfDate || window.SiteContext?.dataAsOfDate || "-";
   els.dataStatus.innerHTML = [
     `<span>口径：${escapeHtml(m.fundTypeLabel || "证券类私募")}</span>`,
@@ -83,6 +88,12 @@ function renderStatus() {
   els.trendSubtitle.textContent = `近 ${m.weeks || state.weeklyCounts.length} 周新增备案产品数量（按备案日期所在自然周统计）`;
   els.topSubtitle.textContent = `本周（${safe(m.currentWeekLabel, "-")}）备案产品数量最多的管理人`;
   els.detailSubtitle.textContent = `本周（${safe(m.currentWeekLabel, "-")}）新增备案的证券类私募产品`;
+  els.dataStatus.innerHTML = [
+    `<span>\u53e3\u5f84\uff1a${escapeHtml(m.fundTypeLabel || "\u8bc1\u5238\u7c7b\u79c1\u52df")}</span>`,
+    `<span>${cutoffPrefix}\uff1a${escapeHtml(cutoffWeekLabel)}</span>`,
+  ].join("");
+  els.topSubtitle.textContent = `${cutoffPrefix}\uff08${safe(cutoffWeekLabel, "-")}\uff09\u5907\u6848\u4ea7\u54c1\u6570\u91cf\u6700\u591a\u7684\u7ba1\u7406\u4eba`;
+  els.detailSubtitle.textContent = `${cutoffPrefix}\uff08${safe(cutoffWeekLabel, "-")}\uff09\u65b0\u589e\u5907\u6848\u7684\u8bc1\u5238\u7c7b\u79c1\u52df\u4ea7\u54c1`;
 }
 
 function renderMetrics() {
@@ -99,6 +110,9 @@ function renderMetrics() {
     { label: `近${m.weeks || state.weeklyCounts.length}周周均`, value: formatNumber(m.averageWeeklyCount), note: "周度备案数量均值" },
     { label: `近${m.weeks || state.weeklyCounts.length}周累计`, value: formatNumber(m.totalFilings), note: "窗口期累计新增备案" },
   ];
+  cards[0].label = "\u622a\u6b62\u5468\u5907\u6848\u6570\u91cf";
+  cards[0].note = `\u524d\u4e00\u5468 ${formatNumber(m.previousWeekCount)} \u53ea`;
+  cards[2].label = "\u622a\u6b62\u5468\u5907\u6848\u6d89\u53ca\u7ba1\u7406\u4eba";
   els.metrics.innerHTML = cards
     .map(
       (card) => `
