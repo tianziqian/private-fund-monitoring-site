@@ -1,9 +1,9 @@
 {
   "dataSource": "latest_snapshot",
-  "snapshotDate": "2026-06-28",
-  "snapshotType": "daily",
-  "persons": "output\\snapshots\\2026-06-28\\persons_snapshot.xlsx",
-  "managers": "output\\snapshots\\2026-06-28\\managers_snapshot.xlsx",
-  "outFile": "..\\private-fund-monitoring-site\\personnel-center\\data\\personnel-data.json",
-  "updatedAt": "2026-07-01T10:22:11"
+  "snapshotDate": "2026-07-27",
+  "snapshotType": "weekly",
+  "persons": "D:\\ai\\fof框架\\资产挖掘\\fof-monitoring\\private-fund-monitoring-platform-main\\output\\snapshots\\2026-07-27\\persons_snapshot.xlsx",
+  "managers": "D:\\ai\\fof框架\\资产挖掘\\fof-monitoring\\private-fund-monitoring-platform-main\\output\\snapshots\\2026-07-27\\managers_snapshot.xlsx",
+  "outFile": "D:\\ai\\fof框架\\资产挖掘\\fof-monitoring\\private-fund-monitoring-site\\personnel-center\\data\\personnel-data.json",
+  "updatedAt": "2026-07-27T11:11:03"
 }

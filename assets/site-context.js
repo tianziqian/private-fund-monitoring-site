@@ -2,6 +2,6 @@
   "use strict";
 
   window.SiteContext = Object.freeze({
-    dataAsOfDate: "2026-07-12",
+    dataAsOfDate: "2026-07-27",
   });
 })();

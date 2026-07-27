@@ -1,0 +1,8 @@
+{
+  "dataSource": "weekly_diff",
+  "selectedDiffDir": "D:\\ai\\fof框架\\资产挖掘\\fof-monitoring\\private-fund-monitoring-platform-main\\output\\weekly_diff\\2026-06-28_to_2026-07-27",
+  "selectedChangeData": "D:\\ai\\fof框架\\资产挖掘\\fof-monitoring\\private-fund-monitoring-platform-main\\output\\weekly_diff\\2026-06-28_to_2026-07-27\\change-data.json",
+  "preferWeekly": true,
+  "allowTestFallback": false,
+  "updatedAt": "2026-07-27T11:23:44"
+}

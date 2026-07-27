@@ -1,0 +1,15 @@
+{
+  "dataSource": "simuwang_news",
+  "sourceUrl": "https://www.simuwang.com/news",
+  "sectionsFound": [
+    "私募公募",
+    "理财百科",
+    "市场动态",
+    "投资者陪伴",
+    "热点头条",
+    "机构访谈",
+    "私募百科"
+  ],
+  "outFile": "D:\\ai\\fof框架\\资产挖掘\\fof-monitoring\\private-fund-monitoring-site\\sentiment-center\\data\\sentiment-data.json",
+  "updatedAt": "2026-07-27T09:51:27"
+}
