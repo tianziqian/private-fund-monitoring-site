@@ -574,7 +574,7 @@ function renderManagerDetail(manager) {
         <div>
           <div class="back-link">管理人详情</div>
           <h2>${safe(manager.managerName)}</h2>
-          <p>聚合最近一周人员变化、主要来源去向与当前团队结构。</p>
+          <p>聚合最近一期人员变动、主要来源去向与当前团队结构。</p>
         </div>
         <div class="hero-metrics">
           ${metricBox("当前人数", currentPersonDisplay(manager))}

@@ -10,6 +10,7 @@ const state = {
 
 const els = {
   summaryPills: document.querySelector("#summaryPills"),
+  snapshotPeriod: document.querySelector("#snapshotPeriod"),
   metrics: document.querySelector("#changeMetrics"),
   expansionList: document.querySelector("#expansionList"),
   shrinkList: document.querySelector("#shrinkList"),
@@ -139,14 +140,19 @@ function routeMatches(route) {
 
 function renderHeader() {
   const meta = state.data.meta;
-  const asOfDate = meta.asOfDate || window.SiteContext?.dataAsOfDate || meta.currentDate;
+  const previousDate = safe(meta.previousDate, "-");
+  const currentDate = safe(meta.currentDate, "-");
+  const snapshotPeriod = `${previousDate} \u2192 ${currentDate}`;
   els.summaryPills.innerHTML = [
-    `数据截至 ${asOfDate}`,
+    `快照对比 ${snapshotPeriod}`,
     `覆盖 ${fmt(meta.currentManagers)} 家`,
     `${fmt(meta.currentPersons)} 人`,
   ]
     .map((text) => `<span class="pill">${text}</span>`)
     .join("");
+  if (els.snapshotPeriod) {
+    els.snapshotPeriod.textContent = `快照对比：${snapshotPeriod}。点击榜单中的管理人查看具体公司和人员。`;
+  }
 }
 
 function renderMetrics() {

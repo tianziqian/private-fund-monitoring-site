@@ -28,15 +28,15 @@
       <section class="module-header">
         <div>
           <div class="module-kicker">PERSONNEL CHANGE</div>
-          <h1>周度人员变动监测</h1>
-          <p>基于周度快照对比，识别人员新增、减少、流动与资格变化</p>
+          <h1>人员变动监测</h1>
+          <p>基于两期人员快照对比，识别人员新增、减少、流动与资格变化</p>
         </div>
         <div class="header-stats" id="summaryPills"></div>
       </section>
 
       <section class="change-metrics" id="changeMetrics"></section>
       <section class="ai-analysis-panel" id="aiAnalysisPanel">
-        <div class="ai-panel-head"><div class="ai-panel-title"><span class="ai-badge">AI 分析</span><h2>人员变动智能分析</h2><p>基于周度人员变动数据，识别团队扩张及人员流失风险信号</p></div></div>
+        <div class="ai-panel-head"><div class="ai-panel-title"><span class="ai-badge">AI 分析</span><h2>人员变动智能分析</h2><p>基于最近一期人员变动数据，识别团队扩张及人员流失风险信号</p></div></div>
         <div class="ai-panel-body" id="aiResults"><div class="ai-loading"><div class="ai-spinner"></div><span>正在加载分析结果...</span></div></div>
       </section>
       <section class="search-panel" aria-label="搜索管理人或人员">
@@ -46,8 +46,8 @@
 
       <section class="section-title">
         <div>
-          <h2>最近一周人员变化</h2>
-          <p>点击榜单中的管理人，进入独立管理人详情页查看具体公司和人员。</p>
+          <h2>最近一期人员变动</h2>
+          <p id="snapshotPeriod">正在加载两期快照日期</p>
         </div>
       </section>
 
@@ -83,6 +83,6 @@
 
     <script src="../assets/site-context.js?v=20260712"></script>
     <script src="../assets/ai-render.js?v=20260712-asof"></script>
-    <script src="./app.js?v=20260712-asof"></script>
+    <script src="./app.js?v=20260727-snapshot-period"></script>
   </body>
 </html>
